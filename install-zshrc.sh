@@ -66,7 +66,7 @@ echo "What operating system are you on?"
 echo "---------------------------------"
 echo "1. Arch based"
 echo "2. Debian based"
-echo "3. Redhad based"
+echo "3. Redhat based"
 echo "4. macOS"
 echo "0. Exit out of this menu/install manually"
 read -p "Choice: " installMethod
