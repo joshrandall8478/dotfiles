@@ -66,6 +66,9 @@ case $installMethod in
 	"2")
 		echo "Debian install method chosen"
 		cd /tmp
+		if [ -d ./pfetch ]; then
+			rm -rf pfetch
+		fi
 		git clone https://github.com/dylanaraps/pfetch.git
 		sudo install pfetch/pfetch /usr/local/bin
 		sudo apt install fortune-mod
@@ -73,6 +76,9 @@ case $installMethod in
 	"3")
 		echo "Redhat install method chosen"
 		cd /tmp
+		if [ -d ./pfetch ]; then
+                        rm -rf pfetch
+                fi
                 git clone https://github.com/dylanaraps/pfetch.git
                 sudo install pfetch/pfetch /usr/local/bin
 		sudo dnf install fortune-mod
