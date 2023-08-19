@@ -12,8 +12,34 @@ else
 	echo "Please install zsh before running"
 	exit
 fi
-echo "copying .zshrc to home"
-cp ./.zshrc ~
+echo "Copy .zshrc into home"
+if [ -f ~/.zshrc ]; then
+	echo "This will overwrite your current .zshrc, how do you want to handle this?"
+	echo "-----------------------------------------------------------------------"
+	echo "1. Overwrite .zshrc"
+	echo "2. mv old .zshrc to .zshrc.old"
+	echo "0. Exit this script"
+	read -p "Choice: " writeChoice
+	case $writeChoice in
+		"0")
+			echo "Exiting..."
+			exit
+			;;
+		"1")
+			echo "Copying .zshrc directly into ~"
+			cp ./.zshrc ~
+			;;
+		"2")
+			echo "Renaming old .zshrc"
+			mv ~/.zshrc ~/.zshrc.old
+			;;
+		*)
+			echo "No valid choice supplied, exiting"
+			exit
+	esac
+else
+	cp ./.zshrc ~
+fi
 cd /tmp
 echo "installing plugins"
 git clone https://github.com/zsh-users/zsh-autosuggestions ${ZSH_CUSTOM:-~/.oh-my-zsh/custom}/plugins/zsh-autosuggestions
@@ -96,5 +122,7 @@ case $installMethod in
 		fi
 		brew install pfetch fortune
 		;;
+	*)
+		echo "No valid choice supplied"
 esac
 echo "Script complete!"
