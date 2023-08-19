@@ -36,6 +36,8 @@ if [ -f ~/.zshrc ]; then
 		"2")
 			echo "Renaming old .zshrc"
 			mv ~/.zshrc ~/.zshrc.old
+			echo "Copying .zshrc"
+			cp ./.zshrc ~
 			;;
 		*)
 			echo "No valid choice supplied, exiting"
