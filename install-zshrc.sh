@@ -1,5 +1,7 @@
 #!/bin/bash
 
+cwd=$(pwd)
+
 if [ ! -f "/usr/bin/git" ]; then
 	echo "Please install git before running"
 	exit
@@ -127,4 +129,11 @@ case $installMethod in
 	*)
 		echo "No valid choice supplied"
 esac
+if [ -d ~/.config/kitty ]; then
+	read -p "Clone kitty config into ~/.config as well? Your old config will be saved as kitty.old" kittyChoice
+	if [ ${kittyChoice,,} == "y" ]; then
+		mv ~/.config/kitty ~/.config/kitty.old
+		cp -r $cwd/.config/kitty ~/.config
+	fi
+fi
 echo "Script complete!"
