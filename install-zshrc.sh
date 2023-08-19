@@ -6,6 +6,8 @@ if [ ! -f "/usr/bin/git" ]; then
 fi
 if [ -f "/usr/bin/zsh" ]; then
 	# Installs oh-my-zsh
+	echo "oh-my-zsh is about to install. When it is done installing, type exit to come back to this script."
+	sleep 3
 	echo "Installing oh-my-zsh"
 	sh -c "$(curl -fsSL https://raw.githubusercontent.com/ohmyzsh/ohmyzsh/master/tools/install.sh)"
 else
