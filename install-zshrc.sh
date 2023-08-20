@@ -81,6 +81,11 @@ case $installMethod in
 			read -p "yay not installed: install yay? [y/n] " installYay
 		
 			if [ ${installYay,,} == "y" ]; then
+				base_devel_check=$(pacman -Qs base-devel)
+				if [[ ! $base_devel_check == *"base-devel"* ]]; then
+					echo "base-devel package not installed. Installing..."
+					sudo pacman -S base-devel
+				fi
 				cd /tmp
 				if [ -d ./yay ]; then
 					rm -rf yay
