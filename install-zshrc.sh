@@ -83,6 +83,7 @@ case $installMethod in
 			if [ ${installYay,,} == "y" ]; then
 				base_devel_check=$(pacman -Qs base-devel)
 				if [ $base_devel_check == "" ]; then
+					echo "base-devel package not installed. Installing..."
 					sudo pacman -S base-devel
 				fi
 				cd /tmp
