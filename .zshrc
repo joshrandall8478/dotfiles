@@ -7,6 +7,7 @@ export PATH="$(python3 -m site --user-base)/bin:$PATH"
 export ZSH="$HOME/.oh-my-zsh"
 
 export EDITOR=nvim
+export VISUAL=nvim
 
 if [ -z "${DISPLAY}" ] && [ "${XDG_VTNR}" -eq 1 ]; then
    startx
@@ -118,8 +119,8 @@ alias snapshot="sudo timeshift --create"
 alias backup="echo use snapshot"
 alias fucking=sudo
 alias krestart5="killall plasmashell;plasmashell &;disown"
-alias pip=pip3
-alias python=python3
+#alias pip=pip3
+#alias python=python3
 #alias ins="sudo pacman -S"
 alias ins="yay -S"
 alias unins="sudo pacman -R"
