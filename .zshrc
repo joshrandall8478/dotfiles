@@ -6,6 +6,8 @@ export PATH="$(python3 -m site --user-base)/bin:$PATH"
 # Path to your oh-my-zsh installation.
 export ZSH="$HOME/.oh-my-zsh"
 
+export EDITOR=nvim
+
 if [ -z "${DISPLAY}" ] && [ "${XDG_VTNR}" -eq 1 ]; then
    startx
 fi
@@ -122,7 +124,7 @@ alias python=python3
 alias ins="yay -S"
 alias unins="sudo pacman -R"
 #alias aur="yay -S"
-alias sys-upgrade="sudo pacman -Syu"
+alias update="sudo pacman -Syu"
 alias yeet-orphans="sudo pacman -Qtdq | sudo pacman -Rns -"
 #export PATH=$PATH:/home/josharch/.spicetify
 alias bspwm-reload="~/.config/bspwm/bspwmrc"
