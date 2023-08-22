@@ -2,11 +2,11 @@
 
 cwd=$(pwd)
 
-if [ ! -f "/usr/bin/git" ]; then
+if [ ! -f "/usr/bin/git" ] && [ ! -f "/bin/git" ]; then
 	echo "Please install git before running"
 	exit
 fi
-if [ -f "/usr/bin/zsh" ]; then
+if [ -f "/usr/bin/zsh" ] || [ -f "/bin/zsh" ]; then
 	# Installs oh-my-zsh
 	printf '\e[38;5;195;1;2moh-my-zsh is about to install. It will put you in a zsh terminal when it finishes.\e[38;5;51m Please type “exit” when oh-my-zsh is finished to return back to this script.\e[0m\n' 
 	sleep 5
