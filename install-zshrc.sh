@@ -17,13 +17,56 @@ else
 	exit
 fi
 echo "Copy .zshrc into home"
+echo ""
+echo "Please choose your operating system"
+echo "-----------------------------------"
+echo "1.) Arch based (includes Manjaro, Endeavor, SteamOS, etc.)"
+echo "2.) Debian based (includes Ubuntu, Pop!_OS, Linux Mint, anything Ubuntu based, etc.)"
+echo "3.) Redhat based (includes Fedora, CentOS, etc.)"
+echo "4.) macOS (Should work with almost any version (OS X included). Tested with macOS 13)"
+echo "5.) Unsure/Other (will install .zshrc.arch, but not install pfetch or fortune-mod)"
+echo "0.) Exit install script"
+echo ""
+echo "If you choose 2-4, you will be prompted to install pfetch + fortune later."
+echo "If you choose 5, you will have to modify the aliases manually in .zshrc to have it match with your system"
+echo ""
+read -p "Operating System Choice [0-5]: " osChoice
+case $osChoice in
+	"0")
+		echo "Exiting..."
+		exit
+		;;
+	"1")
+		echo "Arch chosen"
+		zshrcType="arch"
+		;;
+	"2")
+		echo "Debian chosen"
+		zshrcType="debian"
+		;;
+	"3")
+		echo "Redhat chosen"
+		zshrcType="redhat"
+		;;
+	"4")
+		echo "macOS chosen"
+		zshrcType="macos"
+		;;
+	"5")
+		echo "Manual install method chosen"
+		zshrcType="arch"
+		;;
+	*)
+		echo "Invalid choice. Exiting..."
+		exit
+esac
 if [ -f ~/.zshrc ]; then
 	echo "This will overwrite your current .zshrc, how do you want to handle this?"
 	echo "-----------------------------------------------------------------------"
 	echo "1. Overwrite .zshrc"
 	echo "2. mv old .zshrc to .zshrc.old"
 	echo "0. Exit this script"
-	read -p "Choice: " writeChoice
+	read -p "Choice [0-2]: " writeChoice
 	case $writeChoice in
 		"0")
 			echo "Exiting..."
@@ -31,13 +74,13 @@ if [ -f ~/.zshrc ]; then
 			;;
 		"1")
 			echo "Copying .zshrc directly into ~"
-			cp ./.zshrc ~
+			cp ./.zshrc.$zshrcType ~/.zshrc
 			;;
 		"2")
 			echo "Renaming old .zshrc"
 			mv ~/.zshrc ~/.zshrc.old
 			echo "Copying .zshrc"
-			cp ./.zshrc ~
+			cp ./.zshrc.$zshrcType ~/.zshrc
 			;;
 		*)
 			echo "No valid choice supplied, exiting"
@@ -47,34 +90,32 @@ else
 	cp ./.zshrc ~
 fi
 cd /tmp
-echo "installing plugins"
+echo "Installing plugins..."
 git clone https://github.com/zsh-users/zsh-autosuggestions ${ZSH_CUSTOM:-~/.oh-my-zsh/custom}/plugins/zsh-autosuggestions
 git clone https://github.com/zsh-users/zsh-syntax-highlighting.git ${ZSH_CUSTOM:-~/.oh-my-zsh/custom}/plugins/zsh-syntax-highlighting
 echo "installation complete"
-echo "Install pfetch and fortune"
+if [ $osChoice = "5" ]; then
+	echo "Manual install for pfetch/fortune-mod was chosen earlier."
+	echo "Script complete!"
+	exit
+fi
 echo ""
+read -p "Install pfetch and fortune? [y/n] " installChoice
+if [ ${installChoice,,} != "y" ]; then
+	echo "Skipping install..."
+	echo "Script complete!"
+	exit
+fi
+echo "Installing pfetch and fortune..."
 if [ -f "/usr/bin/pfetch" ] || [ -f "/usr/bin/fortune" ]; then
-	read -p "pfetch and/or fortune is installed. Continue with install script? [y/n]: " installChoice
-	if [ ${installChoice,,} != "y" ]; then
+	read -p "pfetch and/or fortune is installed. Continue with install script? [y/n]: " installChoice2
+	if [ ${installChoice2,,} != "y" ]; then
 		echo "Skipping install..."
 		echo "Script complete!"
 		exit
 	fi
 fi
-echo ""
-echo "What operating system are you on?"
-echo "---------------------------------"
-echo "1. Arch based"
-echo "2. Debian based"
-echo "3. Redhat based"
-echo "4. macOS"
-echo "0. Exit out of this menu/install manually"
-read -p "Choice: " installMethod
-case $installMethod in
-	"0")
-		echo "Exiting"
-		exit
-		;;
+case $osChoice in
 	"1")
 		echo "Arch install method chosen"
 		if [ ! -f /usr/bin/yay ]; then
@@ -138,7 +179,8 @@ case $installMethod in
 		fi
 		brew install pfetch fortune
 		;;
-	*)
-		echo "No valid choice supplied"
+	"5")
+		echo "Manual install for pfetch/fortune-mod was chosen earlier."
+		;;
 esac
 echo "Script complete!"
