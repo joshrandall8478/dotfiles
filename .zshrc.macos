@@ -119,7 +119,7 @@ alias fucking=sudo
 alias ins="brew install"
 alias unins="brew uninstall"
 #alias aur="yay -S"
-alias update="brew update --cask"
+alias update="brew update && brew upgrade"
 alias yeet-orphans="brew autoremove"
 #export PATH=$PATH:/home/josharch/.spicetify
 
