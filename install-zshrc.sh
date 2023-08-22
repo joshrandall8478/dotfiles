@@ -98,7 +98,12 @@ case $installMethod in
 				exit
 			fi
 		fi
-		yay -S pfetch fortune-mod
+		read -p "Add --needed tag? [y/n] " neededTag
+		if [ ${neededTag,,} == "y" ]; then
+			yay -S pfetch fortune-mod --needed
+		else
+			yay -S pfetch fortune-mod
+		fi
 		;;
 	"2")
 		echo "Debian install method chosen"
