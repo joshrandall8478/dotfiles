@@ -100,8 +100,8 @@ if [ $osChoice = "5" ]; then
 	exit
 fi
 echo ""
-read -p "Install pfetch and fortune? [y/n] " installChoice
-if [ ${installChoice,,} != "y" ]; then
+read -p "Install pfetch and fortune? [y/n]: " installChoice
+if [ "${installChoice,,}" != "y" ]; then
 	echo "Skipping install..."
 	echo "Script complete!"
 	exit
@@ -168,7 +168,7 @@ case $osChoice in
 		;;
 	"4")
 		echo "macOS install method chosen"
-		if [ ! -f "/usr/local/bin/brew" ]; then
+		if [ ! -f "/opt/homebrew/bin/brew" ]; then
 			read -p "brew not installed: install brew? [y/n] " installBrew
 			if [ ${installBrew,,} == "y" ]; then
         			/bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/HEAD/install.sh)"
