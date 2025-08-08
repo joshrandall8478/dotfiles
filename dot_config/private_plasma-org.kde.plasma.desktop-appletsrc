@@ -24,7 +24,7 @@ positions={"1920x1080":[]}
 
 [Containments][1][Wallpaper][org.kde.image][General]
 Blur=true
-Image=~/.local/share/wallpapers/Nazuna.jpg
+Image=/home/joshr/.local/share/wallpapers/Nazuna.jpg
 SlidePaths=/usr/share/wallpapers/
 
 [Containments][2]
@@ -47,7 +47,7 @@ positions={"1920x1080":[]}
 
 [Containments][2][Wallpaper][org.kde.image][General]
 Blur=true
-Image=~/.local/share/wallpapers/Nazuna.jpg
+Image=/home/joshr/.local/share/wallpapers/Nazuna.jpg
 SlidePaths=/usr/share/wallpapers/
 
 [Containments][3]
@@ -70,7 +70,7 @@ positions={"1920x1080":[]}
 
 [Containments][3][Wallpaper][org.kde.image][General]
 Blur=true
-Image=~/.local/share/wallpapers/Nazuna.jpg
+Image=/home/joshr/.local/share/wallpapers/Nazuna.jpg
 SlidePaths=/usr/share/wallpapers/
 
 [Containments][4]
