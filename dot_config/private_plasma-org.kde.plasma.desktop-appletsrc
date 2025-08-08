@@ -24,7 +24,7 @@ positions={"1920x1080":[]}
 
 [Containments][1][Wallpaper][org.kde.image][General]
 Blur=true
-Image=/home/joshr/.local/share/wallpapers/Nazuna.jpg
+Image=~/.local/share/wallpapers/Nazuna.jpg
 SlidePaths=/usr/share/wallpapers/
 
 [Containments][2]
@@ -47,7 +47,7 @@ positions={"1920x1080":[]}
 
 [Containments][2][Wallpaper][org.kde.image][General]
 Blur=true
-Image=/home/joshr/.local/share/wallpapers/Nazuna.jpg
+Image=~/.local/share/wallpapers/Nazuna.jpg
 SlidePaths=/usr/share/wallpapers/
 
 [Containments][3]
@@ -70,7 +70,7 @@ positions={"1920x1080":[]}
 
 [Containments][3][Wallpaper][org.kde.image][General]
 Blur=true
-Image=/home/joshr/.local/share/wallpapers/Nazuna.jpg
+Image=~/.local/share/wallpapers/Nazuna.jpg
 SlidePaths=/usr/share/wallpapers/
 
 [Containments][4]
@@ -143,7 +143,7 @@ positions={"1920x1080":[]}
 sortDesc=true
 sortDirsFirst=false
 sortMode=2
-url=file:///home/joshr/Downloads
+url=file://~/Downloads
 
 [Containments][4][Applets][5]
 immutability=1

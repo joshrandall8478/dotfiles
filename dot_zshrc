@@ -183,7 +183,7 @@ alias smallfetch="fastfetch -c ~/smallfetch.jsonc"
 #smallfetch
 #fortune -s -n 100
 
-export PATH=$PATH:/home/joshr/.spicetify
+export PATH=$PATH:~/.spicetify
 
 # for fun :)
 alias fucking='sudo' # because its funny
