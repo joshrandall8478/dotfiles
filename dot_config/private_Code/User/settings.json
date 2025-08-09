@@ -1,0 +1,43 @@
+{
+    "window.titleBarStyle": "custom",
+    "workbench.iconTheme": "material-icon-theme",
+    "editor.stickyScroll.enabled": false,
+    "git.enableSmartCommit": true,
+    "github.copilot.enable": {
+        "*": false,
+        "plaintext": false,
+        "markdown": false,
+        "scminput": false,
+        "json": true,
+        "vue": false
+    },
+    "settingsSync.ignoredExtensions": [
+        "catppuccin.catppuccin-vsc"
+    ],
+    "workbench.colorTheme": "Catppuccin Mocha",
+    "markdown-preview-enhanced.previewTheme": "atom-material.css",
+    "fiveServer.php.executable": "/usr/bin/php",
+    "liveServer.settings.donotShowInfoMsg": true,
+    "[jsonc]": {
+        "editor.defaultFormatter": "esbenp.prettier-vscode"
+    },
+    "files.autoSave": "afterDelay",
+    "codetogether.userName": "Josh",
+    "git.openRepositoryInParentFolders": "always",
+    "redhat.telemetry.enabled": false,
+    "git.autofetch": true,
+    "terminal.integrated.inheritEnv": false,
+    "githubPullRequests.pullBranch": "never",
+    "terminal.integrated.fontFamily": "Hack Nerd Font",
+    "diffEditor.ignoreTrimWhitespace": false,
+    "files.associations": {
+        "*.jas": "plaintext"
+    },
+    "settingsSync.ignoredSettings": [
+        "terminal.integrated.defaultProfile.linux",
+        "terminal.integrated.profiles.linux"
+    ],
+    "security.workspace.trust.untrustedFiles": "open",
+    "workbench.editor.empty.hint": "hidden",
+    "github.copilot.nextEditSuggestions.enabled": true
+}
