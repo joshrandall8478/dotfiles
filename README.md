@@ -43,6 +43,8 @@ chezmoi init --apply joshrandall8478
 ~/scripts/install-poppins-root.sh
 ```
 Installing the two assets to root will help with SDDM configuration, if you wish to use the breeze theme.
+> [!NOTE]
+> The two root font/icon install scripts can be safely ran regardless of whichever install approach you take. To remove them, check their respective `/usr/share` folders. Uninstall scripts WIP.
 
 #### Quick init - chezmoi only
 This will only initialize and install the chezmoi configuration:
