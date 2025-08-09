@@ -1,4 +1,4 @@
-# dotfiles
+# joshrandall's dotfiles
 
 > [!NOTE]
 > Documentation is an active WIP
