@@ -1,6 +1,10 @@
 # dotfiles
+
+> [! INFORMATION]
+> Documentation is an active WIP
 > [! WARNING]
-> These dotfiles are meant to be use 
+> These dotfiles are not directly developed for complete public use. They are designed for newly created users on a Linux system. If you decide to install this on an already established user, **you install them at your own risk.**
 
 My personal dotfiles from Gentoo linux. Meant for bootstraping systems to my configuration quickly.
-![My system](/docs/screenshot.png)
+![My system](/assets/desktop.png)
+
