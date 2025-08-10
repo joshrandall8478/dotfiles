@@ -100,7 +100,7 @@ immutability=1
 plugin=org.kde.plasma.digitalclock
 
 [Containments][4][Applets][33][Configuration]
-PreloadWeight=85
+PreloadWeight=95
 popupHeight=454
 popupWidth=560
 
@@ -130,7 +130,7 @@ immutability=1
 lastScreen=-1
 location=0
 plugin=org.kde.plasma.folder
-popupHeight=453
+popupHeight=455
 popupWidth=288
 wallpaperplugin=
 
@@ -143,7 +143,7 @@ positions={"1920x1080":[]}
 sortDesc=true
 sortDirsFirst=false
 sortMode=2
-url=~/Downloads
+url=file:///home/joshr/Downloads
 
 [Containments][4][Applets][5]
 immutability=1
@@ -151,7 +151,7 @@ plugin=org.kde.plasma.kickoff
 
 [Containments][4][Applets][5][Configuration]
 PreloadWeight=100
-popupHeight=589
+popupHeight=590
 popupWidth=1022
 
 [Containments][4][Applets][5][Configuration][ConfigDialog]
@@ -189,7 +189,7 @@ immutability=1
 lastScreen=0
 location=4
 plugin=org.kde.plasma.systemtray
-popupHeight=477
+popupHeight=479
 popupWidth=432
 wallpaperplugin=org.kde.image
 
@@ -257,7 +257,7 @@ immutability=1
 plugin=org.kde.plasma.battery
 
 [Containments][4][Applets][9][Applets][24][Configuration]
-PreloadWeight=0
+PreloadWeight=2
 
 [Containments][4][Applets][9][Applets][25]
 immutability=1
@@ -278,7 +278,7 @@ immutability=1
 plugin=org.kde.plasma.bluetooth
 
 [Containments][4][Applets][9][Applets][27][Configuration]
-PreloadWeight=62
+PreloadWeight=59
 
 [Containments][4][Applets][9][Applets][28][Configuration]
 PreloadWeight=42
@@ -446,7 +446,7 @@ immutability=1
 plugin=org.kde.plasma.volume
 
 [Containments][56][Applets][59][Configuration]
-popupHeight=449
+popupHeight=451
 popupWidth=560
 
 [Containments][56][Applets][59][Configuration][General]
@@ -518,7 +518,7 @@ immutability=1
 plugin=org.kde.plasma.volume
 
 [Containments][63][Applets][66][Configuration]
-popupHeight=448
+popupHeight=449
 popupWidth=560
 
 [Containments][63][Applets][66][Configuration][General]

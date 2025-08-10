@@ -132,10 +132,7 @@ ForegroundNormal=223,223,223
 ForegroundPositive=1,162,153
 ForegroundVisited=0,188,212
 
-[DirSelect Dialog]
-DirSelectDialog Size=960,540
-History Items[$e]=file:$HOME/projects/jellyfin-featured,file:$HOME/Videos/Recordings
-Splitter State=\x00\x00\x00\xff\x00\x00\x00\x01\x00\x00\x00\x02\x00\x00\x00\x8b\x00\x00\x02\xa8\x00\xff\xff\xff\xff\x01\x00\x00\x00\x01\x00
+
 
 [General]
 AccentColor=146,110,228
