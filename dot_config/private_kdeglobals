@@ -132,8 +132,6 @@ ForegroundNormal=223,223,223
 ForegroundPositive=1,162,153
 ForegroundVisited=0,188,212
 
-
-
 [General]
 AccentColor=146,110,228
 ColorSchemeHash=2823fd85d4dc3e2f05a21c28d68753f841ff70ed
