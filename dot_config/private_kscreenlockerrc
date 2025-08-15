@@ -1,3 +1,7 @@
+[Greeter][LnF][General]
+hideClockWhenIdle=true
+
 [Greeter][Wallpaper][org.kde.image][General]
-Image=/home/joshr/.local/share/wallpapers/Gentoo Chan.png
-PreviewImage=/home/joshr/.local/share/wallpapers/Gentoo Chan.png
+Image=/home/joshr/.local/share/wallpapers/Retro Computing.jpg
+PreviewImage=/home/joshr/.local/share/wallpapers/Retro Computing.jpg
+SlidePaths=/home/joshr/.local/share/wallpapers/,/usr/share/wallpapers/

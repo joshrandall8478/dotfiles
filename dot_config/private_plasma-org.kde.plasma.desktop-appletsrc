@@ -24,7 +24,7 @@ positions={"1920x1080":[]}
 
 [Containments][1][Wallpaper][org.kde.image][General]
 Blur=true
-Image=/home/joshr/.local/share/wallpapers/Nazuna.jpg
+Image=/home/joshr/.local/share/wallpapers/Anime/Nazuna.jpg
 SlidePaths=/usr/share/wallpapers/
 
 [Containments][2]
@@ -47,7 +47,7 @@ positions={"1920x1080":[]}
 
 [Containments][2][Wallpaper][org.kde.image][General]
 Blur=true
-Image=/home/joshr/.local/share/wallpapers/Nazuna.jpg
+Image=/home/joshr/.local/share/wallpapers/Anime/Nazuna.jpg
 SlidePaths=/usr/share/wallpapers/
 
 [Containments][3]
@@ -70,7 +70,7 @@ positions={"1920x1080":[]}
 
 [Containments][3][Wallpaper][org.kde.image][General]
 Blur=true
-Image=/home/joshr/.local/share/wallpapers/Nazuna.jpg
+Image=/home/joshr/.local/share/wallpapers/Anime/Nazuna.jpg
 SlidePaths=/usr/share/wallpapers/
 
 [Containments][4]
@@ -92,7 +92,7 @@ plugin=org.kde.plasma.mediacontroller
 
 [Containments][4][Applets][29][Configuration]
 PreloadWeight=100
-popupHeight=376
+popupHeight=377
 popupWidth=597
 
 [Containments][4][Applets][33]
@@ -100,8 +100,8 @@ immutability=1
 plugin=org.kde.plasma.digitalclock
 
 [Containments][4][Applets][33][Configuration]
-PreloadWeight=95
-popupHeight=454
+PreloadWeight=100
+popupHeight=456
 popupWidth=560
 
 [Containments][4][Applets][33][Configuration][Appearance]
@@ -151,7 +151,7 @@ plugin=org.kde.plasma.kickoff
 
 [Containments][4][Applets][5][Configuration]
 PreloadWeight=100
-popupHeight=592
+popupHeight=594
 popupWidth=1022
 
 [Containments][4][Applets][5][Configuration][ConfigDialog]
@@ -176,7 +176,7 @@ DialogWidth=720
 [Containments][4][Applets][7][Configuration][General]
 indicateAudioStreams=false
 interactiveMute=false
-launchers=applications:zen-zen-bin.desktop,applications:kitty.desktop,applications:org.kde.dolphin.desktop,applications:com.spotify.Client.desktop,file:///var/lib/flatpak/exports/share/applications/com.discordapp.Discord.desktop,applications:steam.desktop,applications:code.desktop,applications:systemsettings.desktop
+launchers=applications:app.zen_browser.zen.desktop,applications:kitty.desktop,applications:org.kde.dolphin.desktop,applications:com.spotify.Client.desktop,file:///var/lib/flatpak/exports/share/applications/com.discordapp.Discord.desktop,applications:steam.desktop,applications:code.desktop,applications:systemsettings.desktop
 
 [Containments][4][Applets][8]
 immutability=1
@@ -189,7 +189,7 @@ immutability=1
 lastScreen=0
 location=4
 plugin=org.kde.plasma.systemtray
-popupHeight=479
+popupHeight=484
 popupWidth=432
 wallpaperplugin=org.kde.image
 
@@ -278,7 +278,7 @@ immutability=1
 plugin=org.kde.plasma.bluetooth
 
 [Containments][4][Applets][9][Applets][27][Configuration]
-PreloadWeight=59
+PreloadWeight=51
 
 [Containments][4][Applets][9][Applets][28][Configuration]
 PreloadWeight=42
@@ -288,7 +288,7 @@ immutability=1
 plugin=org.kde.plasma.weather
 
 [Containments][4][Applets][9][Applets][30][Configuration]
-PreloadWeight=65
+PreloadWeight=70
 
 [Containments][4][Applets][9][Applets][30][Configuration][ConfigDialog]
 DialogHeight=540
@@ -365,14 +365,14 @@ immutability=1
 plugin=org.kde.plasma.networkmanagement
 
 [Containments][4][Applets][9][Applets][70][Configuration]
-PreloadWeight=85
+PreloadWeight=90
 
 [Containments][4][Applets][9][Applets][71]
 immutability=1
 plugin=org.kde.plasma.bluetooth
 
 [Containments][4][Applets][9][Applets][71][Configuration]
-PreloadWeight=5
+PreloadWeight=2
 
 [Containments][4][Applets][9][Applets][72]
 immutability=1
@@ -446,7 +446,7 @@ immutability=1
 plugin=org.kde.plasma.volume
 
 [Containments][56][Applets][59][Configuration]
-popupHeight=452
+popupHeight=453
 popupWidth=560
 
 [Containments][56][Applets][59][Configuration][General]
@@ -518,7 +518,7 @@ immutability=1
 plugin=org.kde.plasma.volume
 
 [Containments][63][Applets][66][Configuration]
-popupHeight=451
+popupHeight=453
 popupWidth=560
 
 [Containments][63][Applets][66][Configuration][General]
