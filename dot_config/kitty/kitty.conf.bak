@@ -2716,6 +2716,6 @@ linux_display_server wayland
 
 
 # BEGIN_KITTY_THEME
-# Base2Tone Motel Dark
+# Idle Toes
 include current-theme.conf
 # END_KITTY_THEME
