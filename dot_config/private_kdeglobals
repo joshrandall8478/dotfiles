@@ -98,8 +98,7 @@ ForegroundVisited=142,121,165
 
 [General]
 AccentColor=146,110,228
-ColorScheme=DarkObsidianII
-ColorSchemeHash=2823fd85d4dc3e2f05a21c28d68753f841ff70ed
+ColorSchemeHash=6441cca7f3a8f49cbdfdbcab0dfe7f03b7369aa7
 LastUsedCustomAccentColor=146,110,228
 TerminalApplication=kitty
 TerminalService=kitty.desktop
@@ -119,7 +118,7 @@ LookAndFeelPackage=org.kde.breezedark.desktop
 [KFileDialog Settings]
 Allow Expansion=false
 Automatically select filename extension=true
-Breadcrumb Navigation=true
+Breadcrumb Navigation=false
 Decoration position=2
 LocationCombo Completionmode=5
 PathCombo Completionmode=5

@@ -24,7 +24,7 @@ positions={"1920x1080":[]}
 
 [Containments][1][Wallpaper][org.kde.image][General]
 Blur=true
-Image=/home/joshr/.local/share/wallpapers/Anime/Nazuna.jpg
+Image=/home/joshr/.local/share/wallpapers/Magic Girl.jpg
 SlidePaths=/usr/share/wallpapers/
 
 [Containments][2]
@@ -47,7 +47,7 @@ positions={"1920x1080":[]}
 
 [Containments][2][Wallpaper][org.kde.image][General]
 Blur=true
-Image=/home/joshr/.local/share/wallpapers/Anime/Nazuna.jpg
+Image=/home/joshr/.local/share/wallpapers/Magic Girl.jpg
 SlidePaths=/usr/share/wallpapers/
 
 [Containments][3]
@@ -70,7 +70,7 @@ positions={"1920x1080":[]}
 
 [Containments][3][Wallpaper][org.kde.image][General]
 Blur=true
-Image=/home/joshr/.local/share/wallpapers/Anime/Nazuna.jpg
+Image=/home/joshr/.local/share/wallpapers/Magic Girl.jpg
 SlidePaths=/usr/share/wallpapers/
 
 [Containments][4]
@@ -92,7 +92,7 @@ plugin=org.kde.plasma.mediacontroller
 
 [Containments][4][Applets][29][Configuration]
 PreloadWeight=100
-popupHeight=377
+popupHeight=379
 popupWidth=597
 
 [Containments][4][Applets][33]
@@ -101,7 +101,7 @@ plugin=org.kde.plasma.digitalclock
 
 [Containments][4][Applets][33][Configuration]
 PreloadWeight=100
-popupHeight=456
+popupHeight=459
 popupWidth=560
 
 [Containments][4][Applets][33][Configuration][Appearance]
@@ -130,7 +130,7 @@ immutability=1
 lastScreen=-1
 location=0
 plugin=org.kde.plasma.folder
-popupHeight=455
+popupHeight=456
 popupWidth=288
 wallpaperplugin=
 
@@ -151,7 +151,7 @@ plugin=org.kde.plasma.kickoff
 
 [Containments][4][Applets][5][Configuration]
 PreloadWeight=100
-popupHeight=594
+popupHeight=603
 popupWidth=1022
 
 [Containments][4][Applets][5][Configuration][ConfigDialog]
@@ -159,6 +159,7 @@ DialogHeight=540
 DialogWidth=720
 
 [Containments][4][Applets][5][Configuration][General]
+applicationsDisplay=0
 favoritesPortedToKAstats=true
 icon=distributor-logo-gentoo
 paneSwap=true
@@ -178,6 +179,31 @@ indicateAudioStreams=false
 interactiveMute=false
 launchers=applications:app.zen_browser.zen.desktop,applications:kitty.desktop,applications:org.kde.dolphin.desktop,applications:com.spotify.Client.desktop,file:///var/lib/flatpak/exports/share/applications/com.discordapp.Discord.desktop,applications:steam.desktop,applications:code.desktop,applications:systemsettings.desktop
 
+[Containments][4][Applets][74]
+activityId=
+formfactor=0
+immutability=1
+lastScreen=-1
+location=0
+plugin=org.kde.plasma.folder
+wallpaperplugin=
+
+[Containments][4][Applets][74][Configuration]
+PreloadWeight=60
+activityId=
+formfactor=0
+immutability=1
+lastScreen=-1
+location=0
+plugin=org.kde.plasma.folder
+popupHeight=448
+popupWidth=288
+wallpaperplugin=
+
+[Containments][4][Applets][74][Configuration][General]
+positions={"0x0":[],"1920x1080":[]}
+url=file:///home/joshr/Nextcloud/EMU/5th Year/Victory Lap
+
 [Containments][4][Applets][8]
 immutability=1
 plugin=org.kde.plasma.marginsseparator
@@ -189,7 +215,7 @@ immutability=1
 lastScreen=0
 location=4
 plugin=org.kde.plasma.systemtray
-popupHeight=484
+popupHeight=497
 popupWidth=432
 wallpaperplugin=org.kde.image
 
@@ -224,7 +250,7 @@ immutability=1
 plugin=org.kde.plasma.notifications
 
 [Containments][4][Applets][9][Applets][16][Configuration]
-PreloadWeight=80
+PreloadWeight=90
 
 [Containments][4][Applets][9][Applets][17]
 immutability=1
@@ -278,7 +304,7 @@ immutability=1
 plugin=org.kde.plasma.bluetooth
 
 [Containments][4][Applets][9][Applets][27][Configuration]
-PreloadWeight=51
+PreloadWeight=62
 
 [Containments][4][Applets][9][Applets][28][Configuration]
 PreloadWeight=42
@@ -317,6 +343,7 @@ plugin=org.kde.plasma.volume
 PreloadWeight=100
 
 [Containments][4][Applets][9][Applets][50][Configuration][General]
+currentTab=streams
 migrated=true
 
 [Containments][4][Applets][9][Applets][51]
@@ -365,14 +392,14 @@ immutability=1
 plugin=org.kde.plasma.networkmanagement
 
 [Containments][4][Applets][9][Applets][70][Configuration]
-PreloadWeight=90
+PreloadWeight=95
 
 [Containments][4][Applets][9][Applets][71]
 immutability=1
 plugin=org.kde.plasma.bluetooth
 
 [Containments][4][Applets][9][Applets][71][Configuration]
-PreloadWeight=2
+PreloadWeight=10
 
 [Containments][4][Applets][9][Applets][72]
 immutability=1
@@ -405,7 +432,7 @@ iconSpacing=1
 knownItems=org.kde.kscreen,org.kde.plasma.bluetooth,org.kde.plasma.networkmanagement,org.kde.plasma.vault,org.kde.plasma.keyboardindicator,org.kde.plasma.volume,org.kde.plasma.notifications,org.kde.plasma.mediacontroller,org.kde.plasma.manage-inputmethod,org.kde.plasma.devicenotifier,org.kde.plasma.clipboard,org.kde.plasma.cameraindicator,org.kde.plasma.keyboardlayout,org.kde.plasma.brightness,org.kde.plasma.battery,org.kde.plasma.printmanager,org.kde.plasma.weather,org.kde.merkuro.contact.applet
 
 [Containments][4][General]
-AppletOrder=5;7;8;29;9;45;33;23
+AppletOrder=5;7;8;29;9;74;45;33;23
 
 [Containments][56]
 activityId=
@@ -446,7 +473,7 @@ immutability=1
 plugin=org.kde.plasma.volume
 
 [Containments][56][Applets][59][Configuration]
-popupHeight=453
+popupHeight=461
 popupWidth=560
 
 [Containments][56][Applets][59][Configuration][General]
@@ -518,7 +545,7 @@ immutability=1
 plugin=org.kde.plasma.volume
 
 [Containments][63][Applets][66][Configuration]
-popupHeight=453
+popupHeight=461
 popupWidth=560
 
 [Containments][63][Applets][66][Configuration][General]
