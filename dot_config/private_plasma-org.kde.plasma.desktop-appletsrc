@@ -92,7 +92,7 @@ plugin=org.kde.plasma.mediacontroller
 
 [Containments][4][Applets][29][Configuration]
 PreloadWeight=100
-popupHeight=379
+popupHeight=381
 popupWidth=597
 
 [Containments][4][Applets][33]
@@ -101,7 +101,7 @@ plugin=org.kde.plasma.digitalclock
 
 [Containments][4][Applets][33][Configuration]
 PreloadWeight=100
-popupHeight=459
+popupHeight=460
 popupWidth=560
 
 [Containments][4][Applets][33][Configuration][Appearance]
@@ -151,7 +151,7 @@ plugin=org.kde.plasma.kickoff
 
 [Containments][4][Applets][5][Configuration]
 PreloadWeight=100
-popupHeight=604
+popupHeight=603
 popupWidth=1022
 
 [Containments][4][Applets][5][Configuration][ConfigDialog]
@@ -283,7 +283,7 @@ immutability=1
 plugin=org.kde.plasma.battery
 
 [Containments][4][Applets][9][Applets][24][Configuration]
-PreloadWeight=0
+PreloadWeight=5
 
 [Containments][4][Applets][9][Applets][25]
 immutability=1
@@ -398,7 +398,7 @@ immutability=1
 plugin=org.kde.plasma.bluetooth
 
 [Containments][4][Applets][9][Applets][71][Configuration]
-PreloadWeight=10
+PreloadWeight=22
 
 [Containments][4][Applets][9][Applets][72]
 immutability=1
@@ -412,7 +412,7 @@ immutability=1
 plugin=org.kde.plasma.battery
 
 [Containments][4][Applets][9][Applets][73][Configuration]
-PreloadWeight=0
+PreloadWeight=10
 
 [Containments][4][Applets][9][Applets][74][Configuration]
 PreloadWeight=42
@@ -425,10 +425,11 @@ DialogWidth=720
 PreloadWeight=100
 
 [Containments][4][Applets][9][General]
-extraItems=org.kde.kscreen,org.kde.plasma.bluetooth,org.kde.plasma.networkmanagement,org.kde.plasma.vault,org.kde.plasma.keyboardindicator,org.kde.plasma.volume,org.kde.plasma.notifications,org.kde.plasma.manage-inputmethod,org.kde.plasma.devicenotifier,org.kde.plasma.clipboard,org.kde.plasma.cameraindicator,org.kde.plasma.keyboardlayout,org.kde.plasma.brightness,org.kde.plasma.battery,org.kde.plasma.printmanager,org.kde.plasma.weather,org.kde.merkuro.contact.applet
+extraItems=org.kde.kscreen,org.kde.plasma.bluetooth,org.kde.plasma.networkmanagement,org.kde.plasma.vault,org.kde.plasma.keyboardindicator,org.kde.plasma.volume,org.kde.plasma.notifications,org.kde.plasma.manage-inputmethod,org.kde.plasma.devicenotifier,org.kde.plasma.clipboard,org.kde.plasma.cameraindicator,org.kde.plasma.keyboardlayout,org.kde.plasma.brightness,org.kde.plasma.printmanager,org.kde.plasma.weather,org.kde.merkuro.contact.applet,org.kde.plasma.battery
 hiddenItems=openrgb,org.kde.plasma.weather,org.kde.merkuro.contact.applet
 iconSpacing=1
 knownItems=org.kde.kscreen,org.kde.plasma.bluetooth,org.kde.plasma.networkmanagement,org.kde.plasma.vault,org.kde.plasma.keyboardindicator,org.kde.plasma.volume,org.kde.plasma.notifications,org.kde.plasma.mediacontroller,org.kde.plasma.manage-inputmethod,org.kde.plasma.devicenotifier,org.kde.plasma.clipboard,org.kde.plasma.cameraindicator,org.kde.plasma.keyboardlayout,org.kde.plasma.brightness,org.kde.plasma.battery,org.kde.plasma.printmanager,org.kde.plasma.weather,org.kde.merkuro.contact.applet
+shownItems=org.kde.plasma.battery
 
 [Containments][4][General]
 AppletOrder=5;7;8;29;9;74;45;33;23
@@ -544,7 +545,7 @@ immutability=1
 plugin=org.kde.plasma.volume
 
 [Containments][63][Applets][66][Configuration]
-popupHeight=460
+popupHeight=462
 popupWidth=560
 
 [Containments][63][Applets][66][Configuration][General]
