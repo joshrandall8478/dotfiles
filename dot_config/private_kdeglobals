@@ -119,7 +119,7 @@ LookAndFeelPackage=org.kde.breezedark.desktop
 Allow Expansion=false
 Automatically select filename extension=true
 Breadcrumb Navigation=false
-Decoration position=2
+Decoration position=0
 LocationCombo Completionmode=5
 PathCombo Completionmode=5
 Show Bookmarks=false
@@ -129,11 +129,11 @@ Show Preview=false
 Show Speedbar=true
 Show hidden files=false
 Sort by=Date
-Sort directories first=true
+Sort directories first=false
 Sort hidden files last=false
-Sort reversed=true
+Sort reversed=false
 Speedbar Width=140
-View Style=Simple
+View Style=Detail
 
 [KScreen]
 ScreenScaleFactors=HDMI-A-1=1;DP-2=1;DP-3=1;

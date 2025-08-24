@@ -304,11 +304,20 @@ switch to next activity=none,,Switch to Next Activity
 switch to previous activity=none,,Switch to Previous Activity
 toggle do not disturb=none,,Toggle do not disturb
 
+[services][app.zen_browser.zen.desktop]
+new-window=Tools
+
 [services][discord.desktop]
 _launch=
 
 [services][kitty.desktop]
-_launch=Meta+Return
+_launch=Launch (5)\tMeta+Return
+
+[services][org.kde.dolphin.desktop]
+_launch=Launch (6)\tMeta+E
+
+[services][systemsettings.desktop]
+_launch=Launch (7)
 
 [wacomtablet]
 Map to fullscreen=Meta+Ctrl+F,Meta+Ctrl+F,Map to fullscreen

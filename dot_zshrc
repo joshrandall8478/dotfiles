@@ -1,5 +1,5 @@
 # If you come from bash you might have to change your $PATH.
-export PATH=$HOME/bin:/usr/local/bin:$HOME/.cargo/bin:$PATH
+export PATH=$HOME/.local/bin:$HOME/bin:/usr/local/bin:$HOME/.cargo/bin:$PATH
 export XDG_DATA_DIRS=~/.local/share/applications:$XDG_DATA_DIRS
 #export WAYLAND_DISPLAY=wayland-1
 export BROWSER=zen

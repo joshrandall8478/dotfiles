@@ -24,7 +24,7 @@ positions={"1920x1080":[]}
 
 [Containments][1][Wallpaper][org.kde.image][General]
 Blur=true
-Image=/home/joshr/.local/share/wallpapers/Magic Girl.jpg
+Image=/home/joshr/.local/share/wallpapers/Retro Computing.jpg
 SlidePaths=/usr/share/wallpapers/
 
 [Containments][2]
@@ -47,7 +47,7 @@ positions={"1920x1080":[]}
 
 [Containments][2][Wallpaper][org.kde.image][General]
 Blur=true
-Image=/home/joshr/.local/share/wallpapers/Magic Girl.jpg
+Image=/home/joshr/.local/share/wallpapers/Retro Computing.jpg
 SlidePaths=/usr/share/wallpapers/
 
 [Containments][3]
@@ -70,7 +70,7 @@ positions={"1920x1080":[]}
 
 [Containments][3][Wallpaper][org.kde.image][General]
 Blur=true
-Image=/home/joshr/.local/share/wallpapers/Magic Girl.jpg
+Image=/home/joshr/.local/share/wallpapers/Retro Computing.jpg
 SlidePaths=/usr/share/wallpapers/
 
 [Containments][4]
@@ -92,7 +92,7 @@ plugin=org.kde.plasma.mediacontroller
 
 [Containments][4][Applets][29][Configuration]
 PreloadWeight=100
-popupHeight=381
+popupHeight=383
 popupWidth=597
 
 [Containments][4][Applets][33]
@@ -101,7 +101,7 @@ plugin=org.kde.plasma.digitalclock
 
 [Containments][4][Applets][33][Configuration]
 PreloadWeight=100
-popupHeight=460
+popupHeight=461
 popupWidth=560
 
 [Containments][4][Applets][33][Configuration][Appearance]
@@ -130,7 +130,7 @@ immutability=1
 lastScreen=-1
 location=0
 plugin=org.kde.plasma.folder
-popupHeight=456
+popupHeight=458
 popupWidth=288
 wallpaperplugin=
 
@@ -151,7 +151,7 @@ plugin=org.kde.plasma.kickoff
 
 [Containments][4][Applets][5][Configuration]
 PreloadWeight=100
-popupHeight=603
+popupHeight=614
 popupWidth=1022
 
 [Containments][4][Applets][5][Configuration][ConfigDialog]
@@ -215,7 +215,7 @@ immutability=1
 lastScreen=0
 location=4
 plugin=org.kde.plasma.systemtray
-popupHeight=498
+popupHeight=511
 popupWidth=432
 wallpaperplugin=org.kde.image
 
@@ -283,7 +283,7 @@ immutability=1
 plugin=org.kde.plasma.battery
 
 [Containments][4][Applets][9][Applets][24][Configuration]
-PreloadWeight=5
+PreloadWeight=0
 
 [Containments][4][Applets][9][Applets][25]
 immutability=1
@@ -304,7 +304,7 @@ immutability=1
 plugin=org.kde.plasma.bluetooth
 
 [Containments][4][Applets][9][Applets][27][Configuration]
-PreloadWeight=62
+PreloadWeight=37
 
 [Containments][4][Applets][9][Applets][28][Configuration]
 PreloadWeight=42
@@ -350,7 +350,7 @@ immutability=1
 plugin=org.kde.plasma.notifications
 
 [Containments][4][Applets][9][Applets][51][Configuration]
-PreloadWeight=65
+PreloadWeight=70
 
 [Containments][4][Applets][9][Applets][52]
 immutability=1
@@ -398,7 +398,7 @@ immutability=1
 plugin=org.kde.plasma.bluetooth
 
 [Containments][4][Applets][9][Applets][71][Configuration]
-PreloadWeight=22
+PreloadWeight=0
 
 [Containments][4][Applets][9][Applets][72]
 immutability=1
@@ -473,7 +473,7 @@ immutability=1
 plugin=org.kde.plasma.volume
 
 [Containments][56][Applets][59][Configuration]
-popupHeight=461
+popupHeight=473
 popupWidth=560
 
 [Containments][56][Applets][59][Configuration][General]
@@ -545,7 +545,7 @@ immutability=1
 plugin=org.kde.plasma.volume
 
 [Containments][63][Applets][66][Configuration]
-popupHeight=462
+popupHeight=473
 popupWidth=560
 
 [Containments][63][Applets][66][Configuration][General]
