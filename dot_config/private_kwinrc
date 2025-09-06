@@ -27,10 +27,19 @@ PopupHideDelay=970
 TextOnly=true
 
 [Tiling]
-padding=10
+padding=12
 
 [Tiling][03c2f180-30af-5b62-8970-6be0ce96b629]
 tiles={"layoutDirection":"horizontal","tiles":[{"width":0.45677083333333335},{"width":0.5432291666666667}]}
+
+[Tiling][070d621f-b5eb-4633-a393-e79f545e3d41][62dfc355-7c18-41be-b1f9-cefda90792c8]
+tiles={"layoutDirection":"horizontal","tiles":[{"width":0.25},{"width":0.5},{"width":0.25}]}
+
+[Tiling][070d621f-b5eb-4633-a393-e79f545e3d41][6e3eae54-f37e-413c-b4fc-1a59a79603be]
+tiles={"layoutDirection":"horizontal","tiles":[{"width":0.25},{"width":0.5},{"width":0.25}]}
+
+[Tiling][070d621f-b5eb-4633-a393-e79f545e3d41][7dec2174-cd9c-41a8-b917-1789ac8d4db5]
+tiles={"layoutDirection":"horizontal","tiles":[{"width":0.25},{"width":0.5},{"width":0.25}]}
 
 [Tiling][0a5d9638-a363-46ad-a359-8995a250f16a][6e6b3fab-3e7b-493c-930b-78c40671b5c4]
 tiles={"layoutDirection":"horizontal","tiles":[{"width":0.25},{"width":0.5},{"width":0.25}]}
@@ -48,7 +57,7 @@ tiles={"layoutDirection":"horizontal","tiles":[{"width":0.25},{"width":0.5},{"wi
 tiles={"layoutDirection":"horizontal","tiles":[{"width":0.25},{"width":0.5},{"width":0.25}]}
 
 [Tiling][7edfe81e-30cc-43c7-a506-bd4e7717f7f1][62dfc355-7c18-41be-b1f9-cefda90792c8]
-tiles={"layoutDirection":"horizontal","tiles":[{"width":0.5},{"width":0.5}]}
+tiles={"layoutDirection":"horizontal","tiles":[{"width":0.48750000000000004},{"width":0.5124999999999997}]}
 
 [Tiling][7edfe81e-30cc-43c7-a506-bd4e7717f7f1][6e3eae54-f37e-413c-b4fc-1a59a79603be]
 tiles={"layoutDirection":"horizontal","tiles":[{"width":0.25},{"width":0.5},{"width":0.25}]}
@@ -101,8 +110,18 @@ tiles={"layoutDirection":"horizontal","tiles":[{"width":0.25},{"width":0.5},{"wi
 [Tiling][cd1820dd-0c75-47e8-bbc6-48c130c22f39][f6d5c15a-9432-46d1-b43b-e153b1d1c3d2]
 tiles={"layoutDirection":"horizontal","tiles":[{"width":0.25},{"width":0.5},{"width":0.25}]}
 
+[Tiling][e19d9a0d-c927-4e1e-941b-eb0147934546][62dfc355-7c18-41be-b1f9-cefda90792c8]
+tiles={"layoutDirection":"horizontal","tiles":[{"width":0.25},{"width":0.5},{"width":0.25}]}
+
+[Tiling][e19d9a0d-c927-4e1e-941b-eb0147934546][6e3eae54-f37e-413c-b4fc-1a59a79603be]
+tiles={"layoutDirection":"horizontal","tiles":[{"width":0.25},{"width":0.5},{"width":0.25}]}
+
+[Tiling][e19d9a0d-c927-4e1e-941b-eb0147934546][7dec2174-cd9c-41a8-b917-1789ac8d4db5]
+tiles={"layoutDirection":"horizontal","tiles":[{"width":0.25},{"width":0.5},{"width":0.25}]}
+
 [Xwayland]
 Scale=1
+XwaylandEisNoPrompt=true
 
 [org.kde.kdecoration2]
 ButtonsOnLeft=MSF

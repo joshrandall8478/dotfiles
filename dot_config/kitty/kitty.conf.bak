@@ -2716,6 +2716,6 @@ linux_display_server wayland
 
 
 # BEGIN_KITTY_THEME
-# Idle Toes
+# Tokyo Night Moon
 include current-theme.conf
 # END_KITTY_THEME

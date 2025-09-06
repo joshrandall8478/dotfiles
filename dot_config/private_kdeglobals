@@ -21,13 +21,13 @@ IntensityAmount=0
 IntensityEffect=0
 
 [Colors:Button]
-BackgroundAlternate=108,83,167
+BackgroundAlternate=168,149,39
 BackgroundNormal=21,23,27
-DecorationFocus=146,110,228
-DecorationHover=146,110,228
-ForegroundActive=146,110,228
+DecorationFocus=232,203,45
+DecorationHover=232,203,45
+ForegroundActive=232,203,45
 ForegroundInactive=120,119,117
-ForegroundLink=146,110,228
+ForegroundLink=232,203,45
 ForegroundNegative=232,88,72
 ForegroundNeutral=192,162,95
 ForegroundNormal=232,230,227
@@ -35,33 +35,33 @@ ForegroundPositive=120,183,83
 ForegroundVisited=142,121,165
 
 [Colors:Complementary]
-DecorationFocus=146,110,228
-DecorationHover=146,110,228
-ForegroundActive=146,110,228
-ForegroundLink=146,110,228
+DecorationFocus=232,203,45
+DecorationHover=232,203,45
+ForegroundActive=232,203,45
+ForegroundLink=232,203,45
 
 [Colors:Selection]
-BackgroundAlternate=107,81,164
-BackgroundNormal=107,81,164
-DecorationFocus=146,110,228
-DecorationHover=146,110,228
-ForegroundActive=146,110,228
-ForegroundInactive=255,255,255
-ForegroundLink=209,199,242
+BackgroundAlternate=167,146,36
+BackgroundNormal=167,146,36
+DecorationFocus=232,203,45
+DecorationHover=232,203,45
+ForegroundActive=232,203,45
+ForegroundInactive=0,0,0
+ForegroundLink=232,203,45
 ForegroundNegative=232,88,72
 ForegroundNeutral=192,162,95
-ForegroundNormal=255,255,255
+ForegroundNormal=0,0,0
 ForegroundPositive=120,183,83
 ForegroundVisited=142,121,165
 
 [Colors:Tooltip]
 BackgroundAlternate=17,51,86
 BackgroundNormal=21,23,25
-DecorationFocus=146,110,228
-DecorationHover=146,110,228
-ForegroundActive=146,110,228
+DecorationFocus=232,203,45
+DecorationHover=232,203,45
+ForegroundActive=232,203,45
 ForegroundInactive=120,119,117
-ForegroundLink=146,110,228
+ForegroundLink=232,203,45
 ForegroundNegative=232,88,72
 ForegroundNeutral=192,162,95
 ForegroundNormal=196,209,224
@@ -71,11 +71,11 @@ ForegroundVisited=142,121,165
 [Colors:View]
 BackgroundAlternate=22,22,22
 BackgroundNormal=16,16,16
-DecorationFocus=146,110,228
-DecorationHover=146,110,228
-ForegroundActive=146,110,228
+DecorationFocus=232,203,45
+DecorationHover=232,203,45
+ForegroundActive=232,203,45
 ForegroundInactive=120,119,117
-ForegroundLink=146,110,228
+ForegroundLink=232,203,45
 ForegroundNegative=232,88,72
 ForegroundNeutral=192,162,95
 ForegroundNormal=212,210,207
@@ -85,11 +85,11 @@ ForegroundVisited=142,121,165
 [Colors:Window]
 BackgroundAlternate=52,51,50
 BackgroundNormal=25,25,25
-DecorationFocus=146,110,228
-DecorationHover=146,110,228
-ForegroundActive=146,110,228
+DecorationFocus=232,203,45
+DecorationHover=232,203,45
+ForegroundActive=232,203,45
 ForegroundInactive=120,119,117
-ForegroundLink=146,110,228
+ForegroundLink=232,203,45
 ForegroundNegative=232,88,72
 ForegroundNeutral=192,162,95
 ForegroundNormal=224,222,219
@@ -97,9 +97,9 @@ ForegroundPositive=120,183,83
 ForegroundVisited=142,121,165
 
 [General]
-AccentColor=146,110,228
+AccentColor=232,203,45
 ColorSchemeHash=6441cca7f3a8f49cbdfdbcab0dfe7f03b7369aa7
-LastUsedCustomAccentColor=146,110,228
+LastUsedCustomAccentColor=232,203,45
 TerminalApplication=kitty
 TerminalService=kitty.desktop
 XftHintStyle=hintslight
@@ -114,6 +114,7 @@ Theme=Papirus-Dark
 
 [KDE]
 LookAndFeelPackage=org.kde.breezedark.desktop
+widgetStyle=Breeze
 
 [KFileDialog Settings]
 Allow Expansion=false

@@ -24,7 +24,7 @@ positions={"1920x1080":[]}
 
 [Containments][1][Wallpaper][org.kde.image][General]
 Blur=true
-Image=/home/joshr/.local/share/wallpapers/Retro Computing.jpg
+Image=/home/joshr/.local/share/wallpapers/Anime/AkiraAsai.png
 SlidePaths=/usr/share/wallpapers/
 
 [Containments][2]
@@ -47,7 +47,7 @@ positions={"1920x1080":[]}
 
 [Containments][2][Wallpaper][org.kde.image][General]
 Blur=true
-Image=/home/joshr/.local/share/wallpapers/Retro Computing.jpg
+Image=/home/joshr/.local/share/wallpapers/Anime/AkiraAsai.png
 SlidePaths=/usr/share/wallpapers/
 
 [Containments][3]
@@ -70,7 +70,7 @@ positions={"1920x1080":[]}
 
 [Containments][3][Wallpaper][org.kde.image][General]
 Blur=true
-Image=/home/joshr/.local/share/wallpapers/Retro Computing.jpg
+Image=/home/joshr/.local/share/wallpapers/Anime/AkiraAsai.png
 SlidePaths=/usr/share/wallpapers/
 
 [Containments][4]
@@ -92,7 +92,7 @@ plugin=org.kde.plasma.mediacontroller
 
 [Containments][4][Applets][29][Configuration]
 PreloadWeight=100
-popupHeight=383
+popupHeight=394
 popupWidth=597
 
 [Containments][4][Applets][33]
@@ -101,7 +101,7 @@ plugin=org.kde.plasma.digitalclock
 
 [Containments][4][Applets][33][Configuration]
 PreloadWeight=100
-popupHeight=461
+popupHeight=471
 popupWidth=560
 
 [Containments][4][Applets][33][Configuration][Appearance]
@@ -130,7 +130,7 @@ immutability=1
 lastScreen=-1
 location=0
 plugin=org.kde.plasma.folder
-popupHeight=458
+popupHeight=463
 popupWidth=288
 wallpaperplugin=
 
@@ -151,7 +151,7 @@ plugin=org.kde.plasma.kickoff
 
 [Containments][4][Applets][5][Configuration]
 PreloadWeight=100
-popupHeight=614
+popupHeight=627
 popupWidth=1022
 
 [Containments][4][Applets][5][Configuration][ConfigDialog]
@@ -177,7 +177,7 @@ DialogWidth=720
 [Containments][4][Applets][7][Configuration][General]
 indicateAudioStreams=false
 interactiveMute=false
-launchers=applications:app.zen_browser.zen.desktop,applications:kitty.desktop,applications:org.kde.dolphin.desktop,applications:com.spotify.Client.desktop,file:///var/lib/flatpak/exports/share/applications/com.discordapp.Discord.desktop,applications:steam.desktop,applications:code.desktop,applications:systemsettings.desktop
+launchers=applications:app.zen_browser.zen.desktop,applications:kitty.desktop,applications:org.kde.dolphin.desktop,file:///var/lib/flatpak/exports/share/applications/com.spotify.Client.desktop,file:///var/lib/flatpak/exports/share/applications/com.discordapp.Discord.desktop,applications:steam.desktop,applications:code.desktop,applications:joplin-desktop.desktop
 
 [Containments][4][Applets][74]
 activityId=
@@ -189,14 +189,14 @@ plugin=org.kde.plasma.folder
 wallpaperplugin=
 
 [Containments][4][Applets][74][Configuration]
-PreloadWeight=60
+PreloadWeight=100
 activityId=
 formfactor=0
 immutability=1
 lastScreen=-1
 location=0
 plugin=org.kde.plasma.folder
-popupHeight=448
+popupHeight=454
 popupWidth=288
 wallpaperplugin=
 
@@ -215,7 +215,7 @@ immutability=1
 lastScreen=0
 location=4
 plugin=org.kde.plasma.systemtray
-popupHeight=511
+popupHeight=530
 popupWidth=432
 wallpaperplugin=org.kde.image
 
@@ -250,7 +250,7 @@ immutability=1
 plugin=org.kde.plasma.notifications
 
 [Containments][4][Applets][9][Applets][16][Configuration]
-PreloadWeight=90
+PreloadWeight=95
 
 [Containments][4][Applets][9][Applets][17]
 immutability=1
@@ -283,7 +283,7 @@ immutability=1
 plugin=org.kde.plasma.battery
 
 [Containments][4][Applets][9][Applets][24][Configuration]
-PreloadWeight=0
+PreloadWeight=5
 
 [Containments][4][Applets][9][Applets][25]
 immutability=1
@@ -304,7 +304,7 @@ immutability=1
 plugin=org.kde.plasma.bluetooth
 
 [Containments][4][Applets][9][Applets][27][Configuration]
-PreloadWeight=37
+PreloadWeight=13
 
 [Containments][4][Applets][9][Applets][28][Configuration]
 PreloadWeight=42
@@ -350,7 +350,7 @@ immutability=1
 plugin=org.kde.plasma.notifications
 
 [Containments][4][Applets][9][Applets][51][Configuration]
-PreloadWeight=70
+PreloadWeight=80
 
 [Containments][4][Applets][9][Applets][52]
 immutability=1
@@ -391,14 +391,14 @@ immutability=1
 plugin=org.kde.plasma.networkmanagement
 
 [Containments][4][Applets][9][Applets][70][Configuration]
-PreloadWeight=95
+PreloadWeight=100
 
 [Containments][4][Applets][9][Applets][71]
 immutability=1
 plugin=org.kde.plasma.bluetooth
 
 [Containments][4][Applets][9][Applets][71][Configuration]
-PreloadWeight=0
+PreloadWeight=11
 
 [Containments][4][Applets][9][Applets][72]
 immutability=1
@@ -412,7 +412,7 @@ immutability=1
 plugin=org.kde.plasma.battery
 
 [Containments][4][Applets][9][Applets][73][Configuration]
-PreloadWeight=10
+PreloadWeight=5
 
 [Containments][4][Applets][9][Applets][74][Configuration]
 PreloadWeight=42
@@ -473,7 +473,7 @@ immutability=1
 plugin=org.kde.plasma.volume
 
 [Containments][56][Applets][59][Configuration]
-popupHeight=473
+popupHeight=486
 popupWidth=560
 
 [Containments][56][Applets][59][Configuration][General]
@@ -545,7 +545,7 @@ immutability=1
 plugin=org.kde.plasma.volume
 
 [Containments][63][Applets][66][Configuration]
-popupHeight=473
+popupHeight=487
 popupWidth=560
 
 [Containments][63][Applets][66][Configuration][General]
@@ -580,4 +580,4 @@ AppletOrder=68;69;64;67;65;66
 
 [ScreenMapping]
 itemsOnDisabledScreens=
-screenMapping=
+screenMapping=desktop:/REMEMBER TO DO THIS SOON.txt,0,c91d0bc0-2618-4ec0-945f-b2599e8e8166,desktop:/jrh-mc.zip,0,c91d0bc0-2618-4ec0-945f-b2599e8e8166
