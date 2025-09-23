@@ -1,0 +1,67 @@
+[Aliases]
+AliasList=tinyurl /exec tinyurl,bug /exec bug,sayclip /exec sayclip,cmd /exec cmd,uptime /exec uptime,fortune /exec fortune,sysinfo /exec sysinfo,gauge /exec gauge,media /exec media,audio /exec media audio,video /exec media video
+
+[Autoreplace List]
+Direction0=o
+Direction1=o
+Pattern0=\\[\\[([^\\s]+)\\]\\]#
+Pattern1=(BUG:|bug:)([0-9]+)#
+Regex0=1
+Regex1=1
+Replace0=http://en.wikipedia.org/wiki/Special:Search?go=Go&search=%1#
+Replace1=https://bugs.kde.org/show_bug.cgi?id=%2#
+
+[Button List]
+Button0=Op,/OP %u%n
+Button1=DeOp,/DEOP %u%n
+Button2=WhoIs,/WHOIS %s,%%u%n
+Button3=Version,/CTCP %s,%%u VERSION%n
+Button4=Kick,/KICK %u%n
+Button5=Ban,/BAN %u%n
+Button6=Part,/PART %c Leaving...%n
+Button7=Quit,/QUIT Leaving...%n
+
+
+[DCC Settings]
+IPv4FallbackIface=0
+PanelSplitter=AAAA/wAAAAEAAAACAAAAUwAAAPUB/////wEAAAACAA==
+
+[Message Text Colors]
+ActionMessage=255,170,255
+ChannelMessage=255,255,255
+CommandMessage=170,85,255
+Hyperlink=170,170,255
+QueryMessage=240,240,240
+TextViewBackground=36,36,36
+
+[Notification Messages]
+ChannelListNoServerSelected=1
+ChannelListWarning=1
+ClearLogfileQuestion=1
+CloseQueryAfterIgnore=1
+HideMenuBarWarning=1
+HideOnCloseInfo=1
+IgnoreNick=1
+Invitation=0
+QuitChannelTab=0
+QuitDCCChatTab=1
+QuitQueryTab=1
+QuitServerTab=0
+QuitWithActiveDccTransfers=1
+ReconnectWithDifferentServer=1
+ReuseExistingConnection=1
+SaveLogfileNote=1
+UnignoreNick=1
+WarnEncodingConflict=1
+systemtrayquitKonversation=0
+
+[Server 0]
+BypassProxy=false
+Password=
+Port=8001
+SSLEnabled=false
+Server=irc.libera.chat
+
+
+[Themes]
+IconTheme=default-dark
