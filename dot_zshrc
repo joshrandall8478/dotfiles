@@ -192,7 +192,8 @@ alias baseddino="fortune -s -n 150 -o | cowsay -f stegosaurus"
 
 #eval "$(zellij setup --generate-auto-start zsh)"
 
-export MANPAGER='nvim +Man!'
+# Disabled for now.
+#export MANPAGER='nvim +Man!'
 
 #source ~/headline.zsh-theme
 
