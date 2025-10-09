@@ -21,7 +21,6 @@
     "[jsonc]": {
         "editor.defaultFormatter": "esbenp.prettier-vscode"
     },
-    "files.autoSave": "afterDelay",
     "codetogether.userName": "Josh",
     "git.openRepositoryInParentFolders": "always",
     "redhat.telemetry.enabled": false,
@@ -39,5 +38,7 @@
     ],
     "security.workspace.trust.untrustedFiles": "open",
     "workbench.editor.empty.hint": "hidden",
-    "github.copilot.nextEditSuggestions.enabled": true
+    "github.copilot.nextEditSuggestions.enabled": true,
+    "files.autoSave": "afterDelay",
+    "markdown-preview-enhanced.chromePath": "/usr/bin/chromium"
 }

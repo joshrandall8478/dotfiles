@@ -16,15 +16,16 @@ plugin=org.kde.plasma.folder
 wallpaperplugin=org.kde.image
 
 [Containments][1][ConfigDialog]
-DialogHeight=540
-DialogWidth=720
+DialogHeight=1008
+DialogWidth=1920
 
 [Containments][1][General]
-positions={"1920x1080":[]}
+positions={"1920x1080":["1","17"]}
+sortMode=-1
 
 [Containments][1][Wallpaper][org.kde.image][General]
 Blur=true
-Image=/home/joshr/.local/share/wallpapers/Anime/AkiraAsai.png
+Image=/home/joshr/.local/share/wallpapers/Gentoo Dark Background.PNG
 SlidePaths=/usr/share/wallpapers/
 
 [Containments][2]
@@ -43,11 +44,12 @@ DialogHeight=540
 DialogWidth=720
 
 [Containments][2][General]
-positions={"1920x1080":[]}
+positions={"1920x1080":["1","17"]}
+sortMode=-1
 
 [Containments][2][Wallpaper][org.kde.image][General]
 Blur=true
-Image=/home/joshr/.local/share/wallpapers/Anime/AkiraAsai.png
+Image=/home/joshr/.local/share/wallpapers/Gentoo Dark Background.PNG
 SlidePaths=/usr/share/wallpapers/
 
 [Containments][3]
@@ -70,7 +72,7 @@ positions={"1920x1080":[]}
 
 [Containments][3][Wallpaper][org.kde.image][General]
 Blur=true
-Image=/home/joshr/.local/share/wallpapers/Anime/AkiraAsai.png
+Image=/home/joshr/.local/share/wallpapers/Gentoo Dark Background.PNG
 SlidePaths=/usr/share/wallpapers/
 
 [Containments][4]
@@ -92,7 +94,7 @@ plugin=org.kde.plasma.mediacontroller
 
 [Containments][4][Applets][29][Configuration]
 PreloadWeight=100
-popupHeight=394
+popupHeight=409
 popupWidth=597
 
 [Containments][4][Applets][33]
@@ -101,7 +103,7 @@ plugin=org.kde.plasma.digitalclock
 
 [Containments][4][Applets][33][Configuration]
 PreloadWeight=100
-popupHeight=471
+popupHeight=488
 popupWidth=560
 
 [Containments][4][Applets][33][Configuration][Appearance]
@@ -130,7 +132,7 @@ immutability=1
 lastScreen=-1
 location=0
 plugin=org.kde.plasma.folder
-popupHeight=463
+popupHeight=482
 popupWidth=288
 wallpaperplugin=
 
@@ -151,8 +153,8 @@ plugin=org.kde.plasma.kickoff
 
 [Containments][4][Applets][5][Configuration]
 PreloadWeight=100
-popupHeight=627
-popupWidth=1022
+popupHeight=637
+popupWidth=1133
 
 [Containments][4][Applets][5][Configuration][ConfigDialog]
 DialogHeight=540
@@ -196,7 +198,7 @@ immutability=1
 lastScreen=-1
 location=0
 plugin=org.kde.plasma.folder
-popupHeight=454
+popupHeight=470
 popupWidth=288
 wallpaperplugin=
 
@@ -215,7 +217,7 @@ immutability=1
 lastScreen=0
 location=4
 plugin=org.kde.plasma.systemtray
-popupHeight=530
+popupHeight=571
 popupWidth=432
 wallpaperplugin=org.kde.image
 
@@ -250,14 +252,14 @@ immutability=1
 plugin=org.kde.plasma.notifications
 
 [Containments][4][Applets][9][Applets][16][Configuration]
-PreloadWeight=95
+PreloadWeight=100
 
 [Containments][4][Applets][9][Applets][17]
 immutability=1
 plugin=org.kde.plasma.clipboard
 
 [Containments][4][Applets][9][Applets][17][Configuration]
-PreloadWeight=55
+PreloadWeight=65
 
 [Containments][4][Applets][9][Applets][18]
 immutability=1
@@ -283,7 +285,7 @@ immutability=1
 plugin=org.kde.plasma.battery
 
 [Containments][4][Applets][9][Applets][24][Configuration]
-PreloadWeight=5
+PreloadWeight=0
 
 [Containments][4][Applets][9][Applets][25]
 immutability=1
@@ -297,14 +299,14 @@ immutability=1
 plugin=org.kde.plasma.networkmanagement
 
 [Containments][4][Applets][9][Applets][26][Configuration]
-PreloadWeight=85
+PreloadWeight=95
 
 [Containments][4][Applets][9][Applets][27]
 immutability=1
 plugin=org.kde.plasma.bluetooth
 
 [Containments][4][Applets][9][Applets][27][Configuration]
-PreloadWeight=13
+PreloadWeight=15
 
 [Containments][4][Applets][9][Applets][28][Configuration]
 PreloadWeight=42
@@ -314,7 +316,7 @@ immutability=1
 plugin=org.kde.plasma.weather
 
 [Containments][4][Applets][9][Applets][30][Configuration]
-PreloadWeight=70
+PreloadWeight=75
 
 [Containments][4][Applets][9][Applets][30][Configuration][ConfigDialog]
 DialogHeight=540
@@ -326,6 +328,9 @@ source=bbcukmet|weather|Ypsilanti, United States, US|5015688
 [Containments][4][Applets][9][Applets][47]
 immutability=1
 plugin=org.kde.kscreen
+
+[Containments][4][Applets][9][Applets][47][Configuration]
+PreloadWeight=55
 
 [Containments][4][Applets][9][Applets][48]
 immutability=1
@@ -343,6 +348,7 @@ plugin=org.kde.plasma.volume
 PreloadWeight=100
 
 [Containments][4][Applets][9][Applets][50][Configuration][General]
+currentTab=streams
 migrated=true
 
 [Containments][4][Applets][9][Applets][51]
@@ -350,7 +356,7 @@ immutability=1
 plugin=org.kde.plasma.notifications
 
 [Containments][4][Applets][9][Applets][51][Configuration]
-PreloadWeight=80
+PreloadWeight=100
 
 [Containments][4][Applets][9][Applets][52]
 immutability=1
@@ -366,6 +372,9 @@ PreloadWeight=100
 [Containments][4][Applets][9][Applets][54]
 immutability=1
 plugin=org.kde.plasma.clipboard
+
+[Containments][4][Applets][9][Applets][54][Configuration]
+PreloadWeight=55
 
 [Containments][4][Applets][9][Applets][55]
 immutability=1
@@ -398,7 +407,7 @@ immutability=1
 plugin=org.kde.plasma.bluetooth
 
 [Containments][4][Applets][9][Applets][71][Configuration]
-PreloadWeight=11
+PreloadWeight=0
 
 [Containments][4][Applets][9][Applets][72]
 immutability=1
@@ -412,7 +421,7 @@ immutability=1
 plugin=org.kde.plasma.battery
 
 [Containments][4][Applets][9][Applets][73][Configuration]
-PreloadWeight=5
+PreloadWeight=0
 
 [Containments][4][Applets][9][Applets][74][Configuration]
 PreloadWeight=42
@@ -425,10 +434,10 @@ DialogWidth=720
 PreloadWeight=100
 
 [Containments][4][Applets][9][General]
-extraItems=org.kde.kscreen,org.kde.plasma.bluetooth,org.kde.plasma.networkmanagement,org.kde.plasma.vault,org.kde.plasma.keyboardindicator,org.kde.plasma.volume,org.kde.plasma.notifications,org.kde.plasma.manage-inputmethod,org.kde.plasma.devicenotifier,org.kde.plasma.clipboard,org.kde.plasma.cameraindicator,org.kde.plasma.keyboardlayout,org.kde.plasma.brightness,org.kde.plasma.printmanager,org.kde.plasma.weather,org.kde.merkuro.contact.applet,org.kde.plasma.battery
-hiddenItems=openrgb,org.kde.plasma.weather,org.kde.merkuro.contact.applet
+extraItems=org.kde.kscreen,org.kde.plasma.bluetooth,org.kde.plasma.networkmanagement,org.kde.plasma.vault,org.kde.plasma.keyboardindicator,org.kde.plasma.volume,org.kde.plasma.notifications,org.kde.plasma.manage-inputmethod,org.kde.plasma.devicenotifier,org.kde.plasma.clipboard,org.kde.plasma.cameraindicator,org.kde.plasma.keyboardlayout,org.kde.plasma.brightness,org.kde.plasma.printmanager,org.kde.plasma.weather,org.kde.plasma.battery
+hiddenItems=openrgb,org.kde.plasma.weather,org.kde.merkuro.contact.applet,Proton Mail Bridge
 iconSpacing=1
-knownItems=org.kde.kscreen,org.kde.plasma.bluetooth,org.kde.plasma.networkmanagement,org.kde.plasma.vault,org.kde.plasma.keyboardindicator,org.kde.plasma.volume,org.kde.plasma.notifications,org.kde.plasma.mediacontroller,org.kde.plasma.manage-inputmethod,org.kde.plasma.devicenotifier,org.kde.plasma.clipboard,org.kde.plasma.cameraindicator,org.kde.plasma.keyboardlayout,org.kde.plasma.brightness,org.kde.plasma.battery,org.kde.plasma.printmanager,org.kde.plasma.weather,org.kde.merkuro.contact.applet
+knownItems=org.kde.kscreen,org.kde.plasma.bluetooth,org.kde.plasma.networkmanagement,org.kde.plasma.vault,org.kde.plasma.keyboardindicator,org.kde.plasma.volume,org.kde.plasma.notifications,org.kde.plasma.mediacontroller,org.kde.plasma.manage-inputmethod,org.kde.plasma.devicenotifier,org.kde.plasma.clipboard,org.kde.plasma.cameraindicator,org.kde.plasma.keyboardlayout,org.kde.plasma.brightness,org.kde.plasma.battery,org.kde.plasma.printmanager,org.kde.plasma.weather
 shownItems=org.kde.plasma.battery
 
 [Containments][4][General]
@@ -448,7 +457,7 @@ immutability=1
 plugin=org.kde.plasma.digitalclock
 
 [Containments][56][Applets][57][Configuration]
-popupHeight=401
+popupHeight=402
 popupWidth=560
 
 [Containments][56][Applets][57][Configuration][Appearance]
@@ -465,7 +474,7 @@ immutability=1
 plugin=org.kde.plasma.mediacontroller
 
 [Containments][56][Applets][58][Configuration]
-popupHeight=401
+popupHeight=402
 popupWidth=560
 
 [Containments][56][Applets][59]
@@ -473,7 +482,7 @@ immutability=1
 plugin=org.kde.plasma.volume
 
 [Containments][56][Applets][59][Configuration]
-popupHeight=486
+popupHeight=506
 popupWidth=560
 
 [Containments][56][Applets][59][Configuration][General]
@@ -520,7 +529,7 @@ immutability=1
 plugin=org.kde.plasma.digitalclock
 
 [Containments][63][Applets][64][Configuration]
-popupHeight=403
+popupHeight=451
 popupWidth=560
 
 [Containments][63][Applets][64][Configuration][Appearance]
@@ -537,7 +546,7 @@ immutability=1
 plugin=org.kde.plasma.mediacontroller
 
 [Containments][63][Applets][65][Configuration]
-popupHeight=400
+popupHeight=401
 popupWidth=560
 
 [Containments][63][Applets][66]
@@ -545,7 +554,7 @@ immutability=1
 plugin=org.kde.plasma.volume
 
 [Containments][63][Applets][66][Configuration]
-popupHeight=487
+popupHeight=506
 popupWidth=560
 
 [Containments][63][Applets][66][Configuration][General]
@@ -578,6 +587,60 @@ plugin=org.kde.plasma.panelspacer
 [Containments][63][General]
 AppletOrder=68;69;64;67;65;66
 
+[Containments][75]
+ItemGeometries-1920x1080=
+ItemGeometriesHorizontal=
+activityId=a6337a69-a4b7-475a-9d32-b6e08b186c4f
+formfactor=0
+immutability=1
+lastScreen=1
+location=0
+plugin=org.kde.plasma.folder
+wallpaperplugin=org.kde.image
+
+[Containments][75][General]
+positions={"0x0":[]}
+
+[Containments][75][Wallpaper][org.kde.image][General]
+Image=/home/joshr/.local/share/wallpapers/hollow-knight.png
+SlidePaths=/home/joshr/.local/share/wallpapers/,/usr/share/wallpapers/
+
+[Containments][76]
+ItemGeometries-1920x1080=
+ItemGeometriesHorizontal=
+activityId=a6337a69-a4b7-475a-9d32-b6e08b186c4f
+formfactor=0
+immutability=1
+lastScreen=2
+location=0
+plugin=org.kde.plasma.folder
+wallpaperplugin=org.kde.image
+
+[Containments][76][General]
+positions={"0x0":[]}
+
+[Containments][76][Wallpaper][org.kde.image][General]
+Image=/home/joshr/.local/share/wallpapers/hollow-knight.png
+SlidePaths=/home/joshr/.local/share/wallpapers/,/usr/share/wallpapers/
+
+[Containments][77]
+ItemGeometries-1920x1080=
+ItemGeometriesHorizontal=
+activityId=a6337a69-a4b7-475a-9d32-b6e08b186c4f
+formfactor=0
+immutability=1
+lastScreen=0
+location=0
+plugin=org.kde.plasma.folder
+wallpaperplugin=org.kde.image
+
+[Containments][77][General]
+positions={"0x0":[]}
+
+[Containments][77][Wallpaper][org.kde.image][General]
+Image=/home/joshr/.local/share/wallpapers/hollow-knight.png
+SlidePaths=/home/joshr/.local/share/wallpapers/,/usr/share/wallpapers/
+
 [ScreenMapping]
 itemsOnDisabledScreens=
-screenMapping=desktop:/REMEMBER TO DO THIS SOON.txt,0,c91d0bc0-2618-4ec0-945f-b2599e8e8166,desktop:/jrh-mc.zip,0,c91d0bc0-2618-4ec0-945f-b2599e8e8166
+screenMapping=desktop:/jrh-mc.zip,0,c91d0bc0-2618-4ec0-945f-b2599e8e8166

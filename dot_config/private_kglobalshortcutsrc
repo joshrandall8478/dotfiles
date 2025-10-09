@@ -1,5 +1,6 @@
 [ActivityManager]
 _k_friendly_name=Activity Manager
+switch-to-activity-a6337a69-a4b7-475a-9d32-b6e08b186c4f=none,none,Switch to activity "lock in"
 switch-to-activity-c91d0bc0-2618-4ec0-945f-b2599e8e8166=none,none,Switch to activity "Default"
 
 [KDE Keyboard Layout Switcher]
@@ -88,6 +89,7 @@ _k_friendly_name=Session Management
 
 [kwin]
 Activate Window Demanding Attention=Meta+Ctrl+A,Meta+Ctrl+A,Activate Window Demanding Attention
+Cube=Meta+C,Meta+C,Toggle Cube
 Cycle Overview=none,none,Cycle through Overview and Grid View
 Cycle Overview Opposite=none,none,Cycle through Grid View and Overview
 Decrease Opacity=none,,Decrease Opacity of Active Window by 5%
