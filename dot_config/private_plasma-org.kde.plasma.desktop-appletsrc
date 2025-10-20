@@ -259,7 +259,6 @@ showOnlyCurrentScreen=true
 showWindowIcons=true
 spacingHorizontal=2
 spacingVertical=18
-wrapPage=true
 
 [Containments][4][Applets][83]
 immutability=1
@@ -574,7 +573,6 @@ DialogWidth=720
 displayedText=Number
 showOnlyCurrentScreen=true
 showWindowIcons=true
-wrapPage=true
 
 [Containments][56][General]
 AppletOrder=85;62;57;60;58;59
@@ -644,7 +642,6 @@ DialogWidth=720
 displayedText=Number
 showOnlyCurrentScreen=true
 showWindowIcons=true
-wrapPage=true
 
 [Containments][63][General]
 AppletOrder=86;69;64;67;65;66
