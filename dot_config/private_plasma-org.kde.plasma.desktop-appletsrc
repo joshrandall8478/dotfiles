@@ -153,7 +153,7 @@ plugin=org.kde.plasma.kickoff
 
 [Containments][4][Applets][5][Configuration]
 PreloadWeight=100
-popupHeight=658
+popupHeight=659
 popupWidth=1133
 
 [Containments][4][Applets][5][Configuration][ConfigDialog]
@@ -282,7 +282,7 @@ immutability=1
 lastScreen=0
 location=4
 plugin=org.kde.plasma.systemtray
-popupHeight=590
+popupHeight=591
 popupWidth=432
 wallpaperplugin=org.kde.image
 
@@ -539,7 +539,8 @@ immutability=1
 plugin=org.kde.plasma.mediacontroller
 
 [Containments][56][Applets][58][Configuration]
-popupHeight=402
+PreloadWeight=65
+popupHeight=403
 popupWidth=560
 
 [Containments][56][Applets][59]
@@ -547,7 +548,7 @@ immutability=1
 plugin=org.kde.plasma.volume
 
 [Containments][56][Applets][59][Configuration]
-popupHeight=512
+popupHeight=513
 popupWidth=560
 
 [Containments][56][Applets][59][Configuration][General]
@@ -557,28 +558,26 @@ migrated=true
 immutability=1
 plugin=org.kde.plasma.panelspacer
 
-[Containments][56][Applets][61]
-immutability=1
-plugin=org.kde.plasma.plasm6desktopindicator
-
-[Containments][56][Applets][61][Configuration][ConfigDialog]
-DialogHeight=540
-DialogWidth=720
-
-[Containments][56][Applets][61][Configuration][General]
-dotSizeCustom=16
-highlightOnActive=true
-indicatorType=1
-radiusFactor=0.5
-spacingHorizontal=2
-spacingVertical=12
-
 [Containments][56][Applets][62]
 immutability=1
 plugin=org.kde.plasma.panelspacer
 
+[Containments][56][Applets][85]
+immutability=1
+plugin=org.kde.plasma.pager
+
+[Containments][56][Applets][85][Configuration][ConfigDialog]
+DialogHeight=540
+DialogWidth=720
+
+[Containments][56][Applets][85][Configuration][General]
+displayedText=Number
+showOnlyCurrentScreen=true
+showWindowIcons=true
+wrapPage=true
+
 [Containments][56][General]
-AppletOrder=61;62;57;60;58;59
+AppletOrder=85;62;57;60;58;59
 
 [Containments][63]
 activityId=
@@ -619,7 +618,7 @@ immutability=1
 plugin=org.kde.plasma.volume
 
 [Containments][63][Applets][66][Configuration]
-popupHeight=512
+popupHeight=513
 popupWidth=560
 
 [Containments][63][Applets][66][Configuration][General]
@@ -629,28 +628,26 @@ migrated=true
 immutability=1
 plugin=org.kde.plasma.panelspacer
 
-[Containments][63][Applets][68]
-immutability=1
-plugin=org.kde.plasma.plasm6desktopindicator
-
-[Containments][63][Applets][68][Configuration][ConfigDialog]
-DialogHeight=540
-DialogWidth=720
-
-[Containments][63][Applets][68][Configuration][General]
-dotSizeCustom=16
-highlightOnActive=true
-indicatorType=1
-radiusFactor=0.5
-spacingHorizontal=2
-spacingVertical=12
-
 [Containments][63][Applets][69]
 immutability=1
 plugin=org.kde.plasma.panelspacer
 
+[Containments][63][Applets][86]
+immutability=1
+plugin=org.kde.plasma.pager
+
+[Containments][63][Applets][86][Configuration][ConfigDialog]
+DialogHeight=540
+DialogWidth=720
+
+[Containments][63][Applets][86][Configuration][General]
+displayedText=Number
+showOnlyCurrentScreen=true
+showWindowIcons=true
+wrapPage=true
+
 [Containments][63][General]
-AppletOrder=68;69;64;67;65;66
+AppletOrder=86;69;64;67;65;66
 
 [Containments][75]
 ItemGeometries-1920x1080=
