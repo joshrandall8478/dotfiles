@@ -40,5 +40,7 @@
     "workbench.editor.empty.hint": "hidden",
     "github.copilot.nextEditSuggestions.enabled": true,
     "files.autoSave": "afterDelay",
-    "markdown-preview-enhanced.chromePath": "/usr/bin/chromium"
+    "markdown-preview-enhanced.chromePath": "/usr/bin/chromium",
+    "jdk.telemetry.enabled": false,
+    "powermode.enabled": true
 }
