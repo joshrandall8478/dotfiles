@@ -187,7 +187,7 @@ export PATH=$PATH:/home/joshr/.spicetify
 
 # for fun :)
 alias fucking='sudo' # because its funny
-alias archbtw='clear;neofetch'
+alias archbtw='clear;fastfetch'
 alias baseddino="fortune -s -n 150 -o | cowsay -f stegosaurus"
 
 #eval "$(zellij setup --generate-auto-start zsh)"
