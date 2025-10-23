@@ -96,9 +96,9 @@ ForegroundNormal=224,222,219
 ForegroundPositive=120,183,83
 ForegroundVisited=142,121,165
 
-
 [General]
 AccentColor=61,174,233
+ColorScheme=DarkObsidianII
 ColorSchemeHash=6441cca7f3a8f49cbdfdbcab0dfe7f03b7369aa7
 LastUsedCustomAccentColor=61,174,233
 TerminalApplication=kitty
@@ -114,9 +114,9 @@ toolBarFont=Poppins,10,-1,5,400,0,0,0,0,0,0,0,0,0,0,1
 Theme=Papirus-Dark
 
 [KDE]
+AutomaticLookAndFeelOnIdle=false
 LookAndFeelPackage=org.kde.breezedark.desktop
 ShowDeleteCommand=false
-widgetStyle=Breeze
 
 [KFileDialog Settings]
 Allow Expansion=false

@@ -94,7 +94,7 @@ plugin=org.kde.plasma.mediacontroller
 
 [Containments][4][Applets][29][Configuration]
 PreloadWeight=100
-popupHeight=412
+popupHeight=413
 popupWidth=597
 
 [Containments][4][Applets][33]
@@ -103,13 +103,15 @@ plugin=org.kde.plasma.digitalclock
 
 [Containments][4][Applets][33][Configuration]
 PreloadWeight=100
-popupHeight=493
+popupHeight=495
 popupWidth=560
 
 [Containments][4][Applets][33][Configuration][Appearance]
 customDateFormat=d
 dateDisplayFormat=BesideTime
 dateFormat=custom
+fontFamily=Poppins
+fontWeight=400
 
 [Containments][4][Applets][33][Configuration][ConfigDialog]
 DialogHeight=540
@@ -153,7 +155,7 @@ plugin=org.kde.plasma.kickoff
 
 [Containments][4][Applets][5][Configuration]
 PreloadWeight=100
-popupHeight=659
+popupHeight=666
 popupWidth=1133
 
 [Containments][4][Applets][5][Configuration][ConfigDialog]
@@ -198,7 +200,7 @@ immutability=1
 lastScreen=-1
 location=0
 plugin=org.kde.plasma.folder
-popupHeight=474
+popupHeight=475
 popupWidth=288
 wallpaperplugin=
 
@@ -216,14 +218,14 @@ plugin=org.kde.plasma.folder
 wallpaperplugin=
 
 [Containments][4][Applets][78][Configuration]
-PreloadWeight=75
+PreloadWeight=90
 activityId=
 formfactor=0
 immutability=1
 lastScreen=-1
 location=0
 plugin=org.kde.plasma.folder
-popupHeight=450
+popupHeight=451
 popupWidth=288
 wallpaperplugin=
 
@@ -281,7 +283,7 @@ immutability=1
 lastScreen=0
 location=4
 plugin=org.kde.plasma.systemtray
-popupHeight=591
+popupHeight=596
 popupWidth=432
 wallpaperplugin=org.kde.image
 
@@ -349,7 +351,7 @@ immutability=1
 plugin=org.kde.plasma.battery
 
 [Containments][4][Applets][9][Applets][24][Configuration]
-PreloadWeight=7
+PreloadWeight=0
 
 [Containments][4][Applets][9][Applets][25]
 immutability=1
@@ -385,9 +387,6 @@ PreloadWeight=80
 [Containments][4][Applets][9][Applets][30][Configuration][ConfigDialog]
 DialogHeight=540
 DialogWidth=720
-
-[Containments][4][Applets][9][Applets][30][Configuration][WeatherStation]
-source=bbcukmet|weather|Ypsilanti, United States, US|5015688
 
 [Containments][4][Applets][9][Applets][47]
 immutability=1
@@ -498,7 +497,7 @@ PreloadWeight=100
 
 [Containments][4][Applets][9][General]
 extraItems=org.kde.kscreen,org.kde.plasma.bluetooth,org.kde.plasma.networkmanagement,org.kde.plasma.vault,org.kde.plasma.keyboardindicator,org.kde.plasma.volume,org.kde.plasma.notifications,org.kde.plasma.manage-inputmethod,org.kde.plasma.devicenotifier,org.kde.plasma.clipboard,org.kde.plasma.cameraindicator,org.kde.plasma.keyboardlayout,org.kde.plasma.brightness,org.kde.plasma.printmanager,org.kde.plasma.weather,org.kde.plasma.battery
-hiddenItems=openrgb,org.kde.plasma.weather,org.kde.merkuro.contact.applet,Proton Mail Bridge
+hiddenItems=openrgb,org.kde.plasma.weather,org.kde.merkuro.contact.applet,Proton Mail Bridge,AppRun.wrapped
 iconSpacing=1
 knownItems=org.kde.kscreen,org.kde.plasma.bluetooth,org.kde.plasma.networkmanagement,org.kde.plasma.vault,org.kde.plasma.keyboardindicator,org.kde.plasma.volume,org.kde.plasma.notifications,org.kde.plasma.mediacontroller,org.kde.plasma.manage-inputmethod,org.kde.plasma.devicenotifier,org.kde.plasma.clipboard,org.kde.plasma.cameraindicator,org.kde.plasma.keyboardlayout,org.kde.plasma.brightness,org.kde.plasma.battery,org.kde.plasma.printmanager,org.kde.plasma.weather
 shownItems=org.kde.plasma.battery
@@ -520,7 +519,7 @@ immutability=1
 plugin=org.kde.plasma.digitalclock
 
 [Containments][56][Applets][57][Configuration]
-PreloadWeight=55
+PreloadWeight=60
 popupHeight=452
 popupWidth=560
 
@@ -547,7 +546,7 @@ immutability=1
 plugin=org.kde.plasma.volume
 
 [Containments][56][Applets][59][Configuration]
-popupHeight=513
+popupHeight=515
 popupWidth=560
 
 [Containments][56][Applets][59][Configuration][General]
@@ -616,7 +615,7 @@ immutability=1
 plugin=org.kde.plasma.volume
 
 [Containments][63][Applets][66][Configuration]
-popupHeight=513
+popupHeight=516
 popupWidth=560
 
 [Containments][63][Applets][66][Configuration][General]
