@@ -1,6 +1,6 @@
 
 format = """
-╭─$username$hostname$directory$conda${env_var.CONTAINER_ID}$git_branch$git_state$git_status$git_commit$git_metrics$java
+╭─$username$hostname$directory$conda${env_var.CONTAINER_ID}$git_branch$git_state$git_status$git_commit$git_metrics$java$cmd_duration
 ╰─$character"""
 
 
@@ -45,6 +45,11 @@ added_style = 'bold blue'
 deleted_style = 'bold red'
 format = '([+$added]($added_style) )([-$deleted]($deleted_style) )' 
 
-[git_commit]
-commit_hash_length = 7
-tag_symbol = '🏷️ '
+[shell]
+disabled=true
+format = " [$indicator]($style) "
+
+[cmd_duration]
+min_time = 10_000  # Show command duration over 10,000 milliseconds (=10 sec)
+format = "took [$duration]($style) "
+
