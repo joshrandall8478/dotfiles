@@ -1,7 +1,7 @@
 
 format = """
-╭─$username$hostname$directory$conda${env_var.CONTAINER_ID}$git_branch$git_state$git_status$git_commit$git_metrics$java$cmd_duration
-╰─$character"""
+[╭─](white)$username$hostname$shell$directory$conda$container$docker_context$git_branch$git_state$git_status$git_commit$git_metrics$aws$c$cpp$cmake$nodejs$python$java$golang$package$cmd_duration
+[╰─](white)$character"""
 
 
 # Get editor completions based on the config schema
@@ -17,7 +17,25 @@ error_symbol = '[❯](bold red)'
 
 # Disable the package module, hiding it from the prompt completely
 [package]
-disabled = true
+disabled = false
+symbol = "📦 "
+format = "[$symbol$version ]($style)"
+
+[nodejs]
+format = '[$symbol($version )]($style)'
+
+[python]
+symbol = '🐍 '
+format = '[${symbol}${pyenv_prefix}(${version} ) (\($virtualenv\) )]($style)'
+
+[golang]
+format = '[$symbol($version )]($style)'
+
+[java]
+format = '[${symbol}(${version} )]($style)'
+
+[docker_context]
+format = '[🐋 $context ](blue bold)'
 
 [username]
 style_user = 'green bold'
@@ -32,12 +50,15 @@ format = '[$hostname]($style) '
 [sudo]
 disabled=false
 
-[env_var.CONTAINER_ID]
-default = ""
-#variable = "CONTAINER_ID"
-#symbol = "in 󰌽 "
-style = "cyan bold"
-format = "[$env_value]($style)"
+[os]
+disabled=false
+
+[os.symbols]
+Gentoo = "󰣨 "
+Arch = "󰣇 "
+
+[git_branch]
+style="yellow bold"
 
 [git_metrics]
 disabled=false
@@ -46,8 +67,16 @@ deleted_style = 'bold red'
 format = '([+$added]($added_style) )([-$deleted]($deleted_style) )' 
 
 [shell]
-disabled=true
-format = " [$indicator]($style) "
+disabled=false
+nu_indicator="󰟆 nu"
+zsh_indicator=" zsh"
+bash_indicator=" bash"
+fish_indicator="󰈺 fish"
+unknown_indicator="󱚟 tf is ts?"
+powershell_indicator="󰨊 pwsh"
+cmd_indicator=" cmd"
+style="purple bold"
+format = "[$indicator]($style) "
 
 [cmd_duration]
 min_time = 10_000  # Show command duration over 10,000 milliseconds (=10 sec)
