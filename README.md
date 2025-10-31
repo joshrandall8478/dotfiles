@@ -24,6 +24,7 @@ This is a rough list of dependencies an applications used in the configuration:
 - zoxide (`cd` replacement)
 - fastfetch
 - eza (`ls` replacement)
+- starship
 
 ## Install
 

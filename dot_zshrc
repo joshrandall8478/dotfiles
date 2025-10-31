@@ -10,6 +10,8 @@ export BROWSER=zen
 # Path to your oh-my-zsh installation.
 ZSH=~/.oh-my-zsh/
 
+
+
 # Set name of the theme to load --- if set to "random", it will
 # load a random theme each time oh-my-zsh is loaded, in which case,
 # to know which specific one was loaded, run: echo $RANDOM_THEME
@@ -197,6 +199,9 @@ alias baseddino="fortune -s -n 150 -o | cowsay -f stegosaurus"
 
 #source ~/headline.zsh-theme
 
+
+
+
 # >>> conda initialize >>>
 # !! Contents within this block are managed by 'conda init' !!
 __conda_setup="$('/home/joshr/anaconda3/bin/conda' 'shell.zsh' 'hook' 2> /dev/null)"
@@ -211,4 +216,6 @@ else
 fi
 unset __conda_setup
 # <<< conda initialize <<<
-source ~/bira.zsh-theme
+#source ~/bira.zsh-theme
+eval "$(starship init zsh)"
+
