@@ -1,6 +1,6 @@
 
 format = """
-[╭─](white)$username$hostname$shell$conda$container$docker_context$directory$git_branch$git_state$git_status$git_commit$git_metrics$c$cpp$cmake$nodejs$bun$python$java$golang$ruby$rust$rlang$package$cmd_duration
+[╭─](white)$username$hostname$shell$conda$container$docker_context$directory$git_branch$git_state$git_status$git_commit$git_metrics$c$cpp$cmake$nodejs$bun$python$java$golang$ruby$rust$php$rlang$package$cmd_duration
 [╰─](white)$character"""
 
 
@@ -21,13 +21,18 @@ disabled = false
 symbol = "📦 "
 format = "[$symbol$version ]($style)"
 
+
 [directory]
+truncation_length = 2
 format = '[$path]($style)[$read_only]($read_only_style) '
 
 [nodejs]
 format = '[$symbol($version )]($style)'
 
 [bun]
+format = '[$symbol($version )]($style)'
+
+[php]
 format = '[$symbol($version )]($style)'
 
 [python]
@@ -66,8 +71,6 @@ format = '[$user]($style)@'
 ssh_only = false
 format = '[$hostname]($style) '
 
-[sudo]
-disabled=false
 
 [os]
 disabled=false
