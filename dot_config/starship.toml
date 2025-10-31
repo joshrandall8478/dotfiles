@@ -1,6 +1,6 @@
 
 format = """
-[╭─](white)$username$hostname$shell$directory$conda$container$docker_context$git_branch$git_state$git_status$git_commit$git_metrics$c$cpp$cmake$nodejs$python$java$golang$ruby$rust$rlang$package$cmd_duration
+[╭─](white)$username$hostname$shell$conda$container$docker_context$directory$git_branch$git_state$git_status$git_commit$git_metrics$c$cpp$cmake$nodejs$python$java$golang$ruby$rust$rlang$package$cmd_duration
 [╰─](white)$character"""
 
 
@@ -45,6 +45,9 @@ format = '[${symbol}(${version} )]($style)'
 
 [docker_context]
 format = '[🐋 $context ](blue bold)'
+
+[conda]
+format = '[$symbol$environment]($style) '
 
 [username]
 style_user = 'green bold'
