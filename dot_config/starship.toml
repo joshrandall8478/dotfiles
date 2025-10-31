@@ -1,6 +1,6 @@
 
 format = """
-[╭─](white)$username$hostname$shell$directory$conda$container$docker_context$git_branch$git_state$git_status$git_commit$git_metrics$aws$c$cpp$cmake$nodejs$python$java$golang$package$cmd_duration
+[╭─](white)$username$hostname$shell$directory$aws$gcloud$conda$container$docker_context$git_branch$git_state$git_status$git_commit$git_metrics$c$cpp$cmake$nodejs$python$java$golang$package$cmd_duration
 [╰─](white)$character"""
 
 
