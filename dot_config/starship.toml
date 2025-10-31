@@ -1,6 +1,6 @@
 
 format = """
-[╭─](white)$username$hostname$shell$directory$aws$gcloud$conda$container$docker_context$git_branch$git_state$git_status$git_commit$git_metrics$c$cpp$cmake$nodejs$python$java$golang$package$cmd_duration
+[╭─](white)$username$hostname$shell$directory$conda$container$docker_context$git_branch$git_state$git_status$git_commit$git_metrics$c$cpp$cmake$nodejs$python$java$golang$ruby$rust$rlang$package$cmd_duration
 [╰─](white)$character"""
 
 
@@ -29,6 +29,15 @@ symbol = '🐍 '
 format = '[${symbol}${pyenv_prefix}(${version} ) (\($virtualenv\) )]($style)'
 
 [golang]
+format = '[$symbol($version )]($style)'
+
+[ruby]
+format = '[$symbol($version )]($style)'
+
+[rust]
+format = '[$symbol($version )]($style)'
+
+[rlang]
 format = '[$symbol($version )]($style)'
 
 [java]
