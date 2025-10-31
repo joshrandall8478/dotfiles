@@ -38,3 +38,13 @@ default = ""
 #symbol = "in 󰌽 "
 style = "cyan bold"
 format = "[$env_value]($style)"
+
+[git_metrics]
+disabled=false
+added_style = 'bold blue'
+deleted_style = 'bold red'
+format = '([+$added]($added_style) )([-$deleted]($deleted_style) )' 
+
+[git_commit]
+commit_hash_length = 7
+tag_symbol = '🏷️ '
