@@ -78,10 +78,10 @@ format = '([+$added]($added_style) )([-$deleted]($deleted_style) )'
 [shell]
 disabled=false
 nu_indicator="󰟆 nu"
-zsh_indicator=" zsh"
+zsh_indicator=" zsh"
 bash_indicator=" bash"
 fish_indicator="󰈺 fish"
-unknown_indicator="󱚟 tf is ts?"
+unknown_indicator=" wtf?"
 powershell_indicator="󰨊 pwsh"
 cmd_indicator=" cmd"
 style="purple bold"
