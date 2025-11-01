@@ -144,7 +144,7 @@ source $ZSH/oh-my-zsh.sh
 
 
 alias ls='eza --icons' # list
-alias cd='z' # cd = zoxide
+#alias cd='z' # cd = zoxide
 # alias un='yay -R' # uninstall package
 # alias up='yay -Syu' # update system/package/aur
 # alias pl='yay -Qs' # list installed package
@@ -178,10 +178,10 @@ alias vc='code' # gui code editor
 #	pfetch
 #fi
 
-eval "$(zoxide init zsh)"
+#eval "$(zoxide init zsh)"
 
-fastfetch -c ~/smallfetch.jsonc
-alias smallfetch="fastfetch -c ~/smallfetch.jsonc"
+fastfetch -c ~/.smallfetch.jsonc
+alias smallfetch="fastfetch -c ~/.smallfetch.jsonc"
 #smallfetch
 #fortune -s -n 100
 

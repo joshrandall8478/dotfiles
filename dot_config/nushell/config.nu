@@ -37,7 +37,7 @@ $env.config = {
 }
 
 # show fastfetch
-fastfetch -c ~/smallfetch.jsonc
+fastfetch -c ~/.smallfetch.jsonc
 
 # some aliases
 alias eza = eza --icons
