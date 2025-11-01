@@ -1,6 +1,6 @@
 
 format = """
-[╭─](white)$username$hostname$shell$conda$container$docker_context$directory$git_branch$git_state$git_status$git_commit$git_metrics$c$cpp$cmake$nodejs$bun$python$java$golang$ruby$rust$php$rlang$package$cmd_duration
+[╭─](white)$username$hostname$os$shell$conda$container$docker_context$directory$git_branch$git_state$git_status$git_commit$git_metrics$c$cpp$cmake$nodejs$bun$python$java$golang$ruby$rust$php$rlang$package$cmd_duration
 [╰─](white)$character"""
 
 
@@ -73,11 +73,13 @@ format = '[$hostname]($style) '
 
 
 [os]
-disabled=false
+disabled=true
+style = "bold green"
+format='[$symbol($type) ]($style)'
 
-[os.symbols]
-Gentoo = "󰣨 "
-Arch = "󰣇 "
+#[os.symbols]
+#Gentoo = "󰣨 "
+#Arch = "󰣇 "
 
 [git_branch]
 style="yellow bold"
