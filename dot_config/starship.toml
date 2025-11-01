@@ -74,12 +74,14 @@ format = '[$hostname]($style) '
 
 [os]
 disabled=true
-style = "bold green"
+style = "bold dimmed purple"
 format='[$symbol($type) ]($style)'
 
-#[os.symbols]
-#Gentoo = "󰣨 "
-#Arch = "󰣇 "
+[os.symbols]
+Gentoo = "󰣨 "
+Arch = "󰣇 "
+Macos = " "
+Debian = " "
 
 [git_branch]
 style="yellow bold"
