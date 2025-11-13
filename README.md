@@ -21,7 +21,8 @@ This is a rough list of dependencies an applications used in the configuration:
 - git
 - chezmoi
 - zsh
-- zoxide (`cd` replacement)
+- nushell
+<!-- - zoxide (`cd` replacement) -->
 - fastfetch
 - eza (`ls` replacement)
 - starship
