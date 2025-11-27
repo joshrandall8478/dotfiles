@@ -14,7 +14,7 @@
     "settingsSync.ignoredExtensions": [
         "catppuccin.catppuccin-vsc"
     ],
-    "workbench.colorTheme": "Catppuccin Mocha",
+    "workbench.colorTheme": "Bearded Theme Arc Eggplant",
     "markdown-preview-enhanced.previewTheme": "atom-material.css",
     "fiveServer.php.executable": "/usr/bin/php",
     "liveServer.settings.donotShowInfoMsg": true,
@@ -27,7 +27,7 @@
     "git.autofetch": true,
     "terminal.integrated.inheritEnv": false,
     "githubPullRequests.pullBranch": "never",
-    "terminal.integrated.fontFamily": "Hack Nerd Font",
+    "terminal.integrated.fontFamily": "FiraCode Nerd Font Mono",
     "diffEditor.ignoreTrimWhitespace": false,
     "files.associations": {
         "*.jas": "plaintext"
@@ -39,8 +39,10 @@
     "security.workspace.trust.untrustedFiles": "open",
     "workbench.editor.empty.hint": "hidden",
     "github.copilot.nextEditSuggestions.enabled": true,
-    "files.autoSave": "afterDelay",
-    "markdown-preview-enhanced.chromePath": "/usr/bin/chromium",
+    "markdown-preview-enhanced.chromePath": "/home/joshr/.local/bin/chromium",
     "jdk.telemetry.enabled": false,
-    "powermode.enabled": true
+    "powermode.enabled": true,
+    "files.autoSave": "afterDelay",
+    "workbench.secondarySideBar.defaultVisibility": "hidden",
+    "claudeCode.preferredLocation": "panel"
 }
