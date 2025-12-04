@@ -14,7 +14,7 @@
     "settingsSync.ignoredExtensions": [
         "catppuccin.catppuccin-vsc"
     ],
-    "workbench.colorTheme": "Bearded Theme Arc Eggplant",
+    "workbench.colorTheme": "Bearded Theme Monokai Black",
     "markdown-preview-enhanced.previewTheme": "atom-material.css",
     "fiveServer.php.executable": "/usr/bin/php",
     "liveServer.settings.donotShowInfoMsg": true,
