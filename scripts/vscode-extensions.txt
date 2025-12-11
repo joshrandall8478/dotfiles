@@ -5,6 +5,8 @@ bbenoist.qml
 beardedbear.beardedtheme
 brapifra.phpserver
 catppuccin.catppuccin-vsc
+cweijan.dbclient-jdbc
+cweijan.vscode-database-client2
 davidanson.vscode-markdownlint
 esbenp.prettier-vscode
 github.copilot
