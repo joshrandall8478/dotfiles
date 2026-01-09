@@ -16,8 +16,8 @@ plugin=org.kde.plasma.folder
 wallpaperplugin=org.kde.image
 
 [Containments][1][ConfigDialog]
-DialogHeight=1007
-DialogWidth=1918
+DialogHeight=802
+DialogWidth=1161
 
 [Containments][1][General]
 positions={"1920x1080":["1","17"]}
@@ -25,10 +25,11 @@ sortMode=-1
 
 [Containments][1][Wallpaper][org.kde.image][General]
 Blur=true
-Image=/home/joshr/.local/share/wallpapers/city2.jpg
+Image=/home/joshr/.local/share/wallpapers/engineer.jpg
 SlidePaths=/usr/share/wallpapers/
 
 [Containments][2]
+ItemGeometries-1024x768=
 ItemGeometries-1920x1080=
 ItemGeometriesHorizontal=
 activityId=c91d0bc0-2618-4ec0-945f-b2599e8e8166
@@ -44,12 +45,12 @@ DialogHeight=540
 DialogWidth=720
 
 [Containments][2][General]
-positions={"1920x1080":["1","17"]}
+positions={"1024x768":["1","9"],"1920x1080":["1","17"]}
 sortMode=-1
 
 [Containments][2][Wallpaper][org.kde.image][General]
 Blur=true
-Image=/home/joshr/.local/share/wallpapers/city2.jpg
+Image=/home/joshr/.local/share/wallpapers/engineer.jpg
 SlidePaths=/usr/share/wallpapers/
 
 [Containments][3]
@@ -72,7 +73,7 @@ positions={"1920x1080":[]}
 
 [Containments][3][Wallpaper][org.kde.image][General]
 Blur=true
-Image=/home/joshr/.local/share/wallpapers/city2.jpg
+Image=/home/joshr/.local/share/wallpapers/engineer.jpg
 SlidePaths=/usr/share/wallpapers/
 
 [Containments][4]
@@ -94,8 +95,8 @@ plugin=org.kde.plasma.mediacontroller
 
 [Containments][4][Applets][29][Configuration]
 PreloadWeight=100
-popupHeight=413
-popupWidth=597
+popupHeight=409
+popupWidth=546
 
 [Containments][4][Applets][33]
 immutability=1
@@ -103,7 +104,7 @@ plugin=org.kde.plasma.digitalclock
 
 [Containments][4][Applets][33][Configuration]
 PreloadWeight=100
-popupHeight=495
+popupHeight=538
 popupWidth=560
 
 [Containments][4][Applets][33][Configuration][Appearance]
@@ -134,7 +135,7 @@ immutability=1
 lastScreen=-1
 location=0
 plugin=org.kde.plasma.folder
-popupHeight=492
+popupHeight=524
 popupWidth=288
 wallpaperplugin=
 
@@ -155,7 +156,7 @@ plugin=org.kde.plasma.kickoff
 
 [Containments][4][Applets][5][Configuration]
 PreloadWeight=100
-popupHeight=666
+popupHeight=732
 popupWidth=1133
 
 [Containments][4][Applets][5][Configuration][ConfigDialog]
@@ -181,63 +182,7 @@ DialogWidth=720
 [Containments][4][Applets][7][Configuration][General]
 indicateAudioStreams=false
 interactiveMute=false
-launchers=file:///var/lib/flatpak/exports/share/applications/app.zen_browser.zen.desktop,applications:kitty.desktop,applications:org.kde.dolphin.desktop,file:///var/lib/flatpak/exports/share/applications/com.spotify.Client.desktop,file:///var/lib/flatpak/exports/share/applications/com.discordapp.Discord.desktop,applications:steam.desktop,applications:joplin-desktop.desktop,applications:code.desktop
-
-[Containments][4][Applets][74]
-activityId=
-formfactor=0
-immutability=1
-lastScreen=-1
-location=0
-plugin=org.kde.plasma.folder
-wallpaperplugin=
-
-[Containments][4][Applets][74][Configuration]
-PreloadWeight=100
-activityId=
-formfactor=0
-immutability=1
-lastScreen=-1
-location=0
-plugin=org.kde.plasma.folder
-popupHeight=475
-popupWidth=288
-wallpaperplugin=
-
-[Containments][4][Applets][74][Configuration][General]
-positions={"0x0":[],"1920x1080":[]}
-url=file:///home/joshr/Nextcloud/EMU/5th Year/Victory Lap
-
-[Containments][4][Applets][78]
-activityId=
-formfactor=0
-immutability=1
-lastScreen=-1
-location=0
-plugin=org.kde.plasma.folder
-wallpaperplugin=
-
-[Containments][4][Applets][78][Configuration]
-PreloadWeight=90
-activityId=
-formfactor=0
-immutability=1
-lastScreen=-1
-location=0
-plugin=org.kde.plasma.folder
-popupHeight=451
-popupWidth=288
-wallpaperplugin=
-
-[Containments][4][Applets][78][Configuration][ConfigDialog]
-DialogHeight=540
-DialogWidth=720
-
-[Containments][4][Applets][78][Configuration][General]
-icon=folder-white-nextcloud
-positions={"0x0":[],"1920x1080":[]}
-url=file:///home/joshr/Nextcloud
-useCustomIcon=true
+launchers=applications:zen-browser-bin.desktop,applications:kitty.desktop,applications:org.kde.dolphin.desktop,applications:spotify.desktop,applications:discord.desktop,applications:steam.desktop,applications:code.desktop,applications:Joplin.desktop
 
 [Containments][4][Applets][8]
 immutability=1
@@ -283,7 +228,7 @@ immutability=1
 lastScreen=0
 location=4
 plugin=org.kde.plasma.systemtray
-popupHeight=596
+popupHeight=691
 popupWidth=432
 wallpaperplugin=org.kde.image
 
@@ -325,7 +270,7 @@ immutability=1
 plugin=org.kde.plasma.clipboard
 
 [Containments][4][Applets][9][Applets][17][Configuration]
-PreloadWeight=70
+PreloadWeight=80
 
 [Containments][4][Applets][9][Applets][18]
 immutability=1
@@ -382,7 +327,7 @@ immutability=1
 plugin=org.kde.plasma.weather
 
 [Containments][4][Applets][9][Applets][30][Configuration]
-PreloadWeight=80
+PreloadWeight=100
 
 [Containments][4][Applets][9][Applets][30][Configuration][ConfigDialog]
 DialogHeight=540
@@ -503,7 +448,7 @@ knownItems=org.kde.kscreen,org.kde.plasma.bluetooth,org.kde.plasma.networkmanage
 shownItems=org.kde.plasma.battery
 
 [Containments][4][General]
-AppletOrder=5;7;8;84;81;83;29;9;74;78;45;33;23
+AppletOrder=5;7;8;84;81;83;29;9;45;33;23
 
 [Containments][56]
 activityId=
@@ -519,8 +464,8 @@ immutability=1
 plugin=org.kde.plasma.digitalclock
 
 [Containments][56][Applets][57][Configuration]
-PreloadWeight=60
-popupHeight=452
+PreloadWeight=65
+popupHeight=453
 popupWidth=560
 
 [Containments][56][Applets][57][Configuration][Appearance]
@@ -546,7 +491,8 @@ immutability=1
 plugin=org.kde.plasma.volume
 
 [Containments][56][Applets][59][Configuration]
-popupHeight=515
+PreloadWeight=55
+popupHeight=542
 popupWidth=560
 
 [Containments][56][Applets][59][Configuration][General]
@@ -615,7 +561,8 @@ immutability=1
 plugin=org.kde.plasma.volume
 
 [Containments][63][Applets][66][Configuration]
-popupHeight=516
+PreloadWeight=55
+popupHeight=546
 popupWidth=560
 
 [Containments][63][Applets][66][Configuration][General]
@@ -660,7 +607,7 @@ wallpaperplugin=org.kde.image
 positions={"0x0":[]}
 
 [Containments][75][Wallpaper][org.kde.image][General]
-Image=/home/joshr/.local/share/wallpapers/hollow-knight.png
+Image=/home/joshr/.local/share/wallpapers/gator.png
 SlidePaths=/home/joshr/.local/share/wallpapers/,/usr/share/wallpapers/
 
 [Containments][76]
@@ -678,7 +625,7 @@ wallpaperplugin=org.kde.image
 positions={"0x0":[]}
 
 [Containments][76][Wallpaper][org.kde.image][General]
-Image=/home/joshr/.local/share/wallpapers/hollow-knight.png
+Image=/home/joshr/.local/share/wallpapers/gator.png
 SlidePaths=/home/joshr/.local/share/wallpapers/,/usr/share/wallpapers/
 
 [Containments][77]
@@ -696,7 +643,7 @@ wallpaperplugin=org.kde.image
 positions={"0x0":[]}
 
 [Containments][77][Wallpaper][org.kde.image][General]
-Image=/home/joshr/.local/share/wallpapers/hollow-knight.png
+Image=/home/joshr/.local/share/wallpapers/gator.png
 SlidePaths=/home/joshr/.local/share/wallpapers/,/usr/share/wallpapers/
 
 [ScreenMapping]

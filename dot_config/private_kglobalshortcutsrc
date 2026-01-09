@@ -192,7 +192,7 @@ Window One Screen Down=none,,Move Window One Screen Down
 Window One Screen Up=none,,Move Window One Screen Up
 Window One Screen to the Left=none,,Move Window One Screen to the Left
 Window One Screen to the Right=none,,Move Window One Screen to the Right
-Window Operations Menu=Alt+F3,Alt+F3,Window Operations Menu
+Window Operations Menu=Alt+F3,Alt+F3,Window Menu
 Window Pack Down=none,,Move Window Down
 Window Pack Left=none,,Move Window Left
 Window Pack Right=none,,Move Window Right
@@ -207,7 +207,7 @@ Window Quick Tile Top Left=none,,Quick Tile Window to the Top Left
 Window Quick Tile Top Right=none,,Quick Tile Window to the Top Right
 Window Raise=none,,Raise Window
 Window Resize=none,,Resize Window
-Window Shade=none,,Shade Window
+Window Shade=none,none,Shade Window
 Window Shrink Horizontal=none,,Shrink Window Horizontally
 Window Shrink Vertical=none,,Shrink Window Vertically
 Window to Desktop 1=none,,Window to Desktop 1
@@ -259,6 +259,19 @@ playpausemedia=Media Play,Media Play,Play/Pause media playback
 previousmedia=Media Previous,Media Previous,Media playback previous
 stopmedia=Media Stop,Media Stop,Stop media playback
 
+[org.chromium.Chromium]
+72A6F797CC022796EF9FF07D55D7DFAE-autofill_card=none,none,Autofill the last used card for the current website
+72A6F797CC022796EF9FF07D55D7DFAE-autofill_identity=none,none,Autofill the last used identity for the current website
+72A6F797CC022796EF9FF07D55D7DFAE-autofill_login=none,none,Autofill the last used login for the current website
+72A6F797CC022796EF9FF07D55D7DFAE-generate_password=none,none,Generate and copy a new random password to the clipboard
+72A6F797CC022796EF9FF07D55D7DFAE-lock_vault=none,none,Lock the vault
+8104F0CAAE949C5BE38D9E35CA65AD42-autofill_card=none,none,Autofill the last used card for the current website
+8104F0CAAE949C5BE38D9E35CA65AD42-autofill_identity=none,none,Autofill the last used identity for the current website
+8104F0CAAE949C5BE38D9E35CA65AD42-autofill_login=none,none,Autofill the last used login for the current website
+8104F0CAAE949C5BE38D9E35CA65AD42-generate_password=none,none,Generate and copy a new random password to the clipboard
+8104F0CAAE949C5BE38D9E35CA65AD42-lock_vault=none,none,Lock the vault
+_k_friendly_name=org.chromium.Chromium
+
 [org_kde_powerdevil]
 Decrease Keyboard Brightness=Keyboard Brightness Down,Keyboard Brightness Down,Decrease Keyboard Brightness
 Decrease Screen Brightness=Monitor Brightness Down,Monitor Brightness Down,Decrease Screen Brightness
@@ -276,7 +289,7 @@ _k_friendly_name=Power Management
 powerProfile=Battery\tMeta+B,Battery\tMeta+B,Switch Power Profile
 
 [plasmashell]
-Slideshow Wallpaper Next Image=none,none,Next Wallpaper Image
+Slideshow Wallpaper Next Image=none,,Next Wallpaper Image
 _k_friendly_name=plasmashell
 activate application launcher=Meta\tAlt+F1,Meta\tAlt+F1,Activate Application Launcher
 activate task manager entry 1=Meta+1,Meta+1,Activate Task Manager Entry 1
@@ -310,9 +323,6 @@ toggle do not disturb=none,,Toggle do not disturb
 
 [services][app.zen_browser.zen.desktop]
 new-window=Tools
-
-[services][discord.desktop]
-_launch=
 
 [services][kitty.desktop]
 _launch=Launch (5)\tMeta+Return

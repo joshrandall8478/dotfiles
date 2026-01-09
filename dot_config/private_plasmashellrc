@@ -13,11 +13,18 @@ thickness=36
 [PlasmaViews][Panel 4]
 floating=1
 floatingApplets=0
+panelLengthMode=0
 panelOpacity=0
 panelVisibility=0
 
 [PlasmaViews][Panel 4][Defaults]
+maxLength=1622
+minLength=1622
 thickness=44
+
+[PlasmaViews][Panel 4][Horizontal1920]
+maxLength=1622
+minLength=1622
 
 [PlasmaViews][Panel 40]
 floating=1

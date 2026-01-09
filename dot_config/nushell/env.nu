@@ -16,3 +16,9 @@
 #
 # You can remove these comments if you want or leave
 # them for future reference.
+
+use std "path add"
+$env.PATH = ($env.PATH | split row (char esep))
+
+path add ($env.HOME | path join ".local" "bin")
+path add ($env.HOME | path join ".cargo" "bin")
