@@ -42,6 +42,7 @@ fastfetch -c ~/.smallfetch.jsonc
 # some aliases
 alias eza = eza --icons
 alias "ls e" = eza --icons
+alias fix-crackle = pw-metadata -n settings 0 clock.force-quantum 500
 
 # Use starship
 mkdir ($nu.data-dir | path join "vendor/autoload")
