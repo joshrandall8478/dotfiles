@@ -1,6 +1,6 @@
 
 format = """
-[╭─](white)$username$hostname$os$shell$conda$container$docker_context$directory$git_branch$git_state$git_status$git_commit$git_metrics$c$cpp$cmake$nodejs$bun$python$java$golang$ruby$rust$php$rlang$package$cmd_duration
+[╭─](white)$username$hostname$os$shell$conda$container$docker_context$directory$git_branch$git_state$git_status$git_commit$git_metrics$c$cpp$cmake$nodejs$bun$python$java$dotnet$golang$ruby$rust$php$rlang$package$cmd_duration
 [╰─](white)$character"""
 
 
@@ -39,6 +39,10 @@ format = '[$symbol($version )]($style)'
 symbol = ' '
 style = "blue bold"
 format = '[${symbol}${pyenv_prefix}(${version} ) (\($virtualenv\) )]($style)'
+
+
+[dotnet]
+format = '[$symbol($version )]($style)'
 
 [golang]
 format = '[$symbol($version )]($style)'
@@ -85,6 +89,7 @@ Debian = " "
 
 [git_branch]
 style="yellow bold"
+format = '[${symbol}${branch} ]($style)'
 
 [git_metrics]
 disabled=false
