@@ -24,3 +24,6 @@ path add ($env.HOME | path join ".local" "bin")
 path add ($env.HOME | path join ".cargo" "bin")
 path add ($env.HOME | path join ".dotnet" "tools")
 path add ($env.HOME | path join "bin")
+
+# Set terminal
+$env.TERM = "xterm-256color"

@@ -5,6 +5,9 @@ export XDG_DATA_DIRS=~/.local/share/applications:$XDG_DATA_DIRS
 #export WAYLAND_DISPLAY=wayland-1
 export BROWSER=zen
 
+# Terminal
+export TERM=xterm-256color
+
 #Disable or enable xwayland glamor
 #export XWAYALAND_NO_GLAMOR=1
 
@@ -220,3 +223,10 @@ unset __conda_setup
 #source ~/bira.zsh-theme
 eval "$(starship init zsh)"
 
+
+# bun completions
+[ -s "/home/joshr/.bun/_bun" ] && source "/home/joshr/.bun/_bun"
+
+# bun
+export BUN_INSTALL="$HOME/.bun"
+export PATH="$BUN_INSTALL/bin:$PATH"
