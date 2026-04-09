@@ -2,7 +2,7 @@
 fastfetch -c ~/.smallfetch.jsonc
 
 # Starship
-eval -- "$(/usr/bin/starship init bash --print-full-init)"
+eval -- "$(starship init bash --print-full-init)"
 
 
 
