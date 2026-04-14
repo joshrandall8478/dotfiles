@@ -157,7 +157,6 @@ immutability=1
 plugin=org.kde.plasma.volume
 
 [Containments][4][Applets][9][Applets][15][Configuration][General]
-currentTab=streams
 migrated=true
 
 [Containments][4][Applets][9][Applets][16]
@@ -167,9 +166,6 @@ plugin=org.kde.plasma.notifications
 [Containments][4][Applets][9][Applets][17]
 immutability=1
 plugin=org.kde.plasma.clipboard
-
-[Containments][4][Applets][9][Applets][17][Configuration]
-PreloadWeight=80
 
 [Containments][4][Applets][9][Applets][18]
 immutability=1
@@ -324,7 +320,6 @@ DialogWidth=720
 [Containments][4][Applets][91][Configuration][General]
 applicationsDisplay=0
 favoritesPortedToKAstats=true
-icon=org.cachyos.hello
 paneSwap=true
 primaryActions=3
 systemFavorites=lock-screen\\,logout\\,save-session\\,switch-user\\,suspend\\,hibernate\\,reboot\\,shutdown
