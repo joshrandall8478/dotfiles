@@ -1,15 +1,3 @@
-[PlasmaViews][Panel 31]
-floating=1
-
-[PlasmaViews][Panel 31][Defaults]
-thickness=36
-
-[PlasmaViews][Panel 35]
-floating=1
-
-[PlasmaViews][Panel 35][Defaults]
-thickness=36
-
 [PlasmaViews][Panel 4]
 floating=1
 floatingApplets=0
@@ -26,26 +14,16 @@ thickness=44
 maxLength=1622
 minLength=1622
 
-[PlasmaViews][Panel 40]
-floating=1
-
-[PlasmaViews][Panel 40][Defaults]
-thickness=36
-
-[PlasmaViews][Panel 49]
-floating=1
-
-[PlasmaViews][Panel 49][Defaults]
-thickness=36
-
 [PlasmaViews][Panel 56]
 floating=1
+panelOpacity=0
 
 [PlasmaViews][Panel 56][Defaults]
 thickness=36
 
 [PlasmaViews][Panel 63]
 floating=1
+panelOpacity=0
 
 [PlasmaViews][Panel 63][Defaults]
 thickness=36
