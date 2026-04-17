@@ -86,7 +86,7 @@ DialogWidth=720
 [Containments][4][Applets][7][Configuration][General]
 indicateAudioStreams=false
 interactiveMute=false
-launchers=applications:vivaldi-stable.desktop,applications:kitty.desktop,applications:org.kde.dolphin.desktop,applications:spotify.desktop,applications:discord.desktop,applications:steam.desktop
+launchers=applications:vivaldi-stable.desktop,applications:kitty.desktop,applications:org.kde.dolphin.desktop,applications:spotify.desktop,applications:discord.desktop,applications:steam.desktop,applications:code.desktop
 
 [Containments][4][Applets][8]
 immutability=1
@@ -233,7 +233,6 @@ immutability=1
 plugin=org.kde.plasma.volume
 
 [Containments][4][Applets][9][Applets][50][Configuration][General]
-currentTab=streams
 migrated=true
 
 [Containments][4][Applets][9][Applets][51]
@@ -320,6 +319,7 @@ DialogWidth=720
 [Containments][4][Applets][91][Configuration][General]
 applicationsDisplay=0
 favoritesPortedToKAstats=true
+icon=tool-circle-symbolic
 paneSwap=true
 primaryActions=3
 systemFavorites=lock-screen\\,logout\\,save-session\\,switch-user\\,suspend\\,hibernate\\,reboot\\,shutdown
@@ -486,6 +486,7 @@ SlidePaths=/home/joshr/.local/share/wallpapers/,/usr/share/wallpapers/
 
 [Containments][94]
 ItemGeometries-1920x1080=
+ItemGeometries-2560x1440=
 ItemGeometriesHorizontal=
 activityId=e84c4d3c-b7e0-4ed0-90e1-091d5ebfb63a
 formfactor=0
