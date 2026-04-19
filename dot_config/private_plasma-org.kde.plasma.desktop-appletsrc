@@ -319,7 +319,6 @@ DialogWidth=720
 [Containments][4][Applets][91][Configuration][General]
 applicationsDisplay=0
 favoritesPortedToKAstats=true
-icon=tool-circle-symbolic
 paneSwap=true
 primaryActions=3
 systemFavorites=lock-screen\\,logout\\,save-session\\,switch-user\\,suspend\\,hibernate\\,reboot\\,shutdown
@@ -502,6 +501,7 @@ SlidePaths=/home/joshr/.local/share/wallpapers/,/usr/share/wallpapers/
 
 [Containments][95]
 ItemGeometries-1920x1080=
+ItemGeometries-640x480=
 ItemGeometriesHorizontal=
 activityId=e84c4d3c-b7e0-4ed0-90e1-091d5ebfb63a
 formfactor=0

@@ -21,11 +21,11 @@ IntensityAmount=0
 IntensityEffect=0
 
 [Colors:Button]
-BackgroundAlternate=61,63,148
+BackgroundAlternate=60,65,149
 BackgroundNormal=21,23,27
-DecorationFocus=79,81,201
-DecorationHover=79,81,201
-ForegroundActive=79,81,201
+DecorationFocus=78,83,202
+DecorationHover=78,83,202
+ForegroundActive=78,83,202
 ForegroundInactive=120,119,117
 ForegroundLink=192,193,230
 ForegroundNegative=232,88,72
@@ -35,17 +35,17 @@ ForegroundPositive=120,183,83
 ForegroundVisited=142,121,165
 
 [Colors:Complementary]
-DecorationFocus=79,81,201
-DecorationHover=79,81,201
-ForegroundActive=79,81,201
+DecorationFocus=78,83,202
+DecorationHover=78,83,202
+ForegroundActive=78,83,202
 ForegroundLink=192,193,230
 
 [Colors:Selection]
-BackgroundAlternate=60,61,145
-BackgroundNormal=60,61,145
-DecorationFocus=79,81,201
-DecorationHover=79,81,201
-ForegroundActive=79,81,201
+BackgroundAlternate=59,62,146
+BackgroundNormal=59,62,146
+DecorationFocus=78,83,202
+DecorationHover=78,83,202
+ForegroundActive=78,83,202
 ForegroundInactive=255,255,255
 ForegroundLink=192,193,230
 ForegroundNegative=232,88,72
@@ -57,9 +57,9 @@ ForegroundVisited=142,121,165
 [Colors:Tooltip]
 BackgroundAlternate=17,51,86
 BackgroundNormal=21,23,25
-DecorationFocus=79,81,201
-DecorationHover=79,81,201
-ForegroundActive=79,81,201
+DecorationFocus=78,83,202
+DecorationHover=78,83,202
+ForegroundActive=78,83,202
 ForegroundInactive=120,119,117
 ForegroundLink=192,193,230
 ForegroundNegative=232,88,72
@@ -71,9 +71,9 @@ ForegroundVisited=142,121,165
 [Colors:View]
 BackgroundAlternate=22,22,22
 BackgroundNormal=16,16,16
-DecorationFocus=79,81,201
-DecorationHover=79,81,201
-ForegroundActive=79,81,201
+DecorationFocus=78,83,202
+DecorationHover=78,83,202
+ForegroundActive=78,83,202
 ForegroundInactive=120,119,117
 ForegroundLink=192,193,230
 ForegroundNegative=232,88,72
@@ -85,9 +85,9 @@ ForegroundVisited=142,121,165
 [Colors:Window]
 BackgroundAlternate=52,51,50
 BackgroundNormal=25,25,25
-DecorationFocus=79,81,201
-DecorationHover=79,81,201
-ForegroundActive=79,81,201
+DecorationFocus=78,83,202
+DecorationHover=78,83,202
+ForegroundActive=78,83,202
 ForegroundInactive=120,119,117
 ForegroundLink=192,193,230
 ForegroundNegative=232,88,72
@@ -97,7 +97,7 @@ ForegroundPositive=120,183,83
 ForegroundVisited=142,121,165
 
 [General]
-AccentColor=79,81,201
+AccentColor=78,83,202
 BrowserApplication=vivaldi-stable.desktop
 ColorScheme=DarkObsidianII
 ColorSchemeHash=6441cca7f3a8f49cbdfdbcab0dfe7f03b7369aa7
