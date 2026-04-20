@@ -319,6 +319,7 @@ DialogWidth=720
 [Containments][4][Applets][91][Configuration][General]
 applicationsDisplay=0
 favoritesPortedToKAstats=true
+icon=org.cachyos.hello
 paneSwap=true
 primaryActions=3
 systemFavorites=lock-screen\\,logout\\,save-session\\,switch-user\\,suspend\\,hibernate\\,reboot\\,shutdown
