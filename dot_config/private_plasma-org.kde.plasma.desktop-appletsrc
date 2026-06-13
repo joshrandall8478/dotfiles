@@ -92,25 +92,6 @@ launchers=applications:vivaldi-stable.desktop,applications:kitty.desktop,applica
 immutability=1
 plugin=org.kde.plasma.marginsseparator
 
-[Containments][4][Applets][81]
-immutability=1
-plugin=org.kde.plasma.pager
-
-[Containments][4][Applets][81][Configuration][ConfigDialog]
-DialogHeight=540
-DialogWidth=720
-
-[Containments][4][Applets][81][Configuration][General]
-displayedText=Number
-dotSizeCustom=19
-highlightOnActive=true
-indicatorType=1
-radiusFactor=0.4
-showOnlyCurrentScreen=true
-showWindowIcons=true
-spacingHorizontal=2
-spacingVertical=18
-
 [Containments][4][Applets][83]
 immutability=1
 plugin=org.kde.plasma.panelspacer
@@ -322,12 +303,26 @@ DialogWidth=720
 [Containments][4][Applets][91][Configuration][General]
 applicationsDisplay=0
 favoritesPortedToKAstats=true
+icon=org.cachyos.hello
 paneSwap=true
 primaryActions=3
 systemFavorites=lock-screen\\,logout\\,save-session\\,switch-user\\,suspend\\,hibernate\\,reboot\\,shutdown
 
+[Containments][4][Applets][97]
+immutability=1
+plugin=org.kde.plasma.pager
+
+[Containments][4][Applets][97][Configuration][ConfigDialog]
+DialogHeight=630
+DialogWidth=810
+
+[Containments][4][Applets][97][Configuration][General]
+displayedText=Number
+showOnlyCurrentScreen=true
+showWindowIcons=true
+
 [Containments][4][General]
-AppletOrder=91;7;8;84;81;83;29;9;45;33;23
+AppletOrder=91;7;8;84;97;83;29;9;45;33;23
 
 [Containments][56]
 activityId=

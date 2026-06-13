@@ -473,7 +473,8 @@ EOF
   # be prompted for the password either way, so this shouldn't cause any issues.
   #
   if user_can_sudo; then
-    sudo -k chsh -s "$zsh" "$USER"  # -k forces the password prompt
+    sudo -k >/dev/null 2>&1         # -k forces the password prompt
+    sudo chsh -s "$zsh" "$USER"
   else
     chsh -s "$zsh" "$USER"          # run chsh normally
   fi
@@ -505,7 +506,7 @@ print_success() {
   printf '\n'
   printf '%s\n' "• Follow us on X: $(fmt_link @ohmyzsh https://x.com/ohmyzsh)"
   printf '%s\n' "• Join our Discord community: $(fmt_link "Discord server" https://discord.gg/ohmyzsh)"
-  printf '%s\n' "• Get stickers, t-shirts, coffee mugs and more: $(fmt_link "Planet Argon Shop" https://shop.planetargon.com/collections/oh-my-zsh)"
+  printf '%s\n' "• Get stickers, t-shirts, coffee mugs and more: $(fmt_link "CommitGoods Shop" https://commitgoods.com/collections/oh-my-zsh)"
   printf '%s\n' $FMT_RESET
 }
 
