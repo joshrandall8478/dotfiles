@@ -30,7 +30,7 @@ immutability=1
 plugin=org.kde.plasma.digitalclock
 
 [Containments][4][Applets][33][Configuration]
-popupHeight=545
+popupHeight=451
 popupWidth=560
 
 [Containments][4][Applets][33][Configuration][Appearance]
@@ -60,7 +60,7 @@ immutability=1
 lastScreen=-1
 location=0
 plugin=org.kde.plasma.folder
-popupHeight=537
+popupHeight=448
 popupWidth=288
 wallpaperplugin=
 
@@ -86,7 +86,7 @@ DialogWidth=720
 [Containments][4][Applets][7][Configuration][General]
 indicateAudioStreams=false
 interactiveMute=false
-launchers=applications:vivaldi-stable.desktop,applications:kitty.desktop,applications:org.kde.dolphin.desktop,applications:spotify.desktop,applications:discord.desktop,applications:steam.desktop,applications:code.desktop
+launchers=applications:vivaldi-stable.desktop,applications:kitty.desktop,applications:org.kde.dolphin.desktop,applications:spotify.desktop,applications:discord.desktop,applications:signal.desktop,applications:steam.desktop,applications:code.desktop
 
 [Containments][4][Applets][8]
 immutability=1
@@ -132,7 +132,7 @@ immutability=1
 lastScreen=0
 location=4
 plugin=org.kde.plasma.systemtray
-popupHeight=777
+popupHeight=448
 popupWidth=444
 wallpaperplugin=org.kde.image
 
@@ -274,6 +274,9 @@ PreloadWeight=60
 immutability=1
 plugin=org.kde.plasma.networkmanagement
 
+[Containments][4][Applets][9][Applets][70][Configuration][General]
+currentDetailsTab=details
+
 [Containments][4][Applets][9][Applets][71]
 immutability=1
 plugin=org.kde.plasma.bluetooth
@@ -309,8 +312,8 @@ immutability=1
 plugin=org.kde.plasma.kickoff
 
 [Containments][4][Applets][91][Configuration]
-popupHeight=653
-popupWidth=1243
+popupHeight=566
+popupWidth=1090
 
 [Containments][4][Applets][91][Configuration][ConfigDialog]
 DialogHeight=540
@@ -319,7 +322,7 @@ DialogWidth=720
 [Containments][4][Applets][91][Configuration][General]
 applicationsDisplay=0
 favoritesPortedToKAstats=true
-icon=org.cachyos.hello
+icon=distributor-logo-archlinux
 paneSwap=true
 primaryActions=3
 systemFavorites=lock-screen\\,logout\\,save-session\\,switch-user\\,suspend\\,hibernate\\,reboot\\,shutdown
@@ -466,7 +469,11 @@ showWindowIcons=true
 AppletOrder=86;69;64;67;65;66
 
 [Containments][93]
+ItemGeometries-1422x800=
+ItemGeometries-1707x960=
+ItemGeometries-1920x1080=
 ItemGeometries-2560x1440=
+ItemGeometries-640x480=
 ItemGeometriesHorizontal=
 activityId=e84c4d3c-b7e0-4ed0-90e1-091d5ebfb63a
 formfactor=0
@@ -477,11 +484,11 @@ plugin=org.kde.plasma.folder
 wallpaperplugin=org.kde.image
 
 [Containments][93][ConfigDialog]
-DialogHeight=1016
-DialogWidth=1920
+DialogHeight=728
+DialogWidth=1422
 
 [Containments][93][Wallpaper][org.kde.image][General]
-Image=file:///usr/share/wallpapers/cachyos-wallpapers/Liquid.png
+Image=file:///usr/share/wallpapers/cachyos-wallpapers/Metal.png
 SlidePaths=/home/joshr/.local/share/wallpapers/,/usr/share/wallpapers/
 
 [Containments][94]
@@ -496,8 +503,12 @@ location=0
 plugin=org.kde.plasma.folder
 wallpaperplugin=org.kde.image
 
+[Containments][94][ConfigDialog]
+DialogHeight=630
+DialogWidth=810
+
 [Containments][94][Wallpaper][org.kde.image][General]
-Image=file:///usr/share/wallpapers/cachyos-wallpapers/Liquid.png
+Image=file:///usr/share/wallpapers/cachyos-wallpapers/Metal.png
 SlidePaths=/home/joshr/.local/share/wallpapers/,/usr/share/wallpapers/
 
 [Containments][95]
@@ -522,4 +533,4 @@ SlidePaths=/home/joshr/.local/share/wallpapers/,/usr/share/wallpapers/
 
 [ScreenMapping]
 itemsOnDisabledScreens=
-screenMapping=desktop:/jrh-mc.zip,0,c91d0bc0-2618-4ec0-945f-b2599e8e8166
+screenMapping=desktop:/dufs,0,e84c4d3c-b7e0-4ed0-90e1-091d5ebfb63a,desktop:/jrh-mc.zip,0,c91d0bc0-2618-4ec0-945f-b2599e8e8166,desktop:/stash,0,e84c4d3c-b7e0-4ed0-90e1-091d5ebfb63a
