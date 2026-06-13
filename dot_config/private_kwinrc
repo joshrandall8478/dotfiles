@@ -9,11 +9,17 @@ Rows=1
 BlurStrength=4
 NoiseStrength=3
 
+[Effect-diminactive]
+DimFullScreen=false
+
 [Effect-magiclamp]
 AnimationDuration=400
 
 [Effect-overview]
 BorderActivate=9
+
+[Effect-translucency]
+Inactive=90
 
 [Plugins]
 blurEnabled=true
