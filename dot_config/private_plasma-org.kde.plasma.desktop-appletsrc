@@ -373,7 +373,7 @@ DialogHeight=728
 DialogWidth=1422
 
 [Containments][93][Wallpaper][org.kde.image][General]
-Image=file:///home/joshr/.local/share/wallpapers/Anime/gaming.png
+Image=/home/joshr/Downloads/wallhaven-k82kp1.png
 SlidePaths=/home/joshr/.local/share/wallpapers/,/usr/share/wallpapers/
 
 [Containments][94]
@@ -393,7 +393,7 @@ DialogHeight=630
 DialogWidth=810
 
 [Containments][94][Wallpaper][org.kde.image][General]
-Image=file:///home/joshr/.local/share/wallpapers/Anime/gaming.png
+Image=/home/joshr/Downloads/wallhaven-k82kp1.png
 SlidePaths=/home/joshr/.local/share/wallpapers/,/usr/share/wallpapers/
 
 [Containments][95]
@@ -413,7 +413,7 @@ DialogHeight=1368
 DialogWidth=2560
 
 [Containments][95][Wallpaper][org.kde.image][General]
-Image=file:///usr/share/wallpapers/cachyos-wallpapers/Liquid.png
+Image=/home/joshr/Downloads/wallhaven-k82kp1.png
 SlidePaths=/home/joshr/.local/share/wallpapers/,/usr/share/wallpapers/
 
 [ScreenMapping]
