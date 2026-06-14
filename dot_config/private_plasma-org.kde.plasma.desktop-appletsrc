@@ -83,16 +83,16 @@ plugin=org.kde.plasma.brightness
 immutability=1
 plugin=org.kde.plasma.battery
 
-[Containments][101][Applets][102][Applets][117]
-immutability=1
-plugin=org.kde.plasma.mediacontroller
-
 [Containments][101][Applets][102][Applets][118]
 immutability=1
 plugin=org.kde.plasma.bluetooth
 
+[Containments][101][Applets][102][ConfigDialog]
+DialogHeight=630
+DialogWidth=810
+
 [Containments][101][Applets][102][General]
-extraItems=org.kde.kdeconnect,org.kde.plasma.bluetooth,org.kde.plasma.keyboardindicator,org.kde.plasma.weather,org.kde.kscreen,org.kde.plasma.battery,org.kde.plasma.brightness,org.kde.plasma.keyboardlayout,org.kde.plasma.networkmanagement,org.kde.plasma.volume,org.kde.plasma.cameraindicator,org.kde.plasma.clipboard,org.kde.plasma.devicenotifier,org.kde.plasma.manage-inputmethod,org.kde.plasma.mediacontroller,org.kde.plasma.notifications
+extraItems=org.kde.kdeconnect,org.kde.plasma.bluetooth,org.kde.plasma.keyboardindicator,org.kde.plasma.weather,org.kde.kscreen,org.kde.plasma.battery,org.kde.plasma.brightness,org.kde.plasma.keyboardlayout,org.kde.plasma.networkmanagement,org.kde.plasma.volume,org.kde.plasma.cameraindicator,org.kde.plasma.clipboard,org.kde.plasma.devicenotifier,org.kde.plasma.manage-inputmethod,org.kde.plasma.notifications
 knownItems=org.kde.kdeconnect,org.kde.plasma.bluetooth,org.kde.plasma.keyboardindicator,org.kde.plasma.weather,org.kde.kscreen,org.kde.plasma.battery,org.kde.plasma.brightness,org.kde.plasma.keyboardlayout,org.kde.plasma.networkmanagement,org.kde.plasma.volume,org.kde.plasma.cameraindicator,org.kde.plasma.clipboard,org.kde.plasma.devicenotifier,org.kde.plasma.manage-inputmethod,org.kde.plasma.mediacontroller,org.kde.plasma.notifications
 
 [Containments][101][Applets][119]
@@ -100,8 +100,8 @@ immutability=1
 plugin=org.kde.plasma.mediacontroller
 
 [Containments][101][Applets][119][Configuration]
-popupHeight=361
-popupWidth=360
+popupHeight=312
+popupWidth=493
 
 [Containments][101][Applets][120]
 immutability=1
@@ -154,8 +154,19 @@ popupWidth=560
 DialogHeight=630
 DialogWidth=810
 
+[Containments][101][Applets][130]
+immutability=1
+plugin=org.kde.plasma.lock_logout
+
+[Containments][101][Applets][130][Configuration][ConfigDialog]
+DialogHeight=630
+DialogWidth=810
+
+[Containments][101][Applets][130][Configuration][General]
+actionsOrder=lockScreen,switchUser,requestShutDown,requestReboot,requestLogout,requestLogoutScreen,suspendToRam,suspendToDisk
+
 [Containments][101][General]
-AppletOrder=121;127;124;120;122;119;102
+AppletOrder=121;127;124;120;122;119;102;130
 
 [Containments][4]
 activityId=
@@ -314,8 +325,8 @@ immutability=1
 plugin=org.kde.plasma.mediacontroller
 
 [Containments][63][Applets][65][Configuration]
-popupHeight=396
-popupWidth=552
+popupHeight=257
+popupWidth=390
 
 [Containments][63][Applets][66]
 immutability=1
@@ -373,7 +384,7 @@ DialogHeight=728
 DialogWidth=1422
 
 [Containments][93][Wallpaper][org.kde.image][General]
-Image=/home/joshr/Downloads/wallhaven-k82kp1.png
+Image=file:///usr/share/wallpapers/cachyos-wallpapers/Cachy_Topography.jpg
 SlidePaths=/home/joshr/.local/share/wallpapers/,/usr/share/wallpapers/
 
 [Containments][94]
@@ -393,7 +404,7 @@ DialogHeight=630
 DialogWidth=810
 
 [Containments][94][Wallpaper][org.kde.image][General]
-Image=/home/joshr/Downloads/wallhaven-k82kp1.png
+Image=file:///usr/share/wallpapers/cachyos-wallpapers/Cachy_Topography.jpg
 SlidePaths=/home/joshr/.local/share/wallpapers/,/usr/share/wallpapers/
 
 [Containments][95]

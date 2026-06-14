@@ -39,6 +39,7 @@ thickness=36
 [PlasmaViews][Panel 63]
 floating=1
 panelOpacity=0
+panelVisibility=0
 
 [PlasmaViews][Panel 63][Defaults]
 thickness=32
