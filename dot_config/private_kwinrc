@@ -24,6 +24,7 @@ Inactive=90
 [Plugins]
 blurEnabled=true
 desktopchangeosdEnabled=true
+screenedgeEnabled=false
 
 [Script-desktopchangeosd]
 PopupHideDelay=970
