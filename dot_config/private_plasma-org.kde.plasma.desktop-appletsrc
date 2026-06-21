@@ -130,7 +130,6 @@ DialogHeight=630
 DialogWidth=810
 
 [Containments][101][Applets][121][Configuration][General]
-currentDesktopSelected=ShowDesktop
 displayedText=Number
 showOnlyCurrentScreen=true
 showWindowIcons=true
@@ -148,8 +147,8 @@ immutability=1
 plugin=org.kde.plasma.windowlist
 
 [Containments][101][Applets][127][Configuration]
-popupHeight=400
-popupWidth=560
+popupHeight=143
+popupWidth=286
 
 [Containments][101][Applets][127][Configuration][ConfigDialog]
 DialogHeight=630
@@ -164,7 +163,7 @@ DialogHeight=630
 DialogWidth=810
 
 [Containments][101][Applets][130][Configuration][General]
-actionsOrder=lockScreen,switchUser,requestShutDown,requestReboot,requestLogout,requestLogoutScreen,suspendToRam,suspendToDisk
+actionsOrder=lockScreen,switchUser,suspendToRam,requestReboot,requestShutDown,requestLogout,requestLogoutScreen,suspendToDisk
 
 [Containments][101][General]
 AppletOrder=121;127;124;120;122;119;102;130
@@ -193,15 +192,15 @@ DialogWidth=720
 [Containments][4][Applets][7][Configuration][General]
 indicateAudioStreams=false
 interactiveMute=false
-launchers=applications:vivaldi-stable.desktop,applications:kitty.desktop,applications:org.kde.dolphin.desktop,applications:spotify.desktop,applications:discord.desktop,applications:signal.desktop,applications:steam.desktop,applications:code.desktop
+launchers=applications:vivaldi-stable.desktop,applications:kitty.desktop,applications:org.kde.dolphin.desktop,applications:spotify.desktop,applications:discord.desktop,applications:signal.desktop,applications:steam.desktop,applications:code.desktop,applications:joplin-desktop.desktop,applications:com.shellyorg.shelly.desktop
 
 [Containments][4][Applets][91]
 immutability=1
 plugin=org.kde.plasma.kickoff
 
 [Containments][4][Applets][91][Configuration]
-popupHeight=563
-popupWidth=1002
+popupHeight=560
+popupWidth=998
 
 [Containments][4][Applets][91][Configuration][ConfigDialog]
 DialogHeight=540
@@ -301,8 +300,8 @@ immutability=1
 plugin=org.kde.plasma.windowlist
 
 [Containments][63][Applets][129][Configuration]
-popupHeight=400
-popupWidth=560
+popupHeight=32
+popupWidth=154
 
 [Containments][63][Applets][64]
 immutability=1
@@ -338,6 +337,7 @@ popupHeight=587
 popupWidth=560
 
 [Containments][63][Applets][66][Configuration][General]
+currentTab=streams
 migrated=true
 
 [Containments][63][Applets][67]
@@ -357,7 +357,6 @@ DialogHeight=540
 DialogWidth=720
 
 [Containments][63][Applets][86][Configuration][General]
-currentDesktopSelected=ShowDesktop
 displayedText=Number
 showOnlyCurrentScreen=true
 showWindowIcons=true
@@ -385,7 +384,7 @@ DialogHeight=728
 DialogWidth=1422
 
 [Containments][93][Wallpaper][org.kde.image][General]
-Image=/home/joshr/Downloads/wallhaven-k82kp1.png
+Image=/home/joshr/Downloads/wallhaven-8grlyj.jpg
 SlidePaths=/home/joshr/.local/share/wallpapers/,/usr/share/wallpapers/
 
 [Containments][94]
@@ -405,7 +404,7 @@ DialogHeight=630
 DialogWidth=810
 
 [Containments][94][Wallpaper][org.kde.image][General]
-Image=/home/joshr/Downloads/wallhaven-k82kp1.png
+Image=/home/joshr/Downloads/wallhaven-8grlyj.jpg
 SlidePaths=/home/joshr/.local/share/wallpapers/,/usr/share/wallpapers/
 
 [Containments][95]
@@ -425,7 +424,7 @@ DialogHeight=1368
 DialogWidth=2560
 
 [Containments][95][Wallpaper][org.kde.image][General]
-Image=/home/joshr/Downloads/wallhaven-k82kp1.png
+Image=/home/joshr/Downloads/wallhaven-8grlyj.jpg
 SlidePaths=/home/joshr/.local/share/wallpapers/,/usr/share/wallpapers/
 
 [ScreenMapping]
