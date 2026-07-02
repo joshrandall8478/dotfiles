@@ -20,8 +20,8 @@ immutability=1
 lastScreen=-1
 location=0
 plugin=org.kde.plasma.systemtray
-popupHeight=432
-popupWidth=432
+popupHeight=553
+popupWidth=459
 wallpaperplugin=org.kde.image
 
 [Containments][101][Applets][102][Applets][103]
@@ -35,6 +35,15 @@ plugin=org.kde.plasma.keyboardindicator
 [Containments][101][Applets][102][Applets][105]
 immutability=1
 plugin=org.kde.plasma.weather
+
+[Containments][101][Applets][102][Applets][105][Configuration][ConfigDialog]
+DialogHeight=630
+DialogWidth=810
+
+[Containments][101][Applets][102][Applets][105][Configuration][WeatherStation]
+placeDisplayName=Detroit, United States, US
+placeInfo=Detroit, United States, US|4990729
+provider=bbcukmet
 
 [Containments][101][Applets][102][Applets][106]
 immutability=1
@@ -53,6 +62,7 @@ immutability=1
 plugin=org.kde.plasma.volume
 
 [Containments][101][Applets][102][Applets][109][Configuration][General]
+currentTab=streams
 migrated=true
 
 [Containments][101][Applets][102][Applets][110]
@@ -109,7 +119,7 @@ immutability=1
 plugin=org.kde.plasma.digitalclock
 
 [Containments][101][Applets][120][Configuration]
-popupHeight=451
+popupHeight=458
 popupWidth=560
 
 [Containments][101][Applets][120][Configuration][Appearance]
@@ -147,8 +157,8 @@ immutability=1
 plugin=org.kde.plasma.windowlist
 
 [Containments][101][Applets][127][Configuration]
-popupHeight=143
-popupWidth=286
+popupHeight=253
+popupWidth=455
 
 [Containments][101][Applets][127][Configuration][ConfigDialog]
 DialogHeight=630
@@ -192,7 +202,7 @@ DialogWidth=720
 [Containments][4][Applets][7][Configuration][General]
 indicateAudioStreams=false
 interactiveMute=false
-launchers=applications:vivaldi-stable.desktop,applications:kitty.desktop,applications:org.kde.dolphin.desktop,applications:spotify.desktop,applications:discord.desktop,applications:signal.desktop,applications:steam.desktop,applications:code.desktop,applications:joplin-desktop.desktop,applications:com.shellyorg.shelly.desktop
+launchers=applications:helium.desktop,applications:kitty.desktop,applications:org.kde.dolphin.desktop,applications:spotify.desktop,applications:discord.desktop,applications:signal.desktop,applications:steam.desktop,applications:code.desktop,applications:joplin-desktop.desktop,applications:com.shellyorg.shelly.desktop
 
 [Containments][4][Applets][91]
 immutability=1
@@ -300,8 +310,8 @@ immutability=1
 plugin=org.kde.plasma.windowlist
 
 [Containments][63][Applets][129][Configuration]
-popupHeight=32
-popupWidth=154
+popupHeight=253
+popupWidth=455
 
 [Containments][63][Applets][64]
 immutability=1

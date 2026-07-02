@@ -310,6 +310,10 @@ powerProfile=Battery\tMeta+B,Battery\tMeta+B,Switch Power Profile
 
 [plasmashell]
 Slideshow Wallpaper Next Image=none,none,Next Wallpaper Image
+Toggle Bigscreen Home Overlay=Meta+O,Meta+O,Toggle Bigscreen Home Overlay
+Toggle Bigscreen Home Screen=Home Page,Home Page,Toggle Bigscreen Home Screen
+Toggle Bigscreen Settings=Settings,Settings,Toggle Bigscreen Settings
+Toggle Bigscreen Tasks Overview=Menu,Menu,Toggle Bigscreen Tasks Overview
 _k_friendly_name=plasmashell
 activate application launcher=Meta\tAlt+F1,Meta\tAlt+F1,Activate Application Launcher
 activate task manager entry 1=Meta+1,Meta+1,Activate Task Manager Entry 1
@@ -322,6 +326,7 @@ activate task manager entry 6=Meta+6,Meta+6,Activate Task Manager Entry 6
 activate task manager entry 7=Meta+7,Meta+7,Activate Task Manager Entry 7
 activate task manager entry 8=Meta+8,Meta+8,Activate Task Manager Entry 8
 activate task manager entry 9=Meta+9,Meta+9,Activate Task Manager Entry 9
+activate widget 1=Meta+F1,none,Activate Plasma Bigscreen Homescreen Widget
 activate widget 127=none,none,Activate Window List Widget
 activate widget 81=none,none,Activate Pager Widget
 activate widget 91=none,none,Activate Application Launcher Widget
@@ -352,6 +357,10 @@ _launch=Launch (5)\tMeta+Return
 
 [services][org.kde.dolphin.desktop]
 _launch=Launch (6)\tMeta+E
+
+[services][org.kde.spectacle.desktop]
+CurrentMonitorScreenShot=none
+OpenWithoutScreenshot=none
 
 [services][systemsettings.desktop]
 _launch=Launch (7)
