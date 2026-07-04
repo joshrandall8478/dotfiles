@@ -36,6 +36,10 @@ plugin=org.kde.plasma.keyboardindicator
 immutability=1
 plugin=org.kde.plasma.weather
 
+[Containments][101][Applets][102][Applets][105][Configuration][Appearance]
+showTemperatureInBadge=true
+showTemperatureInCompactMode=true
+
 [Containments][101][Applets][102][Applets][105][Configuration][ConfigDialog]
 DialogHeight=630
 DialogWidth=810
@@ -157,8 +161,8 @@ immutability=1
 plugin=org.kde.plasma.windowlist
 
 [Containments][101][Applets][127][Configuration]
-popupHeight=253
-popupWidth=455
+popupHeight=32
+popupWidth=154
 
 [Containments][101][Applets][127][Configuration][ConfigDialog]
 DialogHeight=630
@@ -202,7 +206,7 @@ DialogWidth=720
 [Containments][4][Applets][7][Configuration][General]
 indicateAudioStreams=false
 interactiveMute=false
-launchers=applications:helium.desktop,applications:kitty.desktop,applications:org.kde.dolphin.desktop,applications:spotify.desktop,applications:discord.desktop,applications:signal.desktop,applications:steam.desktop,applications:code.desktop,applications:joplin-desktop.desktop,applications:com.shellyorg.shelly.desktop
+launchers=applications:vivaldi-stable.desktop,applications:kitty.desktop,applications:org.kde.dolphin.desktop,applications:spotify.desktop,applications:discord.desktop,applications:signal.desktop,applications:steam.desktop,applications:code.desktop,applications:joplin-desktop.desktop,applications:com.shellyorg.shelly.desktop
 
 [Containments][4][Applets][91]
 immutability=1
@@ -310,8 +314,8 @@ immutability=1
 plugin=org.kde.plasma.windowlist
 
 [Containments][63][Applets][129][Configuration]
-popupHeight=253
-popupWidth=455
+popupHeight=101
+popupWidth=154
 
 [Containments][63][Applets][64]
 immutability=1

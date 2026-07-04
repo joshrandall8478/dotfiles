@@ -358,10 +358,6 @@ _launch=Launch (5)\tMeta+Return
 [services][org.kde.dolphin.desktop]
 _launch=Launch (6)\tMeta+E
 
-[services][org.kde.spectacle.desktop]
-CurrentMonitorScreenShot=none
-OpenWithoutScreenshot=none
-
 [services][systemsettings.desktop]
 _launch=Launch (7)
 
