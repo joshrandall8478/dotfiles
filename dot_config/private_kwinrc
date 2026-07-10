@@ -24,6 +24,7 @@ Inactive=90
 [Plugins]
 blurEnabled=true
 desktopchangeosdEnabled=true
+gamecontrollerEnabled=false
 
 [Script-desktopchangeosd]
 PopupHideDelay=970

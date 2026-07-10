@@ -66,7 +66,6 @@ immutability=1
 plugin=org.kde.plasma.volume
 
 [Containments][101][Applets][102][Applets][109][Configuration][General]
-currentTab=streams
 migrated=true
 
 [Containments][101][Applets][102][Applets][110]
@@ -161,8 +160,8 @@ immutability=1
 plugin=org.kde.plasma.windowlist
 
 [Containments][101][Applets][127][Configuration]
-popupHeight=32
-popupWidth=154
+popupHeight=253
+popupWidth=857
 
 [Containments][101][Applets][127][Configuration][ConfigDialog]
 DialogHeight=630
@@ -179,8 +178,16 @@ DialogWidth=810
 [Containments][101][Applets][130][Configuration][General]
 actionsOrder=lockScreen,switchUser,suspendToRam,requestReboot,requestShutDown,requestLogout,requestLogoutScreen,suspendToDisk
 
+[Containments][101][Applets][131]
+immutability=1
+plugin=org.kde.plasma.appmenu
+
+[Containments][101][Applets][131][Configuration][ConfigDialog]
+DialogHeight=630
+DialogWidth=810
+
 [Containments][101][General]
-AppletOrder=121;127;124;120;122;119;102;130
+AppletOrder=121;127;131;124;120;122;119;102;130
 
 [Containments][4]
 activityId=
@@ -314,8 +321,12 @@ immutability=1
 plugin=org.kde.plasma.windowlist
 
 [Containments][63][Applets][129][Configuration]
-popupHeight=101
+popupHeight=67
 popupWidth=154
+
+[Containments][63][Applets][132]
+immutability=1
+plugin=org.kde.plasma.appmenu
 
 [Containments][63][Applets][64]
 immutability=1
@@ -351,7 +362,6 @@ popupHeight=587
 popupWidth=560
 
 [Containments][63][Applets][66][Configuration][General]
-currentTab=streams
 migrated=true
 
 [Containments][63][Applets][67]
@@ -376,7 +386,7 @@ showOnlyCurrentScreen=true
 showWindowIcons=true
 
 [Containments][63][General]
-AppletOrder=86;129;69;64;67;65;66
+AppletOrder=86;129;132;69;64;67;65;66
 
 [Containments][93]
 ItemGeometries-1422x800=
