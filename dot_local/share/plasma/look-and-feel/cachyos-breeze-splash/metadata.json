@@ -1,0 +1,18 @@
+{
+    "KPackageStructure": "Plasma/LookAndFeel/Splash",
+    "KPlugin": {
+        "Authors": [
+            {
+                "Name": "Funsponge"
+            }
+        ],
+        "Category": "Splash Screen",
+        "Description": "Custom CachyOS splash screen for KDE Plasma 6 based on KDE Breeze",
+        "Id": "cachyos-breeze-splash",
+        "License": "GPL-2.0",
+        "Name": "cachyos-breeze-splash",
+        "Website": "https://github.com/Funsponge/cachyos-breeze-splash"
+    },
+    "Keywords": "Desktop;Workspace;Appearance;Look and Feel;Splash;CachyOS;Breeze",
+    "X-Plasma-APIVersion": "2"
+}
