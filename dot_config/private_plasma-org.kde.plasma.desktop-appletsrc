@@ -160,8 +160,8 @@ immutability=1
 plugin=org.kde.plasma.windowlist
 
 [Containments][101][Applets][127][Configuration]
-popupHeight=253
-popupWidth=857
+popupHeight=67
+popupWidth=154
 
 [Containments][101][Applets][127][Configuration][ConfigDialog]
 DialogHeight=630
@@ -213,7 +213,7 @@ DialogWidth=720
 [Containments][4][Applets][7][Configuration][General]
 indicateAudioStreams=false
 interactiveMute=false
-launchers=applications:vivaldi-stable.desktop,applications:kitty.desktop,applications:org.kde.dolphin.desktop,applications:spotify.desktop,applications:discord.desktop,applications:signal.desktop,applications:steam.desktop,applications:code.desktop,applications:joplin-desktop.desktop,applications:com.shellyorg.shelly.desktop
+launchers=applications:vivaldi-stable.desktop,applications:kitty.desktop,applications:org.kde.dolphin.desktop,applications:spotify.desktop,applications:discord.desktop,applications:signal.desktop,applications:steam.desktop,applications:code.desktop,applications:joplin-desktop.desktop,applications:com.shellyorg.shelly.desktop,applications:org.mozilla.Thunderbird.desktop
 
 [Containments][4][Applets][91]
 immutability=1
@@ -321,7 +321,7 @@ immutability=1
 plugin=org.kde.plasma.windowlist
 
 [Containments][63][Applets][129][Configuration]
-popupHeight=67
+popupHeight=32
 popupWidth=154
 
 [Containments][63][Applets][132]
@@ -408,7 +408,7 @@ DialogHeight=728
 DialogWidth=1422
 
 [Containments][93][Wallpaper][org.kde.image][General]
-Image=/home/joshr/Downloads/wallhaven-8grlyj.jpg
+Image=file:///usr/share/wallpapers/cachyos-wallpapers/Metal.png
 SlidePaths=/home/joshr/.local/share/wallpapers/,/usr/share/wallpapers/
 
 [Containments][94]
@@ -428,7 +428,7 @@ DialogHeight=630
 DialogWidth=810
 
 [Containments][94][Wallpaper][org.kde.image][General]
-Image=/home/joshr/Downloads/wallhaven-8grlyj.jpg
+Image=file:///usr/share/wallpapers/cachyos-wallpapers/Metal.png
 SlidePaths=/home/joshr/.local/share/wallpapers/,/usr/share/wallpapers/
 
 [Containments][95]

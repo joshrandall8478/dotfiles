@@ -1,4 +1,4 @@
 [Greeter][Wallpaper][org.kde.image][General]
-Image=/home/joshr/Downloads/wallhaven-8grlyj.jpg
-PreviewImage=/home/joshr/Downloads/wallhaven-8grlyj.jpg
+Image=file:///home/joshr/.local/share/wallpapers/Sakura.jpg
+PreviewImage=file:///home/joshr/.local/share/wallpapers/Sakura.jpg
 SlidePaths=/home/joshr/.local/share/wallpapers/,/usr/share/wallpapers/

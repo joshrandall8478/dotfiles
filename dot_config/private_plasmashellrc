@@ -66,7 +66,7 @@ alignment=132
 floating=1
 floatingApplets=1
 panelLengthMode=1
-panelOpacity=0
+panelOpacity=2
 panelVisibility=2
 shell=org.kde.plasma.desktop
 
