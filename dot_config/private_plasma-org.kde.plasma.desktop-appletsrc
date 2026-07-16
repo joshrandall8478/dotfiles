@@ -126,7 +126,7 @@ popupHeight=458
 popupWidth=560
 
 [Containments][101][Applets][120][Configuration][Appearance]
-customDateFormat=ddd, MMMM dd
+customDateFormat=ddd, MMM dd
 dateDisplayFormat=BesideTime
 dateFormat=custom
 
