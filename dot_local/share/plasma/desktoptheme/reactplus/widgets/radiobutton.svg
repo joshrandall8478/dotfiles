@@ -1,0 +1,196 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!-- Created with Inkscape (http://www.inkscape.org/) -->
+
+<svg
+   width="31.999998"
+   height="32"
+   viewBox="0 0 31.999998 32"
+   version="1.1"
+   id="svg1"
+   inkscape:version="1.3.2 (091e20ef0f, 2023-11-25, custom)"
+   sodipodi:docname="radiobutton.svg"
+   xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
+   xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
+   xmlns="http://www.w3.org/2000/svg"
+   xmlns:svg="http://www.w3.org/2000/svg">
+  <sodipodi:namedview
+     id="namedview1"
+     pagecolor="#d1d1d1"
+     bordercolor="#111111"
+     borderopacity="1"
+     inkscape:showpageshadow="0"
+     inkscape:pageopacity="0"
+     inkscape:pagecheckerboard="1"
+     inkscape:deskcolor="#d1d1d1"
+     inkscape:document-units="px"
+     inkscape:zoom="8.3046525"
+     inkscape:cx="-8.8504606"
+     inkscape:cy="32.752725"
+     inkscape:current-layer="layer1"
+     showgrid="true"
+     showguides="true">
+    <inkscape:grid
+       id="grid1"
+       units="px"
+       originx="-106"
+       originy="-145"
+       spacingx="1"
+       spacingy="1"
+       empcolor="#0099e5"
+       empopacity="0.30196078"
+       color="#0099e5"
+       opacity="0.14902"
+       empspacing="5"
+       dotted="false"
+       gridanglex="30"
+       gridanglez="30"
+       visible="true" />
+    <sodipodi:guide
+       position="-21,-10"
+       orientation="1,0"
+       id="guide2"
+       inkscape:locked="false" />
+    <sodipodi:guide
+       position="-22,-3"
+       orientation="0,-1"
+       id="guide3"
+       inkscape:locked="false" />
+    <sodipodi:guide
+       position="-8,-7"
+       orientation="1,0"
+       id="guide4"
+       inkscape:locked="false" />
+    <sodipodi:guide
+       position="-5,-16"
+       orientation="0,-1"
+       id="guide5"
+       inkscape:locked="false" />
+  </sodipodi:namedview>
+  <defs
+     id="defs1">
+    <style
+       id="current-color-scheme"
+       type="text/css">
+          .ColorScheme-Text {
+          color:#181612;
+          }
+          .ColorScheme-Background{
+          color:#d4d0c8;
+          }
+          .ColorScheme-Highlight{
+          color:#3a6ea5;
+          }
+          .ColorScheme-ViewText {
+          color:#181612;
+          }
+          .ColorScheme-ViewBackground{
+          color:#ffffff;
+          }
+          .ColorScheme-ViewHover {
+          color:#a3c6ee;
+          }
+          .ColorScheme-ViewFocus{
+          color:#fafafa;
+          }
+          .ColorScheme-ButtonText {
+          color:#181612;
+          }
+          .ColorScheme-ButtonBackground{
+          color:#d4d0c8;
+          }
+          .ColorScheme-ButtonHover {
+          color:#84827d;
+          }
+          .ColorScheme-ButtonFocus{
+          color:#363e41;
+          }
+      </style>
+  </defs>
+  <g
+     inkscape:label="Layer 1"
+     inkscape:groupmode="layer"
+     id="layer1"
+     transform="translate(-105.99999,-145)">
+    <circle
+       id="hint-size"
+       cx="113.49999"
+       cy="152.5"
+       style="fill:#332f42;fill-opacity:1;fill-rule:evenodd;stroke-width:1.0625"
+       r="7.5" />
+    <g
+       id="normal">
+      <path
+         id="path6"
+         style="opacity:1;fill:currentColor;stroke-width:5;stroke-linecap:round;stroke-linejoin:round;stroke-opacity:0.799365;paint-order:stroke fill markers"
+         d="m 91.49999,180 a 6.5,6.5 0 0 0 -6.5,6.5 6.5,6.5 0 0 0 6.5,6.5 6.5,6.5 0 0 0 6.5,-6.5 6.5,6.5 0 0 0 -6.5,-6.5 z m 0,1 a 5.5,5.5 0 0 1 5.5,5.5 5.5,5.5 0 0 1 -5.5,5.5 5.5,5.5 0 0 1 -5.5,-5.5 5.5,5.5 0 0 1 5.5,-5.5 z"
+         class="ColorScheme-ViewFocus" />
+      <path
+         id="path1"
+         style="opacity:1;fill:currentColor;stroke-width:5;stroke-linecap:round;stroke-linejoin:round;stroke-opacity:0.799365;paint-order:stroke fill markers"
+         d="M 91.49999 180 A 6.5 6.5 0 0 0 84.99999 186.5 A 6.5 6.5 0 0 0 86.916006 191.08398 L 87.611318 190.38867 A 5.5 5.5 0 0 1 85.99999 186.5 A 5.5 5.5 0 0 1 91.49999 181 A 5.5 5.5 0 0 1 95.386709 182.61328 L 96.095693 181.9043 A 6.5 6.5 0 0 0 91.49999 180 z "
+         class="ColorScheme-ButtonFocus" />
+      <path
+         id="path3"
+         style="opacity:1;fill:currentColor;stroke-width:5;stroke-linecap:round;stroke-linejoin:round;stroke-opacity:0.799365;paint-order:stroke fill markers"
+         d="m 91.49999,181 a 5.5,5.5 0 0 0 -5.5,5.5 5.5,5.5 0 0 0 5.5,5.5 5.5,5.5 0 0 0 5.5,-5.5 5.5,5.5 0 0 0 -5.5,-5.5 z m 0,1 a 4.5,4.5 0 0 1 4.5,4.5 4.5,4.5 0 0 1 -4.5,4.5 4.5,4.5 0 0 1 -4.5,-4.5 4.5,4.5 0 0 1 4.5,-4.5 z"
+         class="ColorScheme-Background" />
+      <path
+         id="circle2"
+         style="opacity:1;fill:currentColor;stroke-width:5;stroke-linecap:round;stroke-linejoin:round;stroke-opacity:0.799365;paint-order:stroke fill markers"
+         d="M 91.49999 181 A 5.5 5.5 0 0 0 85.99999 186.5 A 5.5 5.5 0 0 0 87.621084 190.37891 L 88.318349 189.68164 A 4.5 4.5 0 0 1 86.99999 186.5 A 4.5 4.5 0 0 1 91.49999 182 A 4.5 4.5 0 0 1 94.679677 183.32031 L 95.388662 182.61133 A 5.5 5.5 0 0 0 91.49999 181 z "
+         class="ColorScheme-ButtonHover" />
+      <circle
+         style="opacity:1;fill:currentColor;stroke-width:5;stroke-linecap:round;stroke-linejoin:round;stroke-opacity:0.799365;paint-order:stroke fill markers"
+         id="circle3"
+         cx="91.499992"
+         cy="186.5"
+         r="4.5"
+         class="ColorScheme-ViewBackground" />
+    </g>
+    <circle
+       style="opacity:1;fill:currentColor;stroke-width:5;stroke-linecap:round;stroke-linejoin:round;stroke-opacity:0.799365;paint-order:stroke fill markers"
+       id="symbol"
+       cx="107.99999"
+       cy="190"
+       r="2.5"
+       class="ColorScheme-ViewText" />
+    <g
+       id="hover"
+       transform="translate(30.5)">
+      <path
+         id="path4"
+         style="opacity:1;fill:currentColor;stroke-width:5;stroke-linecap:round;stroke-linejoin:round;stroke-opacity:0.799365;paint-order:stroke fill markers"
+         d="m 91.49999,180 a 6.5,6.5 0 0 0 -6.5,6.5 6.5,6.5 0 0 0 6.5,6.5 6.5,6.5 0 0 0 6.5,-6.5 6.5,6.5 0 0 0 -6.5,-6.5 z m 0,1 a 5.5,5.5 0 0 1 5.5,5.5 5.5,5.5 0 0 1 -5.5,5.5 5.5,5.5 0 0 1 -5.5,-5.5 5.5,5.5 0 0 1 5.5,-5.5 z"
+         class="ColorScheme-ViewFocus" />
+      <path
+         id="path5"
+         style="opacity:1;fill:currentColor;stroke-width:5;stroke-linecap:round;stroke-linejoin:round;stroke-opacity:0.799365;paint-order:stroke fill markers"
+         d="m 91.49999,180 a 6.5,6.5 0 0 0 -6.5,6.5 6.5,6.5 0 0 0 1.916016,4.58398 l 0.695312,-0.69531 A 5.5,5.5 0 0 1 85.99999,186.5 a 5.5,5.5 0 0 1 5.5,-5.5 5.5,5.5 0 0 1 3.886719,1.61328 l 0.708984,-0.70898 A 6.5,6.5 0 0 0 91.49999,180 Z"
+         class="ColorScheme-ButtonFocus" />
+      <path
+         id="path7"
+         style="opacity:1;fill:currentColor;stroke-width:5;stroke-linecap:round;stroke-linejoin:round;stroke-opacity:0.799365;paint-order:stroke fill markers"
+         d="m 91.49999,181 a 5.5,5.5 0 0 0 -5.5,5.5 5.5,5.5 0 0 0 5.5,5.5 5.5,5.5 0 0 0 5.5,-5.5 5.5,5.5 0 0 0 -5.5,-5.5 z m 0,1 a 4.5,4.5 0 0 1 4.5,4.5 4.5,4.5 0 0 1 -4.5,4.5 4.5,4.5 0 0 1 -4.5,-4.5 4.5,4.5 0 0 1 4.5,-4.5 z"
+         class="ColorScheme-Background" />
+      <path
+         id="path8"
+         style="opacity:1;fill:currentColor;stroke-width:5;stroke-linecap:round;stroke-linejoin:round;stroke-opacity:0.799365;paint-order:stroke fill markers"
+         d="m 91.49999,181 a 5.5,5.5 0 0 0 -5.5,5.5 5.5,5.5 0 0 0 1.621094,3.87891 l 0.697265,-0.69727 A 4.5,4.5 0 0 1 86.99999,186.5 a 4.5,4.5 0 0 1 4.5,-4.5 4.5,4.5 0 0 1 3.179687,1.32031 l 0.708985,-0.70898 A 5.5,5.5 0 0 0 91.49999,181 Z"
+         class="ColorScheme-ButtonHover" />
+      <circle
+         style="opacity:1;fill:currentColor;stroke-width:5;stroke-linecap:round;stroke-linejoin:round;stroke-opacity:0.799365;paint-order:stroke fill markers"
+         id="circle8"
+         cx="91.499992"
+         cy="186.5"
+         r="4.5"
+         class="ColorScheme-ViewBackground" />
+      <circle
+         style="opacity:0.15;fill:currentColor;stroke-width:5;stroke-linecap:round;stroke-linejoin:round;stroke-opacity:0.799365;paint-order:stroke fill markers"
+         id="circle9"
+         cx="91.499992"
+         cy="186.5"
+         r="4.5"
+         class="ColorScheme-Highlight" />
+    </g>
+  </g>
+</svg>

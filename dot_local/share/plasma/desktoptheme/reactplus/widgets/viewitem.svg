@@ -1,0 +1,235 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!-- Created with Inkscape (http://www.inkscape.org/) -->
+
+<svg
+   width="35"
+   height="24.999998"
+   viewBox="0 0 35 24.999999"
+   version="1.1"
+   id="svg8"
+   inkscape:version="1.4.3 (0d15f75042, 2025-12-25)"
+   sodipodi:docname="viewitem.svg"
+   xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
+   xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
+   xmlns:xlink="http://www.w3.org/1999/xlink"
+   xmlns="http://www.w3.org/2000/svg"
+   xmlns:svg="http://www.w3.org/2000/svg"
+   xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+   xmlns:cc="http://creativecommons.org/ns#"
+   xmlns:dc="http://purl.org/dc/elements/1.1/">
+  <sodipodi:namedview
+     id="base"
+     pagecolor="#d1d1d1"
+     bordercolor="#666666"
+     borderopacity="1.0"
+     inkscape:pageopacity="0.0"
+     inkscape:pageshadow="2"
+     inkscape:zoom="13.566584"
+     inkscape:cx="25.172144"
+     inkscape:cy="17.211407"
+     inkscape:document-units="px"
+     inkscape:current-layer="layer1"
+     showgrid="true"
+     units="px"
+     inkscape:showpageshadow="false"
+     inkscape:pagecheckerboard="true"
+     fit-margin-top="5"
+     fit-margin-left="5"
+     fit-margin-right="5"
+     fit-margin-bottom="5"
+     inkscape:deskcolor="#d1d1d1">
+    <inkscape:grid
+       type="xygrid"
+       id="grid843"
+       originx="-4.4335937e-06"
+       originy="-8.3710941e-07"
+       spacingy="1"
+       spacingx="1"
+       units="px"
+       visible="true" />
+  </sodipodi:namedview>
+  <defs
+     id="defs2" />
+  <style
+     id="current-color-scheme"
+     type="text/css">
+    .ColorScheme-Text {
+    color:#31363b;
+    }
+    .ColorScheme-Background{
+    color:#eff0f1;
+    }
+    .ColorScheme-Highlight{
+    color:#eff0f1;
+    }
+    .ColorScheme-ViewText {
+    color:#31363b;
+    }
+    .ColorScheme-ViewBackground{
+    color:#fcfcfc;
+    }
+    .ColorScheme-ViewHover {
+    color:#3daee9;
+    }
+    .ColorScheme-ViewFocus{
+    color:#ffaee9;
+    }
+    .ColorScheme-ButtonText {
+    color:#31363b;
+    }
+    .ColorScheme-ButtonBackground{
+    color:#eff0f1;
+    }
+    .ColorScheme-ButtonHover {
+    color:#3daee9;
+    }
+    .ColorScheme-ButtonFocus{
+    color:#1d8ed9;
+    }
+  </style>
+  <metadata
+     id="metadata5">
+    <rdf:RDF>
+      <cc:Work
+         rdf:about="">
+        <dc:format>image/svg+xml</dc:format>
+        <dc:type
+           rdf:resource="http://purl.org/dc/dcmitype/StillImage" />
+      </cc:Work>
+    </rdf:RDF>
+  </metadata>
+  <g
+     id="layer1"
+     inkscape:groupmode="layer"
+     inkscape:label="Layer 1"
+     transform="translate(696.03571,-450.2518)">
+    <rect
+       style="opacity:0.08;fill:none;fill-opacity:1;fill-rule:evenodd;stroke:none;stroke-width:0.0212515;stroke-linecap:round;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1;paint-order:normal"
+       class="ColorScheme-Text"
+       id="normal-center"
+       width="5"
+       height="5"
+       x="-671.03571"
+       y="455.2518" />
+    <rect
+       y="470.2518"
+       x="-696.03571"
+       height="4.999999"
+       width="4.9999957"
+       id="selected-center"
+       class="ColorScheme-Background"
+       style="opacity:0.7;fill:#e6e6e6;fill-opacity:1;fill-rule:evenodd;stroke:none;stroke-width:0.00545313;stroke-linecap:round;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1;paint-order:normal" />
+    <use
+       x="0"
+       y="0"
+       xlink:href="#normal-center"
+       id="normal-top"
+       transform="translate(-3.3593778e-8,-4.9999997)" />
+    <use
+       x="0"
+       y="0"
+       xlink:href="#normal-center"
+       id="normal-bottom"
+       transform="translate(-4.4335938e-6,5.0000003)" />
+    <use
+       x="0"
+       y="0"
+       xlink:href="#normal-center"
+       id="normal-right"
+       transform="translate(5)" />
+    <use
+       x="0"
+       y="0"
+       xlink:href="#normal-center"
+       id="normal-left"
+       transform="translate(-5)" />
+    <use
+       x="0"
+       y="0"
+       xlink:href="#normal-center"
+       id="normal-topright"
+       transform="translate(4.9999956,-4.9999997)" />
+    <use
+       x="0"
+       y="0"
+       xlink:href="#normal-center"
+       id="normal-topleft"
+       transform="translate(-5.000004,-4.9999997)" />
+    <use
+       x="0"
+       y="0"
+       xlink:href="#normal-center"
+       id="normal-bottomright"
+       transform="translate(4.9999956,5.0000003)" />
+    <use
+       x="0"
+       y="0"
+       xlink:href="#normal-center"
+       id="normal-bottomleft"
+       transform="translate(-5.000004,5.0000003)" />
+    <rect
+       y="470.2518"
+       x="-676.03571"
+       height="4.999999"
+       width="4.9999957"
+       id="selected+hover-center"
+       class="ColorScheme-Background"
+       style="opacity:0.75;fill:currentColor;fill-opacity:1;fill-rule:evenodd;stroke:none;stroke-width:0.00545313;stroke-linecap:round;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1;paint-order:normal" />
+    <rect
+       y="455.2518"
+       x="-691.03571"
+       height="5"
+       width="5"
+       id="hover-center"
+       class="ColorScheme-Highlight"
+       style="opacity:0.35;fill:currentColor;fill-opacity:1;fill-rule:evenodd;stroke:none;stroke-width:0.00545314;stroke-linecap:round;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1;paint-order:normal" />
+    <use
+       x="0"
+       y="0"
+       xlink:href="#hover-center"
+       id="hover-topleft"
+       transform="translate(-5,-4.9999991)" />
+    <use
+       x="0"
+       y="0"
+       xlink:href="#hover-center"
+       id="hover-top"
+       transform="translate(0,-4.999999)" />
+    <use
+       x="0"
+       y="0"
+       xlink:href="#hover-center"
+       id="hover-topright"
+       transform="translate(5,-4.999999)" />
+    <use
+       x="0"
+       y="0"
+       xlink:href="#hover-center"
+       id="hover-left"
+       transform="translate(-5)" />
+    <use
+       x="0"
+       y="0"
+       xlink:href="#hover-center"
+       id="hover-right"
+       transform="translate(5)" />
+    <use
+       x="0"
+       y="0"
+       xlink:href="#hover-center"
+       id="hover-bottomleft"
+       transform="translate(-5,4.9999987)" />
+    <use
+       x="0"
+       y="0"
+       xlink:href="#hover-center"
+       id="hover-bottom"
+       transform="translate(-4.4335937e-6,4.9999991)" />
+    <use
+       x="0"
+       y="0"
+       xlink:href="#hover-center"
+       id="hover-bottomright"
+       transform="translate(4.9999956,4.9999991)" />
+  </g>
+</svg>

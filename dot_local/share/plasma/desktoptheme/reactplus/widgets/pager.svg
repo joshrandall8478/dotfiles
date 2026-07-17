@@ -1,0 +1,329 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!-- Created with Inkscape (http://www.inkscape.org/) -->
+
+<svg
+   id="svg2"
+   version="1.1"
+   viewBox="0 0 30.000064 51.999992"
+   width="30.000029"
+   height="51.999992"
+   inkscape:version="1.4.3 (0d15f75042, 2025-12-25)"
+   sodipodi:docname="pager.svg"
+   xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
+   xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
+   xmlns:xlink="http://www.w3.org/1999/xlink"
+   xmlns="http://www.w3.org/2000/svg"
+   xmlns:svg="http://www.w3.org/2000/svg"
+   xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+   xmlns:cc="http://creativecommons.org/ns#"
+   xmlns:dc="http://purl.org/dc/elements/1.1/">
+  <sodipodi:namedview
+     pagecolor="#d0d0d0"
+     bordercolor="#666666"
+     borderopacity="1"
+     objecttolerance="10"
+     gridtolerance="10"
+     guidetolerance="10"
+     inkscape:pageopacity="0"
+     inkscape:pageshadow="2"
+     inkscape:window-width="1396"
+     inkscape:window-height="787"
+     id="namedview7461"
+     showgrid="true"
+     inkscape:zoom="19.428019"
+     inkscape:cx="18.607147"
+     inkscape:cy="33.070793"
+     inkscape:window-x="130"
+     inkscape:window-y="167"
+     inkscape:window-maximized="0"
+     inkscape:current-layer="svg2"
+     inkscape:pagecheckerboard="true"
+     inkscape:showpageshadow="false"
+     fit-margin-top="10"
+     fit-margin-left="10"
+     fit-margin-right="10"
+     fit-margin-bottom="10"
+     inkscape:deskcolor="#d1d1d1">
+    <inkscape:grid
+       id="grid875"
+       type="xygrid"
+       originx="7.0000297"
+       originy="1.0000026"
+       spacingy="1"
+       spacingx="1"
+       units="px"
+       visible="true" />
+  </sodipodi:namedview>
+  <defs
+     id="defs4">
+    <style
+       id="current-color-scheme"
+       type="text/css">
+      .ColorScheme-Text {
+      }
+      .ColorScheme-Highlight {
+      }
+      .ColorScheme-Background{
+      }
+      .ColorScheme-ViewText {
+      }
+      .ColorScheme-ViewBackground{
+      }
+      .ColorScheme-ViewHover {
+      }
+      .ColorScheme-ViewFocus{
+      }
+      .ColorScheme-ButtonText {
+      }
+      .ColorScheme-ButtonBackground{
+      }
+      .ColorScheme-ButtonHover {
+      }
+      .ColorScheme-ButtonFocus{
+      }
+    </style>
+    <linearGradient
+       id="linearGradient8024"
+       inkscape:swatch="solid">
+      <stop
+         id="stop8026"
+         offset="0"
+         style="stop-color:#000000;stop-opacity:1;" />
+    </linearGradient>
+  </defs>
+  <metadata
+     id="metadata7">
+    <rdf:RDF>
+      <cc:Work
+         rdf:about="">
+        <dc:format>image/svg+xml</dc:format>
+        <dc:type
+           rdf:resource="http://purl.org/dc/dcmitype/StillImage" />
+      </cc:Work>
+    </rdf:RDF>
+  </metadata>
+  <rect
+     id="normal-center"
+     width="8"
+     x="11.000031"
+     y="10.999984"
+     height="8"
+     style="opacity:0.6;fill:currentColor;fill-opacity:1;fill-rule:evenodd"
+     class="ColorScheme-Background" />
+  <rect
+     id="active-center"
+     width="8"
+     x="11.000041"
+     y="21.999987"
+     height="8"
+     style="opacity:0.6;fill:currentColor;fill-opacity:1;fill-rule:evenodd"
+     class="ColorScheme-Background" />
+  <rect
+     id="normal-right"
+     width="8"
+     transform="rotate(90)"
+     x="10.999977"
+     y="-20.000053"
+     height="1.0000012"
+     style="opacity:1;fill:currentColor;fill-opacity:1;fill-rule:evenodd;stroke-width:1"
+     class="ColorScheme-ViewFocus" />
+  <rect
+     id="normal-topright"
+     width="1.0000012"
+     transform="rotate(90)"
+     x="9.9999838"
+     y="-20.000046"
+     height="1.0000012"
+     style="opacity:1;fill:currentColor;fill-opacity:1;fill-rule:evenodd;stroke-width:1"
+     class="ColorScheme-ButtonFocus" />
+  <rect
+     id="active-top"
+     width="8"
+     x="11.000041"
+     y="20.999985"
+     height="1.0000012"
+     style="opacity:1;fill:currentColor;fill-opacity:1;fill-rule:evenodd;stroke-width:1"
+     class="ColorScheme-ButtonFocus" />
+  <rect
+     id="active-topright"
+     width="1.0000012"
+     x="19.000044"
+     y="20.999985"
+     height="1.0000012"
+     style="opacity:1;fill:currentColor;fill-opacity:1;fill-rule:evenodd;stroke-width:1"
+     class="ColorScheme-ButtonFocus" />
+  <rect
+     id="hover-center"
+     width="8"
+     x="11.000031"
+     y="32.999996"
+     height="8"
+     style="opacity:0.4;fill:currentColor;fill-opacity:1;fill-rule:evenodd"
+     class="ColorScheme-Highlight" />
+  <rect
+     id="normal-left"
+     width="8"
+     transform="rotate(90)"
+     x="10.999994"
+     y="-11.000034"
+     height="1.0000012"
+     style="opacity:1;fill:currentColor;fill-opacity:1;fill-rule:evenodd;stroke-width:1"
+     class="ColorScheme-ButtonFocus" />
+  <rect
+     id="normal-top"
+     width="8"
+     transform="scale(-1)"
+     x="-19.000034"
+     y="-10.999985"
+     height="1.0000012"
+     style="opacity:1;fill:currentColor;fill-opacity:1;fill-rule:evenodd;stroke-width:1"
+     class="ColorScheme-ButtonFocus" />
+  <rect
+     id="normal-bottom"
+     width="8"
+     transform="scale(-1)"
+     x="-19.000034"
+     y="-19.999996"
+     height="1.0000012"
+     style="opacity:1;fill:currentColor;fill-opacity:1;fill-rule:evenodd;stroke-width:1"
+     class="ColorScheme-ViewFocus" />
+  <rect
+     id="normal-topleft"
+     width="1.0000012"
+     transform="rotate(90)"
+     x="9.9999838"
+     y="-11.000034"
+     height="1.0000012"
+     style="opacity:1;fill:currentColor;fill-opacity:1;fill-rule:evenodd;stroke-width:1"
+     class="ColorScheme-ButtonFocus" />
+  <rect
+     id="normal-bottomright"
+     width="1.0000012"
+     transform="rotate(90)"
+     x="18.999969"
+     y="-20.000048"
+     height="1.0000012"
+     style="opacity:1;fill:currentColor;fill-opacity:1;fill-rule:evenodd;stroke-width:1"
+     class="ColorScheme-ViewFocus" />
+  <rect
+     id="normal-bottomleft"
+     width="1.0000012"
+     transform="rotate(90)"
+     x="18.999994"
+     y="-11.000034"
+     height="1.0000012"
+     style="opacity:1;fill:currentColor;fill-opacity:1;fill-rule:evenodd;stroke-width:1"
+     class="ColorScheme-ButtonFocus" />
+  <use
+     x="0"
+     y="0"
+     xlink:href="#active-right"
+     id="active-bottom"
+     transform="rotate(90,15.00003,26.000008)"
+     style="opacity:1" />
+  <use
+     x="0"
+     y="0"
+     xlink:href="#active-top"
+     id="active-left"
+     transform="rotate(-90,15.000048,26)"
+     style="opacity:1" />
+  <rect
+     id="active-bottomright"
+     width="1.0000012"
+     x="19.000065"
+     y="30.000029"
+     height="1.0000012"
+     style="fill:currentColor;fill-opacity:1;fill-rule:evenodd;stroke-width:1"
+     class="ColorScheme-ViewFocus" />
+  <use
+     x="0"
+     y="0"
+     xlink:href="#active-topright"
+     id="active-bottomleft"
+     transform="translate(-9.0000229,9.0000019)"
+     style="opacity:1" />
+  <rect
+     id="hover-top"
+     width="8"
+     x="11.000034"
+     y="32.000011"
+     height="1.0000012"
+     style="opacity:1;fill:currentColor;fill-opacity:1;fill-rule:evenodd;stroke-width:1"
+     class="ColorScheme-ButtonFocus" />
+  <rect
+     id="hover-bottom"
+     width="8"
+     x="11.000044"
+     y="40.999981"
+     height="1.0000012"
+     style="opacity:1;fill:currentColor;fill-opacity:1;fill-rule:evenodd;stroke-width:1"
+     class="ColorScheme-ViewFocus" />
+  <rect
+     id="hover-right"
+     width="8"
+     x="33.000019"
+     y="-20.000031"
+     height="1.0000012"
+     style="opacity:1;fill:currentColor;fill-opacity:1;fill-rule:evenodd;stroke-width:1"
+     class="ColorScheme-ViewFocus"
+     transform="rotate(90)" />
+  <rect
+     id="hover-left"
+     width="8"
+     x="-41.018478"
+     y="10.000034"
+     height="1.0000012"
+     style="opacity:1;fill:currentColor;fill-opacity:1;fill-rule:evenodd;stroke-width:1"
+     class="ColorScheme-ButtonFocus"
+     transform="rotate(-90)" />
+  <rect
+     id="hover-topright"
+     width="1.0000012"
+     x="19.000046"
+     y="32.000042"
+     height="1.0000012"
+     style="opacity:1;fill:currentColor;fill-opacity:1;fill-rule:evenodd;stroke-width:1"
+     class="ColorScheme-ButtonFocus" />
+  <rect
+     id="hover-topleft"
+     width="1.0000012"
+     x="10.000034"
+     y="32.018475"
+     height="1.0000012"
+     style="opacity:1;fill:currentColor;fill-opacity:1;fill-rule:evenodd;stroke-width:1"
+     class="ColorScheme-ButtonFocus" />
+  <rect
+     id="hover-bottomright"
+     width="1.0000012"
+     x="19.000044"
+     y="41.000019"
+     height="1.0000012"
+     style="opacity:1;fill:currentColor;fill-opacity:1;fill-rule:evenodd;stroke-width:1"
+     class="ColorScheme-ViewFocus" />
+  <rect
+     id="hover-bottomleft"
+     width="1.0000012"
+     x="10.000043"
+     y="41.018478"
+     height="1.0000012"
+     style="opacity:1;fill:currentColor;fill-opacity:1;fill-rule:evenodd;stroke-width:1"
+     class="ColorScheme-ButtonFocus" />
+  <rect
+     id="active-topleft"
+     width="1.0000012"
+     x="10.00003"
+     y="20.999996"
+     height="1.0000012"
+     style="opacity:1;fill:currentColor;fill-opacity:1;fill-rule:evenodd;stroke-width:1"
+     class="ColorScheme-ButtonFocus" />
+  <rect
+     id="active-right"
+     width="8"
+     x="22.000008"
+     y="-20.000031"
+     height="1.0000012"
+     style="opacity:1;fill:currentColor;fill-opacity:1;fill-rule:evenodd;stroke-width:1"
+     class="ColorScheme-ViewFocus"
+     transform="rotate(90)" />
+</svg>

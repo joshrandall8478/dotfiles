@@ -1,0 +1,391 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!-- Created with Inkscape (http://www.inkscape.org/) -->
+
+<svg
+   width="47.999992"
+   height="25.000006"
+   viewBox="0 0 47.999991 25.000008"
+   version="1.1"
+   id="svg8"
+   inkscape:version="1.4.3 (0d15f75042, 2025-12-25)"
+   sodipodi:docname="scrollbar.svg"
+   xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
+   xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
+   xmlns:xlink="http://www.w3.org/1999/xlink"
+   xmlns="http://www.w3.org/2000/svg"
+   xmlns:svg="http://www.w3.org/2000/svg"
+   xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+   xmlns:cc="http://creativecommons.org/ns#"
+   xmlns:dc="http://purl.org/dc/elements/1.1/">
+  <sodipodi:namedview
+     id="base"
+     pagecolor="#d1d1d1"
+     bordercolor="#666666"
+     borderopacity="1.0"
+     inkscape:pageopacity="0"
+     inkscape:pageshadow="2"
+     inkscape:zoom="44.8"
+     inkscape:cx="38.738839"
+     inkscape:cy="4.921875"
+     inkscape:document-units="px"
+     inkscape:current-layer="layer1"
+     showgrid="true"
+     units="px"
+     inkscape:showpageshadow="false"
+     inkscape:pagecheckerboard="true"
+     fit-margin-top="5"
+     fit-margin-left="5"
+     fit-margin-right="5"
+     fit-margin-bottom="5"
+     inkscape:deskcolor="#d1d1d1">
+    <inkscape:grid
+       type="xygrid"
+       id="grid2538"
+       originx="-61.000009"
+       originy="-24.000001"
+       spacingy="1"
+       spacingx="1"
+       units="px"
+       visible="true" />
+  </sodipodi:namedview>
+  <defs
+     id="defs2">
+    <style
+       id="current-color-scheme"
+       type="text/css">
+          .ColorScheme-Text {
+          
+          }
+          .ColorScheme-Background{
+          
+          }
+          .ColorScheme-Highlight{
+          
+          }
+          .ColorScheme-ViewText {
+          
+          }
+          .ColorScheme-ViewBackground{
+          color:#fcfcfc;
+          }
+          .ColorScheme-ViewHover {
+          
+          }
+          .ColorScheme-ViewFocus{
+          
+          }
+          .ColorScheme-ButtonText {
+          
+          }
+          .ColorScheme-ButtonBackground{
+          
+          }
+          .ColorScheme-ButtonHover {
+          
+          }
+          .ColorScheme-ButtonFocus{
+          
+          }
+      </style>
+  </defs>
+  <metadata
+     id="metadata5">
+    <rdf:RDF>
+      <cc:Work
+         rdf:about="">
+        <dc:format>image/svg+xml</dc:format>
+        <dc:type
+           rdf:resource="http://purl.org/dc/dcmitype/StillImage" />
+      </cc:Work>
+    </rdf:RDF>
+  </metadata>
+  <g
+     inkscape:label="Layer 1"
+     inkscape:groupmode="layer"
+     id="layer1"
+     transform="translate(506.41095,-610.82892)">
+    <rect
+       id="background-vertical-hint-right-inset"
+       height="1"
+       style="opacity:1;fill:#008080;fill-opacity:1;fill-rule:evenodd;stroke-width:0.471403"
+       width="2.9999621"
+       x="-491.41095"
+       y="628.82892" />
+    <rect
+       id="background-vertical-hint-top-inset"
+       height="3.0000052"
+       style="opacity:1;fill:#008080;fill-opacity:1;fill-rule:evenodd;stroke-width:0.471403"
+       width="1"
+       x="-492.41095"
+       y="625.82892" />
+    <rect
+       id="background-vertical-hint-left-inset"
+       height="1"
+       style="opacity:1;fill:#008080;fill-opacity:1;fill-rule:evenodd;stroke-width:0.471402"
+       width="3.0000381"
+       x="-495.41098"
+       y="628.82892" />
+    <rect
+       id="background-vertical-hint-bottom-inset"
+       height="2.9999976"
+       style="opacity:1;fill:#008080;fill-opacity:1;fill-rule:evenodd;stroke-width:0.471403"
+       width="1"
+       x="-492.41095"
+       y="629.82892" />
+    <rect
+       y="610.82892"
+       x="-481.41095"
+       height="7.999999"
+       width="7.9999928"
+       id="hint-scrollbar-size"
+       style="opacity:0.25;fill:#008080;fill-opacity:1;fill-rule:evenodd;stroke:none;stroke-width:0.758934;stroke-linecap:round;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1;paint-order:normal" />
+    <rect
+       style="opacity:0.7;fill:currentColor;fill-opacity:1;fill-rule:evenodd;stroke:none;stroke-width:0.281478;stroke-linecap:butt;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:0.556098;paint-order:normal;shape-rendering:crispEdges"
+       class="ColorScheme-ButtonHover"
+       id="slider-center"
+       width="3"
+       height="3"
+       x="-476.41095"
+       y="629.82892" />
+    <rect
+       id="mouseover-slider-hint-right-inset"
+       height="1"
+       style="opacity:1;fill:#008080;fill-opacity:1;fill-rule:evenodd;stroke-width:0.471402"
+       width="2.9999926"
+       x="-491.41092"
+       y="618.82892" />
+    <rect
+       id="mouseover-slider-hint-top-inset"
+       height="3.0000024"
+       style="opacity:1;fill:#008080;fill-opacity:1;fill-rule:evenodd;stroke-width:0.471403"
+       width="0.99999934"
+       x="-492.41095"
+       y="615.82892" />
+    <rect
+       id="mouseover-slider-hint-left-inset"
+       height="1"
+       style="opacity:1;fill:#008080;fill-opacity:1;fill-rule:evenodd;stroke-width:0.471402"
+       width="3.0000381"
+       x="-495.41098"
+       y="618.82892" />
+    <rect
+       id="mouseover-slider-hint-bottom-inset"
+       height="2.9999967"
+       style="opacity:1;fill:#008080;fill-opacity:1;fill-rule:evenodd;stroke-width:0.471403"
+       width="0.99999934"
+       x="-492.41095"
+       y="619.82892" />
+    <rect
+       id="slider-hint-right-inset"
+       height="1"
+       style="opacity:1;fill:#008080;fill-opacity:1;fill-rule:evenodd;stroke-width:0.471402"
+       width="3.000015"
+       x="-501.41095"
+       y="618.82892" />
+    <rect
+       id="slider-hint-top-inset"
+       height="3.0000024"
+       style="opacity:1;fill:#008080;fill-opacity:1;fill-rule:evenodd;stroke-width:0.471403"
+       width="0.99999934"
+       x="-502.41095"
+       y="615.82892" />
+    <rect
+       id="slider-hint-left-inset"
+       height="1"
+       style="opacity:1;fill:#008080;fill-opacity:1;fill-rule:evenodd;stroke-width:0.471402"
+       width="3.0000393"
+       x="-505.41098"
+       y="618.82892" />
+    <rect
+       id="slider-hint-bottom-inset"
+       height="2.9999967"
+       style="opacity:1;fill:#008080;fill-opacity:1;fill-rule:evenodd;stroke-width:0.471403"
+       width="0.99999934"
+       x="-502.41095"
+       y="619.82892" />
+    <use
+       x="0"
+       y="0"
+       xlink:href="#background-vertical-topleft"
+       id="background-vertical-top"
+       transform="translate(3)" />
+    <use
+       x="0"
+       y="0"
+       xlink:href="#background-vertical-topleft"
+       id="background-vertical-topright"
+       transform="translate(5.9999897)" />
+    <use
+       x="0"
+       y="0"
+       xlink:href="#background-vertical-topleft"
+       id="background-vertical-left"
+       transform="translate(-1.03e-5,3)" />
+    <use
+       x="0"
+       y="0"
+       xlink:href="#background-vertical-topleft"
+       id="background-vertical-center"
+       transform="translate(2.9999897,3)" />
+    <use
+       x="0"
+       y="0"
+       xlink:href="#background-vertical-topleft"
+       id="background-vertical-right"
+       transform="translate(5.9999897,3)" />
+    <use
+       x="0"
+       y="0"
+       xlink:href="#background-vertical-topleft"
+       id="background-vertical-bottomleft"
+       transform="translate(-1.03e-5,6.0000015)" />
+    <use
+       x="0"
+       y="0"
+       xlink:href="#background-vertical-topleft"
+       id="background-vertical-bottom"
+       transform="translate(2.9999897,6.0000015)" />
+    <use
+       x="0"
+       y="0"
+       xlink:href="#background-vertical-topleft"
+       id="background-vertical-bottomright"
+       transform="translate(5.9999897,6.0000015)" />
+    <rect
+       style="opacity:0.75;fill:currentColor;fill-opacity:1;fill-rule:evenodd;stroke:none;stroke-width:0.281478;stroke-linecap:butt;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:0.556098;paint-order:normal;shape-rendering:crispEdges"
+       class="ColorScheme-Highlight"
+       id="mouseover-slider-center"
+       width="3"
+       height="3"
+       x="-464.41095"
+       y="629.82892" />
+    <use
+       x="0"
+       y="0"
+       xlink:href="#slider-center"
+       id="slider-topright"
+       transform="translate(2.999993,-3.0000021)" />
+    <use
+       x="0"
+       y="0"
+       xlink:href="#slider-center"
+       id="slider-right"
+       transform="translate(2.9999931)" />
+    <use
+       x="0"
+       y="0"
+       xlink:href="#slider-center"
+       id="slider-bottomright"
+       transform="translate(2.9999931,2.9999974)" />
+    <use
+       x="0"
+       y="0"
+       xlink:href="#slider-center"
+       id="slider-topleft"
+       transform="translate(-3,-3)" />
+    <use
+       x="0"
+       y="0"
+       xlink:href="#slider-center"
+       id="slider-left"
+       transform="translate(-3)" />
+    <use
+       x="0"
+       y="0"
+       xlink:href="#slider-center"
+       id="slider-bottomleft"
+       transform="translate(-3.0000072,2.9999974)" />
+    <use
+       x="0"
+       y="0"
+       xlink:href="#mouseover-slider-center"
+       id="mouseover-slider-topleft"
+       transform="translate(-3,-3)" />
+    <use
+       x="0"
+       y="0"
+       xlink:href="#mouseover-slider-center"
+       id="mouseover-slider-top"
+       transform="translate(-6.7230836e-6,-3.0000018)" />
+    <use
+       x="0"
+       y="0"
+       xlink:href="#mouseover-slider-center"
+       id="mouseover-slider-topright"
+       transform="translate(2.9999934,-3.0000018)" />
+    <use
+       x="0"
+       y="0"
+       xlink:href="#mouseover-slider-center"
+       id="mouseover-slider-right"
+       transform="translate(2.9999934)" />
+    <use
+       x="0"
+       y="0"
+       xlink:href="#mouseover-slider-center"
+       id="mouseover-slider-bottomright"
+       transform="translate(2.9999934,2.9999974)" />
+    <use
+       x="0"
+       y="0"
+       xlink:href="#mouseover-slider-center"
+       id="mouseover-slider-bottom"
+       transform="translate(-6.6e-6,2.9999974)" />
+    <use
+       x="0"
+       y="0"
+       xlink:href="#mouseover-slider-center"
+       id="mouseover-slider-bottomleft"
+       transform="translate(-3.0000068,2.9999974)" />
+    <use
+       x="0"
+       y="0"
+       xlink:href="#mouseover-slider-center"
+       id="mouseover-slider-left"
+       transform="translate(-3.0000068)" />
+    <use
+       x="0"
+       y="0"
+       xlink:href="#slider-center"
+       id="slider-top"
+       transform="translate(0,-3)" />
+    <use
+       x="0"
+       y="0"
+       xlink:href="#slider-center"
+       id="slider-bottom"
+       transform="translate(-7.0657349e-6,2.9999974)" />
+    <g
+       id="background-vertical-topleft">
+      <rect
+         style="opacity:0.25;fill:none;stroke-width:9.59998;stroke-linecap:square"
+         id="rect2"
+         width="1.9999932"
+         height="1.9999993"
+         x="-467.41095"
+         y="612.82892"
+         class="ColorScheme-Text" />
+      <rect
+         style="opacity:0.3;fill:currentColor;stroke-width:9.59998;stroke-linecap:square"
+         id="rect1"
+         width="0.99999321"
+         height="0.99999934"
+         x="-467.41095"
+         y="612.82892"
+         class="ColorScheme-Text" />
+      <use
+         x="0"
+         y="0"
+         xlink:href="#rect1"
+         id="use1"
+         transform="translate(1,0.99999994)" />
+    </g>
+    <rect
+       y="609.82892"
+       x="-454.41095"
+       height="7.999999"
+       width="7.9999928"
+       id="hint-tile-center"
+       style="opacity:0.25;fill:#008080;fill-opacity:1;fill-rule:evenodd;stroke:none;stroke-width:0.758934;stroke-linecap:round;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1;paint-order:normal" />
+  </g>
+</svg>

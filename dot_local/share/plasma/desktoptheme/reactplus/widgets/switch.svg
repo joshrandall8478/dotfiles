@@ -1,0 +1,357 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!-- Created with Inkscape (http://www.inkscape.org/) -->
+
+<svg
+   width="53.999992"
+   height="56.999996"
+   viewBox="0 0 53.999992 57"
+   version="1.1"
+   id="svg1"
+   inkscape:version="1.4.3 (0d15f75042, 2025-12-25)"
+   sodipodi:docname="switch.svg"
+   xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
+   xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
+   xmlns:xlink="http://www.w3.org/1999/xlink"
+   xmlns="http://www.w3.org/2000/svg"
+   xmlns:svg="http://www.w3.org/2000/svg">
+  <sodipodi:namedview
+     id="namedview1"
+     pagecolor="#d1d1d1"
+     bordercolor="#111111"
+     borderopacity="1"
+     inkscape:showpageshadow="0"
+     inkscape:pageopacity="0"
+     inkscape:pagecheckerboard="1"
+     inkscape:deskcolor="#d1d1d1"
+     inkscape:document-units="px"
+     inkscape:zoom="17.503479"
+     inkscape:cx="33.450492"
+     inkscape:cy="27.166027"
+     inkscape:current-layer="layer1"
+     showgrid="true"
+     showguides="true">
+    <inkscape:grid
+       id="grid1"
+       units="px"
+       originx="-37.000006"
+       originy="21"
+       spacingx="1"
+       spacingy="1"
+       empcolor="#0099e5"
+       empopacity="0.30196078"
+       color="#0099e5"
+       opacity="0.14902"
+       empspacing="5"
+       dotted="false"
+       gridanglex="30"
+       gridanglez="30"
+       visible="true" />
+    <sodipodi:guide
+       position="-47.000008,-1"
+       orientation="1,0"
+       id="guide15"
+       inkscape:locked="false" />
+    <sodipodi:guide
+       position="-31.000008,0"
+       orientation="1,0"
+       id="guide16"
+       inkscape:locked="false" />
+    <sodipodi:guide
+       position="-34.459554,11"
+       orientation="0,-1"
+       id="guide17"
+       inkscape:locked="false" />
+    <sodipodi:guide
+       position="-35.000008,-5"
+       orientation="0,-1"
+       id="guide18"
+       inkscape:locked="false" />
+  </sodipodi:namedview>
+  <defs
+     id="defs1">
+    <style
+       id="current-color-scheme"
+       type="text/css">
+          .ColorScheme-Text {
+          color:#181612;
+          }
+          .ColorScheme-Background{
+          color:#d4d0c8;
+          }
+          .ColorScheme-Highlight{
+          color:#3a6ea5;
+          }
+          .ColorScheme-ViewText {
+          color:#181612;
+          }
+          .ColorScheme-ViewBackground{
+          color:#ffffff;
+          }
+          .ColorScheme-ViewHover {
+          color:#a3c6ee;
+          }
+          .ColorScheme-ViewFocus{
+          color:#fafafa;
+          }
+          .ColorScheme-ButtonText {
+          color:#181612;
+          }
+          .ColorScheme-ButtonBackground{
+          color:#d4d0c8;
+          }
+          .ColorScheme-ButtonHover {
+          color:#84827d;
+          }
+          .ColorScheme-ButtonFocus{
+          color:#363e41;
+          }
+      </style>
+  </defs>
+  <g
+     inkscape:label="Layer 1"
+     inkscape:groupmode="layer"
+     id="layer1"
+     transform="translate(-37.000006,20.999996)">
+    <rect
+       style="opacity:0.5;fill:#008080;stroke-width:145.989;stroke-linecap:round"
+       id="hint-bar-size"
+       width="36"
+       height="16"
+       x="39"
+       y="-20.999996" />
+    <use
+       x="0"
+       y="0"
+       xlink:href="#handle"
+       id="handle-hover"
+       transform="translate(18)" />
+    <use
+       x="0"
+       y="0"
+       xlink:href="#handle"
+       id="handle-pressed"
+       transform="translate(36)" />
+    <g
+       id="inactive-center">
+      <rect
+         style="fill:none;fill-opacity:1;stroke:none;stroke-width:1;paint-order:stroke fill markers"
+         id="rect11"
+         width="8"
+         height="16.000002"
+         x="46"
+         y="2.9572529e-08" />
+      <rect
+         style="fill:currentColor;fill-opacity:0.85;stroke:none;stroke-width:1;paint-order:stroke fill markers"
+         id="rect7"
+         width="8"
+         height="1"
+         x="45.999996"
+         y="10.000002"
+         class="ColorScheme-ViewFocus" />
+      <rect
+         style="fill:currentColor;fill-opacity:1;stroke:none;stroke-width:1;paint-order:stroke fill markers"
+         id="rect1"
+         width="8"
+         height="1"
+         x="46"
+         y="5.0000005"
+         class="ColorScheme-ButtonFocus" />
+      <rect
+         style="fill:currentColor;fill-opacity:0.4;stroke:none;stroke-width:0.999996;paint-order:stroke fill markers"
+         id="rect5"
+         width="7.9999986"
+         height="1.0000017"
+         x="46"
+         y="6.0000005"
+         class="ColorScheme-ButtonHover" />
+    </g>
+    <g
+       id="active-center"
+       transform="translate(29)">
+      <rect
+         style="fill:none;fill-opacity:1;stroke:none;stroke-width:1;paint-order:stroke fill markers"
+         id="rect28"
+         width="8"
+         height="16.000002"
+         x="46"
+         y="2.9572529e-08" />
+      <rect
+         style="fill:currentColor;fill-opacity:1;stroke:none;stroke-width:0.999997;paint-order:stroke fill markers;opacity:0.9"
+         id="rect31"
+         width="8"
+         height="4.0000014"
+         x="46"
+         y="6.0000005"
+         class="ColorScheme-Highlight" />
+    </g>
+    <g
+       id="active-left"
+       transform="translate(21)">
+      <rect
+         style="fill:none;fill-opacity:1;stroke:none;stroke-width:1;paint-order:stroke fill markers"
+         id="rect33"
+         width="8"
+         height="16.000002"
+         x="46"
+         y="2.9572529e-08" />
+      <rect
+         style="opacity:0.9;fill:currentColor;fill-opacity:1;stroke:none;stroke-width:0.999997;paint-order:stroke fill markers"
+         id="rect35"
+         width="7.9999981"
+         height="4.0000014"
+         x="46"
+         y="6.0000005"
+         class="ColorScheme-Highlight" />
+    </g>
+    <g
+       id="active-right"
+       transform="translate(37)">
+      <rect
+         style="fill:none;fill-opacity:1;stroke:none;stroke-width:1;paint-order:stroke fill markers"
+         id="rect36"
+         width="8"
+         height="16.000002"
+         x="46"
+         y="2.9572529e-08" />
+      <rect
+         style="fill:currentColor;fill-opacity:1;stroke:none;stroke-width:0.999997;paint-order:stroke fill markers;opacity:0.9"
+         id="rect39"
+         width="7"
+         height="4.0000019"
+         x="46"
+         y="6"
+         class="ColorScheme-Highlight" />
+    </g>
+    <g
+       id="inactive-right"
+       transform="translate(8)">
+      <rect
+         style="fill:none;fill-opacity:1;stroke:none;stroke-width:1;paint-order:stroke fill markers"
+         id="rect2"
+         width="8"
+         height="16.000002"
+         x="46"
+         y="2.9572529e-08" />
+      <rect
+         style="fill:currentColor;fill-opacity:0.85;stroke:none;stroke-width:1;paint-order:stroke fill markers"
+         id="rect3"
+         width="8"
+         height="1"
+         x="46"
+         y="10.000002"
+         class="ColorScheme-ViewFocus" />
+      <rect
+         style="fill:currentColor;fill-opacity:1;stroke:none;stroke-width:1;paint-order:stroke fill markers"
+         id="rect4"
+         width="6.9999986"
+         height="1"
+         x="46"
+         y="5.0000005"
+         class="ColorScheme-ButtonFocus" />
+      <rect
+         style="fill:currentColor;fill-opacity:0.4;stroke:none;stroke-width:0.999996;paint-order:stroke fill markers"
+         id="rect6"
+         width="7"
+         height="1.0000017"
+         x="46"
+         y="6.0000005"
+         class="ColorScheme-ButtonHover" />
+      <rect
+         style="fill:currentColor;fill-opacity:0.85;stroke:none;stroke-width:0.999995;paint-order:stroke fill markers"
+         id="rect8"
+         width="1.0000014"
+         height="5.0000014"
+         x="53"
+         y="5.0000005"
+         class="ColorScheme-ViewFocus" />
+    </g>
+    <g
+       id="inactive-left"
+       transform="translate(-8.0000016)">
+      <rect
+         style="fill:none;fill-opacity:1;stroke:none;stroke-width:1;paint-order:stroke fill markers"
+         id="rect9"
+         width="8"
+         height="16.000002"
+         x="46"
+         y="2.9572529e-08" />
+      <rect
+         style="fill:currentColor;fill-opacity:0.85;stroke:none;stroke-width:1;paint-order:stroke fill markers"
+         id="rect10"
+         width="8"
+         height="1"
+         x="46"
+         y="10.000002"
+         class="ColorScheme-ViewFocus" />
+      <rect
+         style="fill:currentColor;fill-opacity:1;stroke:none;stroke-width:1;paint-order:stroke fill markers"
+         id="rect12"
+         width="6.9999986"
+         height="1"
+         x="47"
+         y="5.0000005"
+         class="ColorScheme-ButtonFocus" />
+      <rect
+         style="fill:currentColor;fill-opacity:0.4;stroke:none;stroke-width:0.999996;paint-order:stroke fill markers"
+         id="rect13"
+         width="7.0000014"
+         height="1.0000017"
+         x="47"
+         y="6.0000005"
+         class="ColorScheme-ButtonHover" />
+      <rect
+         style="opacity:1;fill:currentColor;fill-opacity:1;stroke:none;stroke-width:0.999995;paint-order:stroke fill markers"
+         id="rect14"
+         width="1.0000014"
+         height="5.0000014"
+         x="46"
+         y="5.0000005"
+         class="ColorScheme-ButtonFocus" />
+    </g>
+    <g
+       id="handle"
+       transform="matrix(1.125,0,0,1.125,48.25,-10.125003)"
+       style="stroke-width:0.888889">
+      <path
+         id="path18"
+         style="opacity:1;fill:currentColor;stroke-width:4.44445;stroke-linecap:round;stroke-linejoin:round;stroke-opacity:0.799365;paint-order:stroke fill markers"
+         d="m -2.0000011,25.000004 a 8,8 0 0 0 -7.9999999,8 8,8 0 0 0 7.9999999,8 8,8 0 0 0 8,-8 8,8 0 0 0 -8,-8 z m 0,1 a 7,7 0 0 1 7,7 7,7 0 0 1 -7,7 7,7 0 0 1 -7,-7 7,7 0 0 1 7,-7 z"
+         class="ColorScheme-ButtonHover" />
+      <path
+         id="path14"
+         style="opacity:1;fill:currentColor;stroke-width:4.44445;stroke-linecap:round;stroke-linejoin:round;stroke-opacity:0.799365;paint-order:stroke fill markers"
+         class="ColorScheme-ViewFocus"
+         d="m -1.9999952,25.000006 a 8,8 0 0 0 -8,8 8,8 0 0 0 2.3578125,5.642188 l 0.69375,-0.69375 a 7,7 0 0 1 -2.0515625,-4.948438 7,7 0 0 0 2.0625,4.9375 l 0.6953125,-0.695312 a 6,6 0 0 1 -1.7578125,-4.242188 6,6 0 0 1 6,-6 6,6 0 0 1 4.2421875,1.757813 l 0.7078125,-0.707813 0.70625,-0.70625 a 8,8 0 0 0 -5.65625,-2.34375 z m -0.965625,1.070313 a 7,7 0 0 0 -0.2796875,0.05469 7,7 0 0 1 0.2796875,-0.05469 z m -0.921875,0.19375 a 7,7 0 0 0 -0.3828125,0.129687 7,7 0 0 1 0.3828125,-0.129687 z m -0.909375,0.328125 a 7,7 0 0 0 -0.3578125,0.175 7,7 0 0 1 0.3578125,-0.175 z m -0.8515625,0.44375 a 7,7 0 0 0 -0.3515625,0.235937 7,7 0 0 1 0.3515625,-0.235937 z m -0.7734375,0.551562 a 7,7 0 0 0 -0.328125,0.2875 7,7 0 0 1 0.328125,-0.2875 z m -0.703125,0.6625 a 7,7 0 0 0 -0.2875,0.328125 7,7 0 0 1 0.2875,-0.328125 z m -0.603125,0.75 a 7,7 0 0 0 -0.2359375,0.351563 7,7 0 0 1 0.2359375,-0.351563 z m -0.5046875,0.845313 a 7,7 0 0 0 -0.175,0.357812 7,7 0 0 1 0.175,-0.357812 z m -0.3734375,0.884375 a 7,7 0 0 0 -0.1296875,0.382812 7,7 0 0 1 0.1296875,-0.382812 z m -0.26875,1.025 a 7,7 0 0 0 -0.054687,0.279687 7,7 0 0 1 0.054687,-0.279687 z" />
+      <path
+         id="circle15"
+         style="opacity:1;fill:currentColor;stroke-width:4.44445;stroke-linecap:round;stroke-linejoin:round;stroke-opacity:0.799365;paint-order:stroke fill markers"
+         d="m 2.9492247,28.050785 -0.7070312,0.707032 a 6,6 0 0 1 1.7578125,4.242187 6,6 0 0 1 -6,6 6,6 0 0 1 -4.2421875,-1.757812 l -0.6953125,0.695312 a 7,7 0 0 0 4.9375,2.0625 7,7 0 0 0 7,-7 7,7 0 0 0 -2.0507813,-4.949219 z"
+         class="ColorScheme-ButtonHover" />
+      <circle
+         style="opacity:1;fill:currentColor;stroke-width:4.44444;stroke-linecap:round;stroke-linejoin:round;stroke-opacity:0.799365;paint-order:stroke fill markers"
+         id="circle20"
+         cx="-2.0000019"
+         cy="33"
+         r="7"
+         class="ColorScheme-Background" />
+    </g>
+    <g
+       id="handle-shadow">
+      <ellipse
+         style="opacity:0.05;fill:#000000;stroke-width:4.99999;stroke-linecap:round;stroke-linejoin:round;stroke-opacity:0.799365;paint-order:stroke fill markers"
+         id="circle23"
+         cx="102"
+         cy="-9.4999971"
+         rx="9.999999"
+         ry="10" />
+      <ellipse
+         style="opacity:0.8;fill:currentColor;stroke-width:4.99999;stroke-linecap:round;stroke-linejoin:round;stroke-opacity:0.799365;paint-order:stroke fill markers"
+         id="circle22"
+         cx="102"
+         cy="-9.4999971"
+         rx="9.499999"
+         ry="9.5"
+         class="ColorScheme-ButtonFocus" />
+    </g>
+  </g>
+</svg>
