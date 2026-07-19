@@ -20,7 +20,7 @@ immutability=1
 lastScreen=-1
 location=0
 plugin=org.kde.plasma.systemtray
-popupHeight=553
+popupHeight=556
 popupWidth=459
 wallpaperplugin=org.kde.image
 
@@ -115,15 +115,15 @@ plugin=org.kde.plasma.mediacontroller
 
 [Containments][101][Applets][119][Configuration]
 popupHeight=312
-popupWidth=493
+popupWidth=487
 
 [Containments][101][Applets][120]
 immutability=1
 plugin=org.kde.plasma.digitalclock
 
 [Containments][101][Applets][120][Configuration]
-popupHeight=458
-popupWidth=560
+popupHeight=469
+popupWidth=570
 
 [Containments][101][Applets][120][Configuration][Appearance]
 customDateFormat=ddd, MMM dd
@@ -160,8 +160,8 @@ immutability=1
 plugin=org.kde.plasma.windowlist
 
 [Containments][101][Applets][127][Configuration]
-popupHeight=67
-popupWidth=154
+popupHeight=253
+popupWidth=1194
 
 [Containments][101][Applets][127][Configuration][ConfigDialog]
 DialogHeight=630
@@ -178,16 +178,8 @@ DialogWidth=810
 [Containments][101][Applets][130][Configuration][General]
 actionsOrder=lockScreen,switchUser,suspendToRam,requestReboot,requestShutDown,requestLogout,requestLogoutScreen,suspendToDisk
 
-[Containments][101][Applets][131]
-immutability=1
-plugin=org.kde.plasma.appmenu
-
-[Containments][101][Applets][131][Configuration][ConfigDialog]
-DialogHeight=630
-DialogWidth=810
-
 [Containments][101][General]
-AppletOrder=121;127;131;124;120;122;119;102;130
+AppletOrder=121;127;124;120;122;119;102;130
 
 [Containments][4]
 activityId=
@@ -213,15 +205,15 @@ DialogWidth=720
 [Containments][4][Applets][7][Configuration][General]
 indicateAudioStreams=false
 interactiveMute=false
-launchers=applications:vivaldi-stable.desktop,applications:kitty.desktop,applications:org.kde.dolphin.desktop,applications:spotify.desktop,applications:discord.desktop,applications:signal.desktop,applications:steam.desktop,applications:code.desktop,applications:joplin-desktop.desktop,applications:com.shellyorg.shelly.desktop,applications:org.mozilla.Thunderbird.desktop
+launchers=applications:vivaldi-stable.desktop,applications:kitty.desktop,applications:org.kde.dolphin.desktop,applications:spotify.desktop,applications:discord.desktop,applications:signal.desktop,applications:steam.desktop,applications:code.desktop,applications:net.cozic.joplin_desktop.desktop,applications:com.shellyorg.shelly.desktop,applications:org.mozilla.Thunderbird.desktop,applications:systemsettings.desktop
 
 [Containments][4][Applets][91]
 immutability=1
 plugin=org.kde.plasma.kickoff
 
 [Containments][4][Applets][91][Configuration]
-popupHeight=560
-popupWidth=998
+popupHeight=556
+popupWidth=994
 
 [Containments][4][Applets][91][Configuration][ConfigDialog]
 DialogHeight=540
@@ -321,20 +313,16 @@ immutability=1
 plugin=org.kde.plasma.windowlist
 
 [Containments][63][Applets][129][Configuration]
-popupHeight=32
-popupWidth=154
-
-[Containments][63][Applets][132]
-immutability=1
-plugin=org.kde.plasma.appmenu
+popupHeight=253
+popupWidth=1194
 
 [Containments][63][Applets][64]
 immutability=1
 plugin=org.kde.plasma.digitalclock
 
 [Containments][63][Applets][64][Configuration]
-popupHeight=459
-popupWidth=560
+popupHeight=471
+popupWidth=570
 
 [Containments][63][Applets][64][Configuration][Appearance]
 customDateFormat=ddd, MMM d
@@ -350,16 +338,16 @@ immutability=1
 plugin=org.kde.plasma.mediacontroller
 
 [Containments][63][Applets][65][Configuration]
-popupHeight=257
-popupWidth=390
+popupHeight=264
+popupWidth=394
 
 [Containments][63][Applets][66]
 immutability=1
 plugin=org.kde.plasma.volume
 
 [Containments][63][Applets][66][Configuration]
-popupHeight=587
-popupWidth=560
+popupHeight=592
+popupWidth=556
 
 [Containments][63][Applets][66][Configuration][General]
 migrated=true
@@ -386,7 +374,7 @@ showOnlyCurrentScreen=true
 showWindowIcons=true
 
 [Containments][63][General]
-AppletOrder=86;129;132;69;64;67;65;66
+AppletOrder=86;129;69;64;67;65;66
 
 [Containments][93]
 ItemGeometries-1422x800=

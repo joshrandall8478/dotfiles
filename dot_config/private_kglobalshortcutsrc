@@ -9,6 +9,10 @@ Switch to Last-Used Keyboard Layout=Meta+Alt+L,Meta+Alt+L,Switch to Last-Used Ke
 Switch to Next Keyboard Layout=Meta+Alt+K,Meta+Alt+K,Switch to Next Keyboard Layout
 _k_friendly_name=Keyboard Layout Switcher
 
+[com.anthropic.Claude]
+E60481CCC815301A15622807E6450102-Ctrl+Alt+Space=Ctrl+Alt+Space,Ctrl+Alt+Space,Claude shortcut: Ctrl+Alt+Space
+_k_friendly_name=Claude
+
 [com.brave.Browser]
 2C0EA47848E4F73B3EC36F4E8F7A25E5-autofill_card=none,none,Autofill the last used card for the current website
 2C0EA47848E4F73B3EC36F4E8F7A25E5-autofill_identity=none,none,Autofill the last used identity for the current website
