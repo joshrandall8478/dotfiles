@@ -20,7 +20,7 @@ immutability=1
 lastScreen=-1
 location=0
 plugin=org.kde.plasma.systemtray
-popupHeight=556
+popupHeight=557
 popupWidth=459
 wallpaperplugin=org.kde.image
 
@@ -114,7 +114,7 @@ immutability=1
 plugin=org.kde.plasma.mediacontroller
 
 [Containments][101][Applets][119][Configuration]
-popupHeight=312
+popupHeight=313
 popupWidth=487
 
 [Containments][101][Applets][120]
@@ -122,7 +122,7 @@ immutability=1
 plugin=org.kde.plasma.digitalclock
 
 [Containments][101][Applets][120][Configuration]
-popupHeight=469
+popupHeight=470
 popupWidth=570
 
 [Containments][101][Applets][120][Configuration][Appearance]
@@ -212,8 +212,8 @@ immutability=1
 plugin=org.kde.plasma.kickoff
 
 [Containments][4][Applets][91][Configuration]
-popupHeight=556
-popupWidth=994
+popupHeight=558
+popupWidth=996
 
 [Containments][4][Applets][91][Configuration][ConfigDialog]
 DialogHeight=540
@@ -313,15 +313,15 @@ immutability=1
 plugin=org.kde.plasma.windowlist
 
 [Containments][63][Applets][129][Configuration]
-popupHeight=253
-popupWidth=1194
+popupHeight=67
+popupWidth=154
 
 [Containments][63][Applets][64]
 immutability=1
 plugin=org.kde.plasma.digitalclock
 
 [Containments][63][Applets][64][Configuration]
-popupHeight=471
+popupHeight=474
 popupWidth=570
 
 [Containments][63][Applets][64][Configuration][Appearance]
@@ -338,7 +338,7 @@ immutability=1
 plugin=org.kde.plasma.mediacontroller
 
 [Containments][63][Applets][65][Configuration]
-popupHeight=264
+popupHeight=266
 popupWidth=394
 
 [Containments][63][Applets][66]
@@ -346,7 +346,7 @@ immutability=1
 plugin=org.kde.plasma.volume
 
 [Containments][63][Applets][66][Configuration]
-popupHeight=592
+popupHeight=596
 popupWidth=556
 
 [Containments][63][Applets][66][Configuration][General]
@@ -392,11 +392,11 @@ plugin=org.kde.plasma.folder
 wallpaperplugin=org.kde.image
 
 [Containments][93][ConfigDialog]
-DialogHeight=728
-DialogWidth=1422
+DialogHeight=1380
+DialogWidth=2560
 
 [Containments][93][Wallpaper][org.kde.image][General]
-Image=file:///usr/share/wallpapers/cachyos-wallpapers/Metal.png
+Image=file:///home/joshr/.local/share/wallpapers/Anime/Yor.jpg
 SlidePaths=/home/joshr/.local/share/wallpapers/,/usr/share/wallpapers/
 
 [Containments][94]
@@ -416,7 +416,7 @@ DialogHeight=630
 DialogWidth=810
 
 [Containments][94][Wallpaper][org.kde.image][General]
-Image=file:///usr/share/wallpapers/cachyos-wallpapers/Metal.png
+Image=file:///home/joshr/.local/share/wallpapers/Anime/Okarunning.jpg
 SlidePaths=/home/joshr/.local/share/wallpapers/,/usr/share/wallpapers/
 
 [Containments][95]
