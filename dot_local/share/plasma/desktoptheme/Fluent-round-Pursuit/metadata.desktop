@@ -1,0 +1,28 @@
+[Desktop Entry]
+Name=Fluent-round-Pursuit
+Comment=Fluent theme for plasma. Pursuit modifications.
+
+X-KDE-PluginInfo-Author=Joshua Randall
+X-KDE-PluginInfo-Email=josh@joshrandall.net
+X-KDE-PluginInfo-Name=Fluent-round-Pursuit
+X-KDE-PluginInfo-Version=5.78.0
+X-KDE-PluginInfo-Website=https://plasma.kde.org
+X-KDE-PluginInfo-Category=
+X-KDE-PluginInfo-License=LGPL
+X-KDE-PluginInfo-EnabledByDefault=true
+X-Plasma-API=5.0
+
+[Wallpaper]
+defaultWallpaperTheme=Fluent
+defaultFileSuffix=.png
+defaultWidth=3840
+defaultHeight=2160
+
+[ContrastEffect]
+enabled=false
+contrast=0.2
+intensity=1.4
+saturation=1
+
+[AdaptiveTransparency]
+enabled=true
