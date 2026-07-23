@@ -20,7 +20,7 @@ immutability=1
 lastScreen=-1
 location=0
 plugin=org.kde.plasma.systemtray
-popupHeight=557
+popupHeight=558
 popupWidth=459
 wallpaperplugin=org.kde.image
 
@@ -114,7 +114,7 @@ immutability=1
 plugin=org.kde.plasma.mediacontroller
 
 [Containments][101][Applets][119][Configuration]
-popupHeight=313
+popupHeight=314
 popupWidth=487
 
 [Containments][101][Applets][120]
@@ -160,8 +160,8 @@ immutability=1
 plugin=org.kde.plasma.windowlist
 
 [Containments][101][Applets][127][Configuration]
-popupHeight=253
-popupWidth=1194
+popupHeight=67
+popupWidth=154
 
 [Containments][101][Applets][127][Configuration][ConfigDialog]
 DialogHeight=630
@@ -212,8 +212,8 @@ immutability=1
 plugin=org.kde.plasma.kickoff
 
 [Containments][4][Applets][91][Configuration]
-popupHeight=558
-popupWidth=996
+popupHeight=526
+popupWidth=1147
 
 [Containments][4][Applets][91][Configuration][ConfigDialog]
 DialogHeight=540
@@ -222,7 +222,7 @@ DialogWidth=720
 [Containments][4][Applets][91][Configuration][General]
 applicationsDisplay=0
 favoritesPortedToKAstats=true
-icon=org.cachyos.hello
+icon=/home/joshr/.local/share/icons/j-contrast.svg
 paneSwap=true
 primaryActions=3
 systemFavorites=lock-screen\\,logout\\,save-session\\,switch-user\\,suspend\\,hibernate\\,reboot\\,shutdown
@@ -313,8 +313,8 @@ immutability=1
 plugin=org.kde.plasma.windowlist
 
 [Containments][63][Applets][129][Configuration]
-popupHeight=67
-popupWidth=154
+popupHeight=32
+popupWidth=83
 
 [Containments][63][Applets][64]
 immutability=1
@@ -346,10 +346,11 @@ immutability=1
 plugin=org.kde.plasma.volume
 
 [Containments][63][Applets][66][Configuration]
-popupHeight=596
+popupHeight=598
 popupWidth=556
 
 [Containments][63][Applets][66][Configuration][General]
+currentTab=streams
 migrated=true
 
 [Containments][63][Applets][67]
@@ -416,7 +417,7 @@ DialogHeight=630
 DialogWidth=810
 
 [Containments][94][Wallpaper][org.kde.image][General]
-Image=file:///home/joshr/.local/share/wallpapers/Anime/Okarunning.jpg
+Image=file:///home/joshr/.local/share/wallpapers/Anime/Yor.jpg
 SlidePaths=/home/joshr/.local/share/wallpapers/,/usr/share/wallpapers/
 
 [Containments][95]
