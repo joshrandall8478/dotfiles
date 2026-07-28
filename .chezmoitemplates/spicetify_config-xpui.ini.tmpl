@@ -6,6 +6,10 @@ always_enable_devtools = 0
 spotify_path           = {{ .chezmoi.homeDir }}\AppData\Roaming\Spotify
 prefs_path             = {{ .chezmoi.homeDir }}\AppData\Roaming\Spotify\prefs
 color_scheme           = Spotify
+{{ else if eq .chezmoi.os "darwin" -}}
+spotify_path           = /Applications/Spotify.app/Contents/Resources
+prefs_path             = {{ .chezmoi.homeDir }}/Library/Application Support/Spotify/prefs
+color_scheme           = TokyoNight
 {{ else -}}
 spotify_path           = /opt/spotify/
 prefs_path             = {{ .chezmoi.homeDir }}/.config/spotify/prefs
