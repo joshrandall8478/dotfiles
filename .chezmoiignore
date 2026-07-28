@@ -61,7 +61,7 @@ scripts
 .local/share/wallpapers
 {{ end -}}
 
-{{ if or (eq .chezmoi.username "root") (contains "jrh" .chezmoi.hostname) -}}
+{{ if or (eq .chezmoi.username "root") (contains "jrh" .chezmoi.hostname) (contains "jrp" .chezmoi.hostname) -}}
 # Root and jrh-hostname machines: shell + starship only, no KDE Plasma, wallpapers, or Spicetify
 scripts
 .icons

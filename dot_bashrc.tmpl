@@ -1,11 +1,11 @@
-{{- $minimal := or (eq .chezmoi.username "root") (contains "jrh" .chezmoi.hostname) -}}
+{{- $minimal := or (eq .chezmoi.username "root") (contains "jrh" .chezmoi.hostname) (contains "jrp" .chezmoi.hostname) -}}
 {{ if not (eq .chezmoi.username "root") -}}
 # Smallfetch
 fastfetch -c ~/.smallfetch.jsonc
 
 {{ end -}}
 # Starship
-{{ if contains "jrh" .chezmoi.hostname -}}
+{{ if or (contains "jrh" .chezmoi.hostname) (contains "jrp" .chezmoi.hostname) -}}
 eval -- "$(/usr/bin/starship init bash --print-full-init)"
 {{ else -}}
 eval -- "$(starship init bash --print-full-init)"

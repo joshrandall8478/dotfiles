@@ -25,7 +25,7 @@
 #path add ($env.HOME | path join ".cargo" "bin")
 #path add ($env.HOME | path join ".dotnet" "tools")
 #path add ($env.HOME | path join "bin")
-{{- else if not (or (eq .chezmoi.username "root") (contains "jrh" .chezmoi.hostname)) }}
+{{- else if not (or (eq .chezmoi.username "root") (contains "jrh" .chezmoi.hostname) (contains "jrp" .chezmoi.hostname)) }}
 use std "path add"
 $env.PATH = ($env.PATH | split row (char esep))
 
