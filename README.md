@@ -6,19 +6,21 @@
 My personal dotfiles for Linux/KDE Plasma and Windows. Meant for bootstraping systems to my configuration quickly.
 ![My system](/assets/desktop.png)
 
-This repository uses [chezmoi](https://www.chezmoi.io) templates and `{{ .chezmoi.os }}` conditionals (see `.chezmoiignore` and the `.tmpl` files) to keep one source of truth for both platforms:
-- Linux/KDE-only configuration (shell, KDE, kitty, fish, etc.) is skipped when applying on Windows.
+This repository uses [chezmoi](https://www.chezmoi.io) templates and conditionals (see `.chezmoiignore` and the `.tmpl` files) to keep one source of truth across platforms and machine roles:
+- Linux/KDE-only configuration (shell, KDE, kitty, fish, etc.) is skipped when applying on Windows, based on `{{ .chezmoi.os }}`.
 - Windows-only configuration (PowerShell profile, Spicetify under `AppData`) is skipped when applying on Linux/macOS.
 - Shared configuration (nushell, Spicetify theme assets) is templated once and rendered per-OS from `.chezmoitemplates`.
+- On `root` (`{{ .chezmoi.username }}`) or any machine with `jrh` in its hostname (`{{ .chezmoi.hostname }}`), only shell configuration and starship apply — KDE Plasma configuration and wallpapers are skipped, and `.bashrc`/`.zshrc`/nushell render a leaner variant (no conda/bun/fnm/spicetify-PATH, no desktop-only aliases).
 
 ### Working with templated files
 Everything not listed below behaves exactly as it always has (`chezmoi add`, `chezmoi apply`, `chezmoi update`, `chezmoi diff`, `chezmoi edit`, no changes to habits).
 
-The exception is the files that are now shared templates: nushell's `config.nu`/`env.nu` and the Spicetify `config-xpui.ini`s. **Don't run a bare `chezmoi add` on these again** — `add` overwrites the source with a flattened copy of whatever's on disk, which destroys the `{{ template ... }}` include / `{{ if eq .chezmoi.os ... }}` conditionals and turns it back into a plain static file.
+The exception is the files that are now templates: nushell's `config.nu`/`env.nu`, the Spicetify `config-xpui.ini`s, and `.bashrc`/`.zshrc`. **Don't run a bare `chezmoi add` on these again** — `add` overwrites the source with a flattened copy of whatever's on disk, which destroys the `{{ if ... }}` conditionals (and, for nushell/Spicetify, the `{{ template ... }}` include) and turns it back into a plain static file.
 
-To edit those specifically, edit the shared source in `.chezmoitemplates` directly instead — the per-OS `.tmpl` files under `dot_config/`/`AppData/` are just one-line includes of these:
-- shared nushell logic → `.chezmoitemplates/nushell_config.nu.tmpl` / `nushell_env.nu.tmpl`
+To edit those specifically:
+- shared nushell logic → `.chezmoitemplates/nushell_config.nu.tmpl` / `nushell_env.nu.tmpl` (the per-OS `.tmpl` files under `dot_config/`/`AppData/` are just one-line includes of these)
 - shared Spicetify `config-xpui.ini` logic → `.chezmoitemplates/spicetify_config-xpui.ini.tmpl`
+- `.bashrc`/`.zshrc` → edit `dot_bashrc.tmpl`/`dot_zshrc.tmpl` directly; each branches inline on `root`/`jrh`-hostname/desktop since they only ever target one path (no shared partial needed)
 
 Then just `chezmoi apply` as usual, no special command needed to re-render. `chezmoi edit` also still works, just remember you're opening a template, not raw config. If a template ever does get flattened by an accidental `add`, `git checkout` the `.tmpl` file back from the repo and reapply — nothing destructive happens to the actual target files on disk either way.
 

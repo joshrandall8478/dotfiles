@@ -60,3 +60,23 @@ scripts
 .local/share/plasma
 .local/share/wallpapers
 {{ end -}}
+
+{{ if or (eq .chezmoi.username "root") (contains "jrh" .chezmoi.hostname) -}}
+# Root and jrh-hostname machines: shell + starship only, no KDE Plasma or wallpapers
+.icons
+.config/distrobox
+.config/kdeglobals
+.config/kglobalshortcutsrc
+.config/klaunchrc
+.config/krunnerrc
+.config/kscreenlockerrc
+.config/ksplashrc
+.config/kwinrc
+.config/plasma-org.kde.plasma.desktop-appletsrc
+.config/plasmarc
+.config/plasmashellrc
+.local/share/color-schemes
+.local/share/icons
+.local/share/plasma
+.local/share/wallpapers
+{{ end -}}
