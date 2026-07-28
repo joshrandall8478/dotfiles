@@ -36,8 +36,11 @@ $env.config = {
 	error_style: "fancy"
 }
 
+{{- if ne .chezmoi.username "root" }}
+
 # show fastfetch
 fastfetch -c ~/.smallfetch.jsonc
+{{- end }}
 
 # some aliases
 {{- if eq .chezmoi.os "windows" }}

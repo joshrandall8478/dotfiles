@@ -2,9 +2,14 @@ source /usr/share/cachyos-fish-config/cachyos-config.fish
 
 # overwrite greeting
 # potentially disabling fastfetch
+{{- if eq .chezmoi.username "root" }}
+function fish_greeting
+end
+{{- else }}
 function fish_greeting
 	fastfetch -c ~/.smallfetch.jsonc
 end
+{{- end }}
 
 # eza functions
 function ls --description 'eza as ls'
