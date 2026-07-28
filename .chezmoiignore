@@ -63,6 +63,7 @@ scripts
 
 {{ if or (eq .chezmoi.username "root") (contains "jrh" .chezmoi.hostname) -}}
 # Root and jrh-hostname machines: shell + starship only, no KDE Plasma, wallpapers, or Spicetify
+scripts
 .icons
 .config/distrobox
 .config/spicetify
@@ -76,6 +77,9 @@ scripts
 .config/plasma-org.kde.plasma.desktop-appletsrc
 .config/plasmarc
 .config/plasmashellrc
+.config/Code
+.config/mpv
+.config/vlc
 .local/share/color-schemes
 .local/share/icons
 .local/share/plasma
