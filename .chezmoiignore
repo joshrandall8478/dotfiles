@@ -2,3 +2,61 @@ README.md
 assets
 .github
 .config.nu.swp
+
+{{ if ne .chezmoi.os "windows" -}}
+# Windows-only targets
+AppData
+Documents
+{{ end -}}
+
+{{ if eq .chezmoi.os "darwin" -}}
+# Block linux only configs for MacOS
+.icons
+.config/distrobox
+.config/kdeglobals
+.config/kglobalshortcutsrc
+.config/klaunchrc
+.config/krunnerrc
+.config/kscreenlockerrc
+.config/ksplashrc
+.config/kwinrc
+.config/plasma-org.kde.plasma.desktop-appletsrc
+.config/plasmarc
+.config/plasmashellrc
+.local/share/color-schemes
+.local/share/icons
+.local/share/plasma
+{{ end -}}
+
+{{ if eq .chezmoi.os "windows" -}}
+# Linux/KDE-only targets
+.bashrc
+.zshrc
+.oh-my-zsh
+.tmux.conf
+.vimrc
+.icons
+scripts
+.config/kitty
+.config/fish
+.config/distrobox
+.config/ranger
+.config/vlc
+.config/mpv
+.config/Code
+.config/spicetify
+.config/kdeglobals
+.config/kglobalshortcutsrc
+.config/klaunchrc
+.config/krunnerrc
+.config/kscreenlockerrc
+.config/ksplashrc
+.config/kwinrc
+.config/plasma-org.kde.plasma.desktop-appletsrc
+.config/plasmarc
+.config/plasmashellrc
+.local/share/color-schemes
+.local/share/icons
+.local/share/plasma
+.local/share/wallpapers
+{{ end -}}

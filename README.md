@@ -1,30 +1,47 @@
 # joshrandall's dotfiles
 
-> [!NOTE]
-> Documentation is an active WIP
-
-
 > [!WARNING]
 > These dotfiles are not directly developed for complete public use. They are designed for newly created users on a Linux system. If you decide to install this on an already established user, **you install them at your own risk.**
 
-My personal dotfiles for Linux and KDE Plasma. Meant for bootstraping systems to my configuration quickly.
+My personal dotfiles for Linux/KDE Plasma and Windows. Meant for bootstraping systems to my configuration quickly.
 ![My system](/assets/desktop.png)
+
+This repository uses [chezmoi](https://www.chezmoi.io) templates and `{{ .chezmoi.os }}` conditionals (see `.chezmoiignore` and the `.tmpl` files) to keep one source of truth for both platforms:
+- Linux/KDE-only configuration (shell, KDE, kitty, fish, etc.) is skipped when applying on Windows.
+- Windows-only configuration (PowerShell profile, Spicetify under `AppData`) is skipped when applying on Linux/macOS.
+- Shared configuration (nushell, Spicetify theme assets) is templated once and rendered per-OS from `.chezmoitemplates`.
+
+### Working with templated files
+Everything not listed below behaves exactly as it always has (`chezmoi add`, `chezmoi apply`, `chezmoi update`, `chezmoi diff`, `chezmoi edit`, no changes to habits).
+
+The exception is the files that are now shared templates: nushell's `config.nu`/`env.nu` and the Spicetify `config-xpui.ini`s. **Don't run a bare `chezmoi add` on these again** — `add` overwrites the source with a flattened copy of whatever's on disk, which destroys the `{{ template ... }}` include / `{{ if eq .chezmoi.os ... }}` conditionals and turns it back into a plain static file.
+
+To edit those specifically, edit the shared source in `.chezmoitemplates` directly instead — the per-OS `.tmpl` files under `dot_config/`/`AppData/` are just one-line includes of these:
+- shared nushell logic → `.chezmoitemplates/nushell_config.nu.tmpl` / `nushell_env.nu.tmpl`
+- shared Spicetify `config-xpui.ini` logic → `.chezmoitemplates/spicetify_config-xpui.ini.tmpl`
+
+Then just `chezmoi apply` as usual, no special command needed to re-render. `chezmoi edit` also still works, just remember you're opening a template, not raw config. If a template ever does get flattened by an accidental `add`, `git checkout` the `.tmpl` file back from the repo and reapply — nothing destructive happens to the actual target files on disk either way.
 
 ## Dependencies
 This is a rough list of dependencies an applications used in the configuration:
 ### DE + Applications
-- KDE Plasma 6
-- kitty
+- KDE Plasma 6 (Linux)
+- kitty (Linux)
 - Visual Studio Code
 
 ### Deps + Programs
 - git
 - chezmoi
-- zsh
+- zsh (Linux)
 - nushell
 - fastfetch
-- eza (`ls` replacement)
+- eza, `ls` replacement (Linux)
 - starship
+
+### Windows-specific
+- [nushell](https://www.nushell.sh/) and/or PowerShell
+- [starship](https://starship.rs/) installed to `C:\Program Files\starship\bin\starship.exe`
+- [Spicetify](https://spicetify.app/) (theme/marketplace assets applied to `%APPDATA%\spicetify`)
 
 ## Install
 
@@ -67,6 +84,12 @@ or
 ```bash
 # Apply only ~/.zshrc
 chezmoi apply ~/.zshrc
+```
+
+### Windows
+The same repository can be applied on Windows; `.chezmoiignore` automatically skips the Linux/KDE-only files and only applies the Windows-specific ones (nushell, PowerShell profile, Spicetify).
+```powershell
+chezmoi init --apply joshrandall8478
 ```
 
 ## Visual Studio Code
