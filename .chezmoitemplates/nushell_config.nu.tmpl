@@ -50,7 +50,7 @@ fastfetch -c ~/.smallfetch.jsonc
 {{- else }}
 alias eza = eza --icons
 alias "ls e" = eza --icons
-{{- if not (or (eq .chezmoi.username "root") (contains "jrh" .chezmoi.hostname)) }}
+{{- if not (or (eq .chezmoi.username "root") (contains "jrh" .chezmoi.hostname) (contains "jrp" .chezmoi.hostname)) }}
 alias fix-crackle = pw-metadata -n settings 0 clock.force-quantum 500
 {{- end }}
 {{- end }}
