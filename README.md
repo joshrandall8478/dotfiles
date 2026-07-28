@@ -15,6 +15,17 @@ This repository uses [chezmoi](https://www.chezmoi.io) templates and `{{ .chezmo
 - Windows-only configuration (PowerShell profile, Spicetify under `AppData`) is skipped when applying on Linux/macOS.
 - Shared configuration (nushell, Spicetify theme assets) is templated once and rendered per-OS from `.chezmoitemplates`.
 
+### Working with templated files
+Everything not listed below behaves exactly as it always has (`chezmoi add`, `chezmoi apply`, `chezmoi update`, `chezmoi diff`, `chezmoi edit`, no changes to habits).
+
+The exception is the files that are now shared templates: nushell's `config.nu`/`env.nu` and the Spicetify `config-xpui.ini`s. **Don't run a bare `chezmoi add` on these again** — `add` overwrites the source with a flattened copy of whatever's on disk, which destroys the `{{ template ... }}` include / `{{ if eq .chezmoi.os ... }}` conditionals and turns it back into a plain static file.
+
+To edit those specifically, edit the source in the repo directly instead:
+- shared nushell logic → `.chezmoitemplates/nushell_config.nu.tmpl` / `nushell_env.nu.tmpl`
+- Spicetify → `dot_config/private_spicetify/config-xpui.ini.tmpl` (Linux) or `AppData/Roaming/spicetify/config-xpui.ini.tmpl` (Windows)
+
+Then just `chezmoi apply` as usual, no special command needed to re-render. `chezmoi edit` also still works, just remember you're opening a template, not raw config. If a template ever does get flattened by an accidental `add`, `git checkout` the `.tmpl` file back from the repo and reapply — nothing destructive happens to the actual target files on disk either way.
+
 ## Dependencies
 This is a rough list of dependencies an applications used in the configuration:
 ### DE + Applications
