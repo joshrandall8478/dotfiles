@@ -1,10 +1,16 @@
+{{- $minimal := or (eq .chezmoi.username "root") (contains "jrh" .chezmoi.hostname) -}}
+{{ if not (eq .chezmoi.username "root") -}}
 # Smallfetch
 fastfetch -c ~/.smallfetch.jsonc
 
+{{ end -}}
 # Starship
+{{ if contains "jrh" .chezmoi.hostname -}}
+eval -- "$(/usr/bin/starship init bash --print-full-init)"
+{{ else -}}
 eval -- "$(starship init bash --print-full-init)"
-
-
+{{ end -}}
+{{ if not $minimal }}
 
 # >>> conda initialize >>>
 # !! Contents within this block are managed by 'conda init' !!
@@ -20,4 +26,4 @@ else
 fi
 unset __conda_setup
 # <<< conda initialize <<<
-
+{{ end -}}

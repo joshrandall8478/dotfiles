@@ -36,18 +36,23 @@ $env.config = {
 	error_style: "fancy"
 }
 
+{{- if ne .chezmoi.username "root" }}
+
 # show fastfetch
 fastfetch -c ~/.smallfetch.jsonc
+{{- end }}
 
 # some aliases
-{{- if ne .chezmoi.os "windows" }}
-alias eza = eza --icons
-alias "ls e" = eza --icons
-alias fix-crackle = pw-metadata -n settings 0 clock.force-quantum 500
-{{- else }}
+{{- if eq .chezmoi.os "windows" }}
 #alias eza = eza --icons
 #alias "ls e" = eza --icons
 #alias fix-crackle = pw-metadata -n settings 0 clock.force-quantum 500
+{{- else }}
+alias eza = eza --icons
+alias "ls e" = eza --icons
+{{- if not (or (eq .chezmoi.username "root") (contains "jrh" .chezmoi.hostname)) }}
+alias fix-crackle = pw-metadata -n settings 0 clock.force-quantum 500
+{{- end }}
 {{- end }}
 
 # Use starship
