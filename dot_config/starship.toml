@@ -1,6 +1,6 @@
 
 format = """
-[╭─](white)$username$hostname$os$shell$conda$container$docker_context$directory$git_branch$git_state$git_status$git_commit$git_metrics$c$cpp$cmake$nodejs$bun$python$java$dotnet$golang$ruby$rust$php$rlang$package$cmd_duration
+[╭─](white)$username$hostname$os$shell$nix_shell$conda$container$docker_context$directory$git_branch$git_state$git_status$git_commit$git_metrics$c$cpp$cmake$nodejs$bun$python$java$dotnet$golang$ruby$rust$php$rlang$package$cmd_duration
 [╰─](white)$character"""
 
 
@@ -113,3 +113,10 @@ format = "[$indicator]($style) "
 min_time = 10_000  # Show command duration over 10,000 milliseconds (=10 sec)
 format = "took [$duration]($style) "
 
+[nix_shell]
+disabled=false
+symbol='❄️'
+impure_msg = '[impure](bold red)'
+pure_msg = '[pure](bold green)'
+unknown_msg = '[unknown](bold yellow)'
+format = '[$symbol $state( \($name\))]($style) '
