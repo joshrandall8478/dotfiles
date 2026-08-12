@@ -20,7 +20,7 @@ immutability=1
 lastScreen=-1
 location=0
 plugin=org.kde.plasma.systemtray
-popupHeight=558
+popupHeight=559
 popupWidth=459
 wallpaperplugin=org.kde.image
 
@@ -160,7 +160,7 @@ immutability=1
 plugin=org.kde.plasma.windowlist
 
 [Containments][101][Applets][127][Configuration]
-popupHeight=67
+popupHeight=68
 popupWidth=154
 
 [Containments][101][Applets][127][Configuration][ConfigDialog]
@@ -180,6 +180,47 @@ actionsOrder=lockScreen,switchUser,suspendToRam,requestReboot,requestShutDown,re
 
 [Containments][101][General]
 AppletOrder=121;127;124;120;122;119;102;130
+
+[Containments][131]
+ItemGeometries-2560x1440=
+ItemGeometriesHorizontal=
+activityId=c6457dd2-7809-461c-8084-0328989eac04
+formfactor=0
+immutability=1
+lastScreen=0
+location=0
+plugin=org.kde.plasma.folder
+wallpaperplugin=org.kde.image
+
+[Containments][131][ConfigDialog]
+DialogHeight=630
+DialogWidth=810
+
+[Containments][131][Wallpaper][org.kde.image][General]
+Image=file:///home/joshr/.local/share/wallpapers/Anime/Yor.jpg
+SlidePaths=/home/joshr/.local/share/wallpapers/,/usr/share/wallpapers/
+
+[Containments][132]
+ItemGeometries-1920x1080=
+ItemGeometriesHorizontal=
+activityId=c6457dd2-7809-461c-8084-0328989eac04
+formfactor=0
+immutability=1
+lastScreen=1
+location=0
+plugin=org.kde.plasma.folder
+wallpaperplugin=org.kde.image
+
+[Containments][132][Wallpaper][org.kde.image][General]
+Image=file:///home/joshr/.local/share/wallpapers/Anime/Yor.jpg
+SlidePaths=/home/joshr/.local/share/wallpapers/,/usr/share/wallpapers/
+
+[Containments][23][Applets][24][Configuration]
+popupHeight=509
+popupWidth=647
+
+[Containments][23][Applets][28][Applets][37]
+plugin=org.kde.plasma.keyboardindicator
 
 [Containments][4]
 activityId=
@@ -205,7 +246,7 @@ DialogWidth=720
 [Containments][4][Applets][7][Configuration][General]
 indicateAudioStreams=false
 interactiveMute=false
-launchers=applications:vivaldi-stable.desktop,applications:kitty.desktop,applications:org.kde.dolphin.desktop,applications:spotify.desktop,applications:discord.desktop,applications:signal.desktop,applications:steam.desktop,applications:code.desktop,applications:net.cozic.joplin_desktop.desktop,applications:com.shellyorg.shelly.desktop,applications:org.mozilla.Thunderbird.desktop,applications:systemsettings.desktop
+launchers=applications:vivaldi-stable.desktop,applications:kitty.desktop,applications:org.kde.dolphin.desktop,applications:discord.desktop,file:///var/lib/flatpak/exports/share/applications/com.spotify.Client.desktop,applications:steam.desktop,applications:com.shellyorg.shelly.desktop,applications:org.mozilla.Thunderbird.desktop,applications:systemsettings.desktop
 
 [Containments][4][Applets][91]
 immutability=1
@@ -244,7 +285,7 @@ immutability=1
 plugin=org.kde.plasma.windowlist
 
 [Containments][63][Applets][129][Configuration]
-popupHeight=32
+popupHeight=33
 popupWidth=83
 
 [Containments][63][Applets][64]
@@ -277,7 +318,7 @@ immutability=1
 plugin=org.kde.plasma.volume
 
 [Containments][63][Applets][66][Configuration]
-popupHeight=598
+popupHeight=599
 popupWidth=556
 
 [Containments][63][Applets][66][Configuration][General]
@@ -307,69 +348,6 @@ showWindowIcons=true
 
 [Containments][63][General]
 AppletOrder=86;129;69;64;67;65;66
-
-[Containments][93]
-ItemGeometries-1422x800=
-ItemGeometries-1707x960=
-ItemGeometries-1920x1080=
-ItemGeometries-2560x1440=
-ItemGeometries-640x480=
-ItemGeometriesHorizontal=
-activityId=e84c4d3c-b7e0-4ed0-90e1-091d5ebfb63a
-formfactor=0
-immutability=1
-lastScreen=0
-location=0
-plugin=org.kde.plasma.folder
-wallpaperplugin=org.kde.image
-
-[Containments][93][ConfigDialog]
-DialogHeight=1380
-DialogWidth=2560
-
-[Containments][93][Wallpaper][org.kde.image][General]
-Image=file:///home/joshr/.local/share/wallpapers/Anime/Yor.jpg
-SlidePaths=/home/joshr/.local/share/wallpapers/,/usr/share/wallpapers/
-
-[Containments][94]
-ItemGeometries-1920x1080=
-ItemGeometries-2560x1440=
-ItemGeometriesHorizontal=
-activityId=e84c4d3c-b7e0-4ed0-90e1-091d5ebfb63a
-formfactor=0
-immutability=1
-lastScreen=1
-location=0
-plugin=org.kde.plasma.folder
-wallpaperplugin=org.kde.image
-
-[Containments][94][ConfigDialog]
-DialogHeight=630
-DialogWidth=810
-
-[Containments][94][Wallpaper][org.kde.image][General]
-Image=file:///home/joshr/.local/share/wallpapers/Anime/Yor.jpg
-SlidePaths=/home/joshr/.local/share/wallpapers/,/usr/share/wallpapers/
-
-[Containments][95]
-ItemGeometries-1920x1080=
-ItemGeometries-640x480=
-ItemGeometriesHorizontal=
-activityId=e84c4d3c-b7e0-4ed0-90e1-091d5ebfb63a
-formfactor=0
-immutability=1
-lastScreen=2
-location=0
-plugin=org.kde.plasma.folder
-wallpaperplugin=org.kde.image
-
-[Containments][95][ConfigDialog]
-DialogHeight=1368
-DialogWidth=2560
-
-[Containments][95][Wallpaper][org.kde.image][General]
-Image=/home/joshr/Downloads/wallhaven-8grlyj.jpg
-SlidePaths=/home/joshr/.local/share/wallpapers/,/usr/share/wallpapers/
 
 [ScreenMapping]
 itemsOnDisabledScreens=
