@@ -21,7 +21,6 @@ Inactive=90
 [Plugins]
 blurEnabled=true
 desktopchangeosdEnabled=true
-gamecontrollerEnabled=false
 
 [Script-desktopchangeosd]
 PopupHideDelay=970
@@ -360,8 +359,8 @@ padding=7
 tiles={"layoutDirection":"horizontal","tiles":[{"width":0.5},{"width":0.5}]}
 
 [Tiling][7edfe81e-30cc-43c7-a506-bd4e7717f7f1][bea155a5-40ff-4b5b-b157-169096e075d2]
-padding=4
-tiles={"layoutDirection":"horizontal","tiles":[{"width":0.25},{"width":0.5},{"width":0.25}]}
+padding=12
+tiles={"layoutDirection":"horizontal","tiles":[{"width":0.5},{"width":0.5}]}
 
 [Tiling][7edfe81e-30cc-43c7-a506-bd4e7717f7f1][c18a3faa-03fd-4a39-81a9-2c198a8f99cb]
 padding=4

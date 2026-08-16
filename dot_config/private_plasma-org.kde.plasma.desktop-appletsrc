@@ -20,7 +20,7 @@ immutability=1
 lastScreen=-1
 location=0
 plugin=org.kde.plasma.systemtray
-popupHeight=559
+popupHeight=562
 popupWidth=459
 wallpaperplugin=org.kde.image
 
@@ -114,7 +114,7 @@ immutability=1
 plugin=org.kde.plasma.mediacontroller
 
 [Containments][101][Applets][119][Configuration]
-popupHeight=314
+popupHeight=318
 popupWidth=487
 
 [Containments][101][Applets][120]
@@ -122,7 +122,7 @@ immutability=1
 plugin=org.kde.plasma.digitalclock
 
 [Containments][101][Applets][120][Configuration]
-popupHeight=470
+popupHeight=471
 popupWidth=570
 
 [Containments][101][Applets][120][Configuration][Appearance]
@@ -160,7 +160,7 @@ immutability=1
 plugin=org.kde.plasma.windowlist
 
 [Containments][101][Applets][127][Configuration]
-popupHeight=68
+popupHeight=32
 popupWidth=154
 
 [Containments][101][Applets][127][Configuration][ConfigDialog]
@@ -246,7 +246,7 @@ DialogWidth=720
 [Containments][4][Applets][7][Configuration][General]
 indicateAudioStreams=false
 interactiveMute=false
-launchers=applications:vivaldi-stable.desktop,applications:kitty.desktop,applications:org.kde.dolphin.desktop,applications:discord.desktop,file:///var/lib/flatpak/exports/share/applications/com.spotify.Client.desktop,applications:steam.desktop,applications:com.shellyorg.shelly.desktop,applications:org.mozilla.Thunderbird.desktop,applications:systemsettings.desktop
+launchers=applications:vivaldi-stable.desktop,applications:kitty.desktop,applications:org.kde.dolphin.desktop,file:///var/lib/flatpak/exports/share/applications/com.spotify.Client.desktop,applications:discord.desktop,applications:steam-2.desktop,applications:com.shellyorg.shelly.desktop,applications:org.mozilla.Thunderbird.desktop,applications:code.desktop,applications:systemsettings.desktop
 
 [Containments][4][Applets][91]
 immutability=1
@@ -263,7 +263,7 @@ DialogWidth=720
 [Containments][4][Applets][91][Configuration][General]
 applicationsDisplay=0
 favoritesPortedToKAstats=true
-icon=/home/joshr/.local/share/icons/j-contrast.svg
+icon=org.cachyos.hello
 paneSwap=true
 primaryActions=3
 systemFavorites=lock-screen\\,logout\\,save-session\\,switch-user\\,suspend\\,hibernate\\,reboot\\,shutdown
@@ -285,15 +285,15 @@ immutability=1
 plugin=org.kde.plasma.windowlist
 
 [Containments][63][Applets][129][Configuration]
-popupHeight=33
-popupWidth=83
+popupHeight=32
+popupWidth=154
 
 [Containments][63][Applets][64]
 immutability=1
 plugin=org.kde.plasma.digitalclock
 
 [Containments][63][Applets][64][Configuration]
-popupHeight=474
+popupHeight=475
 popupWidth=570
 
 [Containments][63][Applets][64][Configuration][Appearance]
@@ -310,7 +310,7 @@ immutability=1
 plugin=org.kde.plasma.mediacontroller
 
 [Containments][63][Applets][65][Configuration]
-popupHeight=266
+popupHeight=267
 popupWidth=394
 
 [Containments][63][Applets][66]
@@ -318,11 +318,10 @@ immutability=1
 plugin=org.kde.plasma.volume
 
 [Containments][63][Applets][66][Configuration]
-popupHeight=599
+popupHeight=603
 popupWidth=556
 
 [Containments][63][Applets][66][Configuration][General]
-currentTab=streams
 migrated=true
 
 [Containments][63][Applets][67]
