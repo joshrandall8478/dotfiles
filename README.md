@@ -39,6 +39,15 @@ This is a rough list of dependencies an applications used in the configuration:
 - fastfetch
 - eza, `ls` replacement (Linux)
 - starship
+- fish (Linux, optional) — see below
+- [nix](https://nixos.org/) (Linux, optional) — only needed for the `dev-init` profile
+
+### fish and the `dev-init` nix profile
+The fish config checks for its tools at runtime instead of assuming them, so it applies cleanly on a machine that is missing some of them:
+- the `ls`/`ll`/`la`/`lt`/`lg` helpers are only defined when `eza` is installed, so `ls` otherwise falls back to fish's own
+- the fastfetch greeting and `starship init` are each skipped when that binary isn't on `PATH`
+
+`.config/fish/conf.d/dev-init.fish` picks up a nix profile named `dev-init` when one exists, and does nothing at all when it doesn't. It looks in `$DEV_INIT_PROFILE`, `$XDG_STATE_HOME/nix/profiles`, `~/.local/state/nix/profiles`, `~/.local/share/nix/profiles`, `/nix/var/nix/profiles/per-user/$USER` and `/nix/var/nix/profiles`, taking the first that actually has a `bin/`. From that profile it puts `bin` on `PATH`, adds `share/man` to `MANPATH`, wires up the `share/fish/vendor_*` directories that NixOS would normally handle itself, and exports `DEV_INIT_PROFILE`. Since `conf.d` is read before `config.fish`, tools that come from the profile (`eza`, `starship`, …) satisfy the checks above. If a `dev-init` binary ends up on `PATH` it also gets a `di` shorthand, skipped when something else already owns that name.
 
 ### Windows-specific
 - [nushell](https://www.nushell.sh/) and/or PowerShell
