@@ -41,6 +41,13 @@ if command -q eza
     end
 end
 
+# direnv hook
+# only when direnv is installed; conf.d runs first, so a direnv from the nix
+# dev-init profile counts.
+if command -q direnv
+    direnv hook fish | source
+end
+
 if command -q starship
     starship init fish | source
 end
