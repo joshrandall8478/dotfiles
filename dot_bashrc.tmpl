@@ -1,14 +1,21 @@
 {{- $minimal := or (eq .chezmoi.username "root") (contains "jrh" .chezmoi.hostname) (contains "jrp" .chezmoi.hostname) -}}
 {{ if not (eq .chezmoi.username "root") -}}
 # Smallfetch
-fastfetch -c ~/.smallfetch.jsonc
+# only when fastfetch is installed
+if command -v fastfetch >/dev/null 2>&1; then
+    fastfetch -c ~/.smallfetch.jsonc
+fi
 
 {{ end -}}
 # Starship
 {{ if or (contains "jrh" .chezmoi.hostname) (contains "jrp" .chezmoi.hostname) -}}
-eval -- "$(/usr/bin/starship init bash --print-full-init)"
+if [ -x /usr/bin/starship ]; then
+    eval -- "$(/usr/bin/starship init bash --print-full-init)"
+fi
 {{ else -}}
-eval -- "$(starship init bash --print-full-init)"
+if command -v starship >/dev/null 2>&1; then
+    eval -- "$(starship init bash --print-full-init)"
+fi
 {{ end -}}
 {{ if not $minimal }}
 

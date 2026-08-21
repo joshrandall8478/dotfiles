@@ -103,7 +103,9 @@ source $ZSH/oh-my-zsh.sh
 # Example aliases
 # alias zshconfig="mate ~/.zshrc"
 # alias ohmyzsh="mate ~/.oh-my-zsh"
-eval "$(starship init zsh)"
+if command -v starship >/dev/null 2>&1; then
+    eval "$(starship init zsh)"
+fi
 {{- else if or (contains "jrh" .chezmoi.hostname) (contains "jrp" .chezmoi.hostname) -}}
 # If you come from bash you might have to change your $PATH.
 # export PATH=$HOME/bin:$HOME/.local/bin:/usr/local/bin:$PATH
@@ -216,15 +218,21 @@ source $ZSH/oh-my-zsh.sh
 source /etc/restic-env
 
 # Smallfetch
-fastfetch -c ~/.smallfetch.jsonc
-alias smallfetch="fastfetch -c ~/.smallfetch.jsonc"
+if command -v fastfetch >/dev/null 2>&1; then
+    fastfetch -c ~/.smallfetch.jsonc
+    alias smallfetch="fastfetch -c ~/.smallfetch.jsonc"
+fi
 
 # eza, zoxide
-alias ls='eza --icons' # list
+if command -v eza >/dev/null 2>&1; then
+    alias ls='eza --icons' # list
+fi
 #alias cd='z' # cd = zoxide
 
 #eval "$(zoxide init zsh)"
-eval "$(starship init zsh)"
+if command -v starship >/dev/null 2>&1; then
+    eval "$(starship init zsh)"
+fi
 {{- else -}}
 # If you come from bash you might have to change your $PATH.
 export PATH=$HOME/.dotnet/tools:$HOME/.local/bin:$HOME/bin:$HOME/bin:/usr/local/bin:$HOME/.cargo/bin:$PATH
@@ -375,7 +383,9 @@ source $ZSH/oh-my-zsh.sh
 #}
 
 
-alias ls='eza --icons' # list
+if command -v eza >/dev/null 2>&1; then
+    alias ls='eza --icons' # list
+fi
 #alias cd='z' # cd = zoxide
 # alias un='yay -R' # uninstall package
 # alias up='yay -Syu' # update system/package/aur
@@ -412,8 +422,11 @@ alias vc='code' # gui code editor
 
 #eval "$(zoxide init zsh)"
 
-fastfetch -c ~/.smallfetch.jsonc
-alias smallfetch="fastfetch -c ~/.smallfetch.jsonc"
+if command -v fastfetch >/dev/null 2>&1; then
+    fastfetch -c ~/.smallfetch.jsonc
+    alias smallfetch="fastfetch -c ~/.smallfetch.jsonc"
+    alias archbtw='clear;fastfetch'
+fi
 #smallfetch
 #fortune -s -n 100
 
@@ -421,7 +434,6 @@ export PATH=$PATH:{{ .chezmoi.homeDir }}/.spicetify
 
 # for fun :)
 alias fucking='sudo' # because its funny
-alias archbtw='clear;fastfetch'
 alias baseddino="fortune -s -n 150 -o | cowsay -f stegosaurus"
 
 #eval "$(zellij setup --generate-auto-start zsh)"
@@ -449,7 +461,9 @@ fi
 unset __conda_setup
 # <<< conda initialize <<<
 #source ~/bira.zsh-theme
-eval "$(starship init zsh)"
+if command -v starship >/dev/null 2>&1; then
+    eval "$(starship init zsh)"
+fi
 
 
 # bun completions
@@ -460,7 +474,10 @@ export BUN_INSTALL="$HOME/.bun"
 export PATH="$BUN_INSTALL/bin:$PATH"
 
 # fnm
-eval "$(fnm env --use-on-cd --shell zsh)"
+# only when fnm is installed, so a machine without it doesn't error on startup
+if command -v fnm >/dev/null 2>&1; then
+    eval "$(fnm env --use-on-cd --shell zsh)"
+fi
 {{- end }}
 
 
