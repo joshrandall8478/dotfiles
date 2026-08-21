@@ -462,3 +462,6 @@ export PATH="$BUN_INSTALL/bin:$PATH"
 # fnm
 eval "$(fnm env --use-on-cd --shell zsh)"
 {{- end }}
+
+
+{{ template "shell_dev-init.sh.tmpl" "zsh" }}

@@ -1,0 +1,93 @@
+{{- $shell := . }}
+# nix `dev-init` profile/package support, plus the direnv hook.
+#
+# Mirrors .config/fish/conf.d/dev-init.fish. Everything here is detected at
+# runtime: if the profile isn't installed on this machine, or the binaries it
+# should provide are missing, every block below is skipped. That keeps this
+# same config usable on boxes without nix.
+
+# Candidate profile locations, first match wins. $DEV_INIT_PROFILE is checked
+# first so the location can be forced from the environment; the rest cover
+# `nix profile` (XDG state dir), older nix (XDG data dir), and the `nix-env -p`
+# per-user and system profile dirs.
+_dev_init_profile=
+for _dev_init_candidate in \
+    "$DEV_INIT_PROFILE" \
+    "${XDG_STATE_HOME:+$XDG_STATE_HOME/nix/profiles/dev-init}" \
+    "$HOME/.local/state/nix/profiles/dev-init" \
+    "$HOME/.local/share/nix/profiles/dev-init" \
+    "/nix/var/nix/profiles/per-user/${USER:-$LOGNAME}/dev-init" \
+    "/nix/var/nix/profiles/dev-init"
+do
+    [ -n "$_dev_init_candidate" ] || continue
+    # bin/ is the "only if the necessary bins are there" check: a profile
+    # symlink left pointing at nothing usable counts as absent.
+    if [ -d "$_dev_init_candidate/bin" ]; then
+        _dev_init_profile=$_dev_init_candidate
+        break
+    fi
+done
+unset _dev_init_candidate
+
+if [ -n "$_dev_init_profile" ]; then
+    export DEV_INIT_PROFILE="$_dev_init_profile"
+
+    # Prepend only when the entry is missing, so a nested shell inside
+    # `nix develop` keeps that shell's tools in front instead of having these
+    # yanked over them.
+    case ":$PATH:" in
+        *":$_dev_init_profile/bin:"*) ;;
+        *) PATH="$_dev_init_profile/bin:$PATH" ;;
+    esac
+    export PATH
+
+    if [ -d "$_dev_init_profile/share/man" ]; then
+        case ":$MANPATH:" in
+            *":$_dev_init_profile/share/man:"*) ;;
+            *) MANPATH="$_dev_init_profile/share/man:$MANPATH" ;;
+        esac
+        # A trailing empty entry keeps man's own default search path reachable.
+        case "$MANPATH" in
+            *:) ;;
+            *) MANPATH="$MANPATH:" ;;
+        esac
+        export MANPATH
+    fi
+
+{{ if eq $shell "zsh" }}
+    # nix packages ship zsh completions under share/zsh/site-functions. NixOS
+    # wires these up itself; a plain profile on another distro does not.
+    # compinit has already run by this point (oh-my-zsh), so re-run it once
+    # after extending fpath to actually pick the new completions up.
+    if [ -d "$_dev_init_profile/share/zsh/site-functions" ] &&
+        [[ -z ${fpath[(r)$_dev_init_profile/share/zsh/site-functions]} ]]; then
+        fpath=("$_dev_init_profile/share/zsh/site-functions" $fpath)
+        autoload -Uz compinit && compinit -u
+    fi
+{{ else }}
+    # bash-completion loads completions on demand out of
+    # $BASH_COMPLETION_USER_DIR/completions, which is where nix puts them.
+    # Only set when the user hasn't pointed it somewhere else already.
+    if [ -z "$BASH_COMPLETION_USER_DIR" ] &&
+        [ -d "$_dev_init_profile/share/bash-completion/completions" ]; then
+        export BASH_COMPLETION_USER_DIR="$_dev_init_profile/share/bash-completion"
+    fi
+{{ end }}
+fi
+unset _dev_init_profile
+
+# Command-level support is checked separately: `dev-init` can be on PATH from
+# the default nix profile with no dev-init profile dir of its own.
+if command -v dev-init >/dev/null 2>&1; then
+    # `di` shorthand, skipped if something else on this box already owns the
+    # name (command, function or alias).
+    if ! command -v di >/dev/null 2>&1 && ! alias di >/dev/null 2>&1; then
+        alias di='dev-init'
+    fi
+fi
+
+# direnv hook, only when direnv is installed -- including a direnv that came
+# from the dev-init profile put on PATH above.
+if command -v direnv >/dev/null 2>&1; then
+    eval "$(direnv hook {{ $shell }})"
+fi
