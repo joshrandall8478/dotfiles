@@ -54,6 +54,8 @@ The same detection is shared by zsh and bash through the `shell_dev-init.sh.tmpl
 
 Both shells also get the direnv hook (`eval "$(direnv hook zsh|bash)"`), and only when a `direnv` binary is actually on `PATH` — including one that came from the `dev-init` profile, since the profile block runs first.
 
+The zsh and bash configs apply the same runtime checks to the rest of their tools, so a machine that is missing one doesn't error on every new shell: `starship init`, the fastfetch greeting (with its `smallfetch`/`archbtw` aliases), the `eza`-backed `ls` alias and `fnm env` are each skipped when that binary isn't installed, and `ls` falls back to the real one.
+
 ### Windows-specific
 - [nushell](https://www.nushell.sh/) and/or PowerShell
 - [starship](https://starship.rs/) installed to `C:\Program Files\starship\bin\starship.exe`
