@@ -41,13 +41,18 @@ This is a rough list of dependencies an applications used in the configuration:
 - starship
 - fish (Linux, optional) — see below
 - [nix](https://nixos.org/) (Linux, optional) — only needed for the `dev-init` profile
+- [direnv](https://direnv.net/) (optional) — hooked into fish, zsh and bash when installed
 
-### fish and the `dev-init` nix profile
+### fish, zsh, bash and the `dev-init` nix profile
 The fish config checks for its tools at runtime instead of assuming them, so it applies cleanly on a machine that is missing some of them:
 - the `ls`/`ll`/`la`/`lt`/`lg` helpers are only defined when `eza` is installed, so `ls` otherwise falls back to fish's own
 - the fastfetch greeting and `starship init` are each skipped when that binary isn't on `PATH`
 
 `.config/fish/conf.d/dev-init.fish` picks up a nix profile named `dev-init` when one exists, and does nothing at all when it doesn't. It looks in `$DEV_INIT_PROFILE`, `$XDG_STATE_HOME/nix/profiles`, `~/.local/state/nix/profiles`, `~/.local/share/nix/profiles`, `/nix/var/nix/profiles/per-user/$USER` and `/nix/var/nix/profiles`, taking the first that actually has a `bin/`. From that profile it puts `bin` on `PATH`, adds `share/man` to `MANPATH`, wires up the `share/fish/vendor_*` directories that NixOS would normally handle itself, and exports `DEV_INIT_PROFILE`. Since `conf.d` is read before `config.fish`, tools that come from the profile (`eza`, `starship`, …) satisfy the checks above. If a `dev-init` binary ends up on `PATH` it also gets a `di` shorthand, skipped when something else already owns that name.
+
+The same detection is shared by zsh and bash through the `shell_dev-init.sh.tmpl` chezmoi template, appended to `.zshrc` and `.bashrc`: same candidate list and same `bin/` check, exporting `DEV_INIT_PROFILE`, prepending `bin` to `PATH` (only when it isn't already there) and adding `share/man` to `MANPATH`. For completions zsh gets `share/zsh/site-functions` prepended to `fpath` followed by a single `compinit` re-run (oh-my-zsh has already run it by that point), and bash gets `BASH_COMPLETION_USER_DIR` pointed at the profile's `share/bash-completion` unless it is already set. The `di` shorthand is an alias there, defined only when `dev-init` is on `PATH` and nothing else owns the name.
+
+Both shells also get the direnv hook (`eval "$(direnv hook zsh|bash)"`), and only when a `direnv` binary is actually on `PATH` — including one that came from the `dev-init` profile, since the profile block runs first.
 
 ### Windows-specific
 - [nushell](https://www.nushell.sh/) and/or PowerShell
