@@ -43,5 +43,8 @@
     "powermode.enabled": true,
     "files.autoSave": "afterDelay",
     "workbench.secondarySideBar.defaultVisibility": "hidden",
-    "claudeCode.preferredLocation": "panel"
+    "claudeCode.preferredLocation": "panel",
+    "[scss]": {
+        "editor.defaultFormatter": "esbenp.prettier-vscode"
+    }
 }

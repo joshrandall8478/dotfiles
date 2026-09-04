@@ -21,13 +21,13 @@ IntensityAmount=0
 IntensityEffect=0
 
 [Colors:Button]
-BackgroundAlternate=135,55,50
+BackgroundAlternate=33,174,132
 BackgroundNormal=21,23,27
-DecorationFocus=184,69,61
-DecorationHover=184,69,61
-ForegroundActive=184,69,61
+DecorationFocus=39,239,177
+DecorationHover=39,239,177
+ForegroundActive=39,239,177
 ForegroundInactive=120,119,117
-ForegroundLink=240,185,183
+ForegroundLink=39,239,177
 ForegroundNegative=232,88,72
 ForegroundNeutral=192,162,95
 ForegroundNormal=232,230,227
@@ -35,33 +35,33 @@ ForegroundPositive=120,183,83
 ForegroundVisited=142,121,165
 
 [Colors:Complementary]
-DecorationFocus=184,69,61
-DecorationHover=184,69,61
-ForegroundActive=184,69,61
-ForegroundLink=240,185,183
+DecorationFocus=39,239,177
+DecorationHover=39,239,177
+ForegroundActive=39,239,177
+ForegroundLink=39,239,177
 
 [Colors:Selection]
-BackgroundAlternate=133,53,47
-BackgroundNormal=133,53,47
-DecorationFocus=184,69,61
-DecorationHover=184,69,61
-ForegroundActive=184,69,61
-ForegroundInactive=255,255,255
-ForegroundLink=240,185,183
+BackgroundAlternate=32,172,128
+BackgroundNormal=32,172,128
+DecorationFocus=39,239,177
+DecorationHover=39,239,177
+ForegroundActive=39,239,177
+ForegroundInactive=0,0,0
+ForegroundLink=39,239,177
 ForegroundNegative=232,88,72
 ForegroundNeutral=192,162,95
-ForegroundNormal=255,255,255
+ForegroundNormal=0,0,0
 ForegroundPositive=120,183,83
 ForegroundVisited=142,121,165
 
 [Colors:Tooltip]
 BackgroundAlternate=17,51,86
 BackgroundNormal=21,23,25
-DecorationFocus=184,69,61
-DecorationHover=184,69,61
-ForegroundActive=184,69,61
+DecorationFocus=39,239,177
+DecorationHover=39,239,177
+ForegroundActive=39,239,177
 ForegroundInactive=120,119,117
-ForegroundLink=240,185,183
+ForegroundLink=39,239,177
 ForegroundNegative=232,88,72
 ForegroundNeutral=192,162,95
 ForegroundNormal=196,209,224
@@ -71,11 +71,11 @@ ForegroundVisited=142,121,165
 [Colors:View]
 BackgroundAlternate=22,22,22
 BackgroundNormal=16,16,16
-DecorationFocus=184,69,61
-DecorationHover=184,69,61
-ForegroundActive=184,69,61
+DecorationFocus=39,239,177
+DecorationHover=39,239,177
+ForegroundActive=39,239,177
 ForegroundInactive=120,119,117
-ForegroundLink=240,185,183
+ForegroundLink=39,239,177
 ForegroundNegative=232,88,72
 ForegroundNeutral=192,162,95
 ForegroundNormal=212,210,207
@@ -85,11 +85,11 @@ ForegroundVisited=142,121,165
 [Colors:Window]
 BackgroundAlternate=52,51,50
 BackgroundNormal=25,25,25
-DecorationFocus=184,69,61
-DecorationHover=184,69,61
-ForegroundActive=184,69,61
+DecorationFocus=39,239,177
+DecorationHover=39,239,177
+ForegroundActive=39,239,177
 ForegroundInactive=120,119,117
-ForegroundLink=240,185,183
+ForegroundLink=39,239,177
 ForegroundNegative=232,88,72
 ForegroundNeutral=192,162,95
 ForegroundNormal=224,222,219
@@ -97,7 +97,7 @@ ForegroundPositive=120,183,83
 ForegroundVisited=142,121,165
 
 [General]
-AccentColor=184,69,61
+AccentColor=39,239,177
 BrowserApplication=vivaldi-stable.desktop
 ColorScheme=DarkObsidianII
 ColorSchemeHash=6441cca7f3a8f49cbdfdbcab0dfe7f03b7369aa7
@@ -117,7 +117,7 @@ toolBarFont=Poppins,10,-1,5,400,0,0,0,0,0,0,0,0,0,0,1,,0,0
 Theme=Papirus
 
 [KDE]
-AnimationDurationFactor=0.35355339059327373
+AnimationDurationFactor=0.5
 AutomaticLookAndFeelOnIdle=false
 LookAndFeelPackage=org.kde.breezedark.desktop
 ShowDeleteCommand=false
@@ -134,7 +134,7 @@ Show Inline Previews=true
 Show Preview=false
 Show Speedbar=true
 Show hidden files=false
-Sort by=Name
+Sort by=Date
 Sort directories first=false
 Sort hidden files last=false
 Sort reversed=false

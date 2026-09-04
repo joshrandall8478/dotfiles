@@ -20,7 +20,7 @@ immutability=1
 lastScreen=-1
 location=0
 plugin=org.kde.plasma.systemtray
-popupHeight=562
+popupHeight=573
 popupWidth=459
 wallpaperplugin=org.kde.image
 
@@ -114,7 +114,7 @@ immutability=1
 plugin=org.kde.plasma.mediacontroller
 
 [Containments][101][Applets][119][Configuration]
-popupHeight=318
+popupHeight=324
 popupWidth=487
 
 [Containments][101][Applets][120]
@@ -122,7 +122,7 @@ immutability=1
 plugin=org.kde.plasma.digitalclock
 
 [Containments][101][Applets][120][Configuration]
-popupHeight=471
+popupHeight=474
 popupWidth=570
 
 [Containments][101][Applets][120][Configuration][Appearance]
@@ -160,8 +160,8 @@ immutability=1
 plugin=org.kde.plasma.windowlist
 
 [Containments][101][Applets][127][Configuration]
-popupHeight=32
-popupWidth=154
+popupHeight=160
+popupWidth=488
 
 [Containments][101][Applets][127][Configuration][ConfigDialog]
 DialogHeight=630
@@ -197,7 +197,7 @@ DialogHeight=630
 DialogWidth=810
 
 [Containments][131][Wallpaper][org.kde.image][General]
-Image=file:///home/joshr/.local/share/wallpapers/Anime/Yor.jpg
+Image=file:///usr/share/wallpapers/cachyos-wallpapers/cachygalaxy99.jpg
 SlidePaths=/home/joshr/.local/share/wallpapers/,/usr/share/wallpapers/
 
 [Containments][132]
@@ -212,7 +212,7 @@ plugin=org.kde.plasma.folder
 wallpaperplugin=org.kde.image
 
 [Containments][132][Wallpaper][org.kde.image][General]
-Image=file:///home/joshr/.local/share/wallpapers/Anime/Yor.jpg
+Image=file:///usr/share/wallpapers/cachyos-wallpapers/cachygalaxy99.jpg
 SlidePaths=/home/joshr/.local/share/wallpapers/,/usr/share/wallpapers/
 
 [Containments][23][Applets][24][Configuration]
@@ -246,7 +246,7 @@ DialogWidth=720
 [Containments][4][Applets][7][Configuration][General]
 indicateAudioStreams=false
 interactiveMute=false
-launchers=applications:vivaldi-stable.desktop,applications:kitty.desktop,applications:org.kde.dolphin.desktop,file:///var/lib/flatpak/exports/share/applications/com.spotify.Client.desktop,applications:discord.desktop,applications:steam-2.desktop,applications:com.shellyorg.shelly.desktop,applications:org.mozilla.Thunderbird.desktop,applications:code.desktop,applications:systemsettings.desktop
+launchers=applications:vivaldi-stable.desktop,applications:kitty.desktop,applications:org.kde.dolphin.desktop,file:///var/lib/flatpak/exports/share/applications/com.spotify.Client.desktop,applications:vesktop.desktop,applications:steam.desktop,applications:signal.desktop,applications:com.shellyorg.shelly.desktop,applications:org.mozilla.Thunderbird.desktop,applications:code.desktop,applications:systemsettings.desktop,applications:joplin-desktop.desktop
 
 [Containments][4][Applets][91]
 immutability=1
@@ -285,7 +285,7 @@ immutability=1
 plugin=org.kde.plasma.windowlist
 
 [Containments][63][Applets][129][Configuration]
-popupHeight=32
+popupHeight=67
 popupWidth=154
 
 [Containments][63][Applets][64]
@@ -293,7 +293,7 @@ immutability=1
 plugin=org.kde.plasma.digitalclock
 
 [Containments][63][Applets][64][Configuration]
-popupHeight=475
+popupHeight=476
 popupWidth=570
 
 [Containments][63][Applets][64][Configuration][Appearance]
@@ -310,7 +310,7 @@ immutability=1
 plugin=org.kde.plasma.mediacontroller
 
 [Containments][63][Applets][65][Configuration]
-popupHeight=267
+popupHeight=268
 popupWidth=394
 
 [Containments][63][Applets][66]
@@ -318,7 +318,7 @@ immutability=1
 plugin=org.kde.plasma.volume
 
 [Containments][63][Applets][66][Configuration]
-popupHeight=603
+popupHeight=615
 popupWidth=556
 
 [Containments][63][Applets][66][Configuration][General]
