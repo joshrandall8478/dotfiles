@@ -11,6 +11,7 @@ This repository uses [chezmoi](https://www.chezmoi.io) templates and conditional
 - Windows-only configuration (PowerShell profile, Spicetify under `AppData`) is skipped when applying on Linux/macOS.
 - Shared configuration (nushell, Spicetify theme assets) is templated once and rendered per-OS from `.chezmoitemplates`.
 - On `root` (`{{ .chezmoi.username }}`) or any machine with `jrh` in its hostname (`{{ .chezmoi.hostname }}`), only shell configuration and starship apply — KDE Plasma configuration and wallpapers are skipped, and `.bashrc`/`.zshrc`/nushell render a leaner variant (no conda/bun/fnm/spicetify-PATH, no desktop-only aliases).
+- On `jrh`/`jrp`-hostname machines, every shell (`.bashrc`, `.zshrc`, fish, nushell) exports `TERM=xterm-256color` so colors render correctly over SSH regardless of which shell is the login shell. This applies even when the user is `root`, whose branch otherwise takes precedence.
 
 ### Working with templated files
 Everything not listed below behaves exactly as it always has (`chezmoi add`, `chezmoi apply`, `chezmoi update`, `chezmoi diff`, `chezmoi edit`, no changes to habits).
