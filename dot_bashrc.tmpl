@@ -1,4 +1,9 @@
 {{- $minimal := or (eq .chezmoi.username "root") (contains "jrh" .chezmoi.hostname) (contains "jrp" .chezmoi.hostname) -}}
+{{ if or (contains "jrh" .chezmoi.hostname) (contains "jrp" .chezmoi.hostname) -}}
+# Terminal
+export TERM="xterm-256color"
+
+{{ end -}}
 {{ if not (eq .chezmoi.username "root") -}}
 # Smallfetch
 # only when fastfetch is installed
