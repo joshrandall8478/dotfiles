@@ -26,6 +26,7 @@ Documents
 .local/share/color-schemes
 .local/share/icons
 .local/share/plasma
+.config/xdg-terminals.list
 {{ end -}}
 
 {{ if eq .chezmoi.os "windows" -}}
@@ -59,6 +60,7 @@ scripts
 .local/share/icons
 .local/share/plasma
 .local/share/wallpapers
+.config/xdg-terminals.list
 {{ end -}}
 
 {{ if or (eq .chezmoi.username "root") (contains "jrh" .chezmoi.hostname) (contains "jrp" .chezmoi.hostname) -}}
