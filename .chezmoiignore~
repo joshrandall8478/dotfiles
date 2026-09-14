@@ -6,7 +6,7 @@ assets
 {{ if ne .chezmoi.os "windows" -}}
 # Windows-only targets
 AppData
-Documents/WindowsPowerShell
+Documents
 {{ end -}}
 
 {{ if eq .chezmoi.os "darwin" -}}
