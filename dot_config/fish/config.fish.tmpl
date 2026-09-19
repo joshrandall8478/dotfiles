@@ -1,6 +1,12 @@
+# Set editor to vim
+set -Ux EDITOR vim
+
 {{ if or (contains "jrh" .chezmoi.hostname) (contains "jrp" .chezmoi.hostname) -}}
 # Terminal
 set -gx TERM xterm-256color
+
+# Restic
+source /etc/restic-env
 
 {{ end -}}
 # only source the CachyOS fish config on CachyOS
