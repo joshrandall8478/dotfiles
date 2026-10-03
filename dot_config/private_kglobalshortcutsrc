@@ -11,7 +11,7 @@ Switch to Next Keyboard Layout=Meta+Alt+K,Meta+Alt+K,Switch to Next Keyboard Lay
 _k_friendly_name=Keyboard Layout Switcher
 
 [com.anthropic.Claude]
-E60481CCC815301A15622807E6450102-Ctrl+Alt+Space=Ctrl+Alt+Space,Ctrl+Alt+Space,Claude shortcut: Ctrl+Alt+Space
+10EB22A8A4EA56A424869F7A121A5879-Ctrl+Alt+Space=Ctrl+Alt+Space,Ctrl+Alt+Space,Claude shortcut: Ctrl+Alt+Space
 _k_friendly_name=Claude
 
 [com.brave.Browser]
@@ -362,6 +362,10 @@ _launch=Launch (5)\tMeta+Return
 
 [services][org.kde.dolphin.desktop]
 _launch=Launch (6)\tMeta+E
+
+[services][org.kde.spectacle.desktop]
+CurrentMonitorScreenShot=none
+OpenWithoutScreenshot=none
 
 [services][systemsettings.desktop]
 _launch=Launch (7)

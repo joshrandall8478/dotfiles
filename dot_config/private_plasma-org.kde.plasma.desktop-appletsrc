@@ -20,7 +20,7 @@ immutability=1
 lastScreen=-1
 location=0
 plugin=org.kde.plasma.systemtray
-popupHeight=573
+popupHeight=591
 popupWidth=459
 wallpaperplugin=org.kde.image
 
@@ -66,6 +66,7 @@ immutability=1
 plugin=org.kde.plasma.volume
 
 [Containments][101][Applets][102][Applets][109][Configuration][General]
+currentTab=streams
 migrated=true
 
 [Containments][101][Applets][102][Applets][110]
@@ -114,7 +115,7 @@ immutability=1
 plugin=org.kde.plasma.mediacontroller
 
 [Containments][101][Applets][119][Configuration]
-popupHeight=324
+popupHeight=336
 popupWidth=487
 
 [Containments][101][Applets][120]
@@ -122,7 +123,7 @@ immutability=1
 plugin=org.kde.plasma.digitalclock
 
 [Containments][101][Applets][120][Configuration]
-popupHeight=474
+popupHeight=486
 popupWidth=570
 
 [Containments][101][Applets][120][Configuration][Appearance]
@@ -160,8 +161,8 @@ immutability=1
 plugin=org.kde.plasma.windowlist
 
 [Containments][101][Applets][127][Configuration]
-popupHeight=160
-popupWidth=488
+popupHeight=101
+popupWidth=154
 
 [Containments][101][Applets][127][Configuration][ConfigDialog]
 DialogHeight=630
@@ -197,11 +198,12 @@ DialogHeight=630
 DialogWidth=810
 
 [Containments][131][Wallpaper][org.kde.image][General]
-Image=file:///usr/share/wallpapers/cachyos-wallpapers/cachygalaxy99.jpg
+Image=file:///usr/share/wallpapers/cachyos-wallpapers/north.png
 SlidePaths=/home/joshr/.local/share/wallpapers/,/usr/share/wallpapers/
 
 [Containments][132]
 ItemGeometries-1920x1080=
+ItemGeometries-640x480=
 ItemGeometriesHorizontal=
 activityId=c6457dd2-7809-461c-8084-0328989eac04
 formfactor=0
@@ -212,8 +214,101 @@ plugin=org.kde.plasma.folder
 wallpaperplugin=org.kde.image
 
 [Containments][132][Wallpaper][org.kde.image][General]
-Image=file:///usr/share/wallpapers/cachyos-wallpapers/cachygalaxy99.jpg
+Image=file:///usr/share/wallpapers/cachyos-wallpapers/north.png
 SlidePaths=/home/joshr/.local/share/wallpapers/,/usr/share/wallpapers/
+
+[Containments][133]
+ItemGeometries-1024x768=
+ItemGeometries-1920x1080=
+ItemGeometriesHorizontal=
+activityId=c6457dd2-7809-461c-8084-0328989eac04
+formfactor=0
+immutability=1
+lastScreen=2
+location=0
+plugin=org.kde.plasma.folder
+wallpaperplugin=org.kde.image
+
+[Containments][133][Wallpaper][org.kde.image][General]
+Image=file:///usr/share/wallpapers/cachyos-wallpapers/north.png
+SlidePaths=/home/joshr/.local/share/wallpapers/,/usr/share/wallpapers/
+
+[Containments][134]
+activityId=
+formfactor=2
+immutability=1
+lastScreen=2
+location=3
+plugin=org.kde.panel
+wallpaperplugin=org.kde.image
+
+[Containments][134][Applets][135]
+immutability=1
+plugin=org.kde.plasma.digitalclock
+
+[Containments][134][Applets][135][Configuration]
+popupHeight=487
+popupWidth=570
+
+[Containments][134][Applets][135][Configuration][Appearance]
+customDateFormat=ddd, MMM d
+dateDisplayFormat=BesideTime
+dateFormat=custom
+
+[Containments][134][Applets][135][Configuration][ConfigDialog]
+DialogHeight=540
+DialogWidth=720
+
+[Containments][134][Applets][136]
+immutability=1
+plugin=org.kde.plasma.mediacontroller
+
+[Containments][134][Applets][136][Configuration]
+popupHeight=280
+popupWidth=394
+
+[Containments][134][Applets][137]
+immutability=1
+plugin=org.kde.plasma.volume
+
+[Containments][134][Applets][137][Configuration]
+popupHeight=629
+popupWidth=556
+
+[Containments][134][Applets][137][Configuration][General]
+migrated=true
+
+[Containments][134][Applets][138]
+immutability=1
+plugin=org.kde.plasma.panelspacer
+
+[Containments][134][Applets][139]
+immutability=1
+plugin=org.kde.plasma.panelspacer
+
+[Containments][134][Applets][140]
+immutability=1
+plugin=org.kde.plasma.pager
+
+[Containments][134][Applets][140][Configuration][ConfigDialog]
+DialogHeight=540
+DialogWidth=720
+
+[Containments][134][Applets][140][Configuration][General]
+displayedText=Number
+showOnlyCurrentScreen=true
+showWindowIcons=true
+
+[Containments][134][Applets][141]
+immutability=1
+plugin=org.kde.plasma.windowlist
+
+[Containments][134][Applets][141][Configuration]
+popupHeight=67
+popupWidth=154
+
+[Containments][134][General]
+AppletOrder=140;141;139;135;138;136;137
 
 [Containments][23][Applets][24][Configuration]
 popupHeight=509
@@ -246,7 +341,7 @@ DialogWidth=720
 [Containments][4][Applets][7][Configuration][General]
 indicateAudioStreams=false
 interactiveMute=false
-launchers=applications:vivaldi-stable.desktop,applications:kitty.desktop,applications:org.kde.dolphin.desktop,file:///var/lib/flatpak/exports/share/applications/com.spotify.Client.desktop,applications:vesktop.desktop,applications:steam.desktop,applications:signal.desktop,applications:com.shellyorg.shelly.desktop,applications:org.mozilla.Thunderbird.desktop,applications:code.desktop,applications:systemsettings.desktop,applications:joplin-desktop.desktop
+launchers=applications:vivaldi-stable.desktop,applications:kitty.desktop,applications:org.kde.dolphin.desktop,file:///var/lib/flatpak/exports/share/applications/com.spotify.Client.desktop,applications:vesktop.desktop,applications:steam.desktop,applications:signal.desktop,applications:com.microsoft.VSCode.desktop,applications:joplin-desktop.desktop,applications:org.mozilla.Thunderbird.desktop,applications:com.shellyorg.shelly.desktop,applications:systemsettings.desktop
 
 [Containments][4][Applets][91]
 immutability=1
@@ -254,7 +349,7 @@ plugin=org.kde.plasma.kickoff
 
 [Containments][4][Applets][91][Configuration]
 popupHeight=526
-popupWidth=1147
+popupWidth=1122
 
 [Containments][4][Applets][91][Configuration][ConfigDialog]
 DialogHeight=540
@@ -293,7 +388,7 @@ immutability=1
 plugin=org.kde.plasma.digitalclock
 
 [Containments][63][Applets][64][Configuration]
-popupHeight=476
+popupHeight=488
 popupWidth=570
 
 [Containments][63][Applets][64][Configuration][Appearance]
@@ -310,7 +405,7 @@ immutability=1
 plugin=org.kde.plasma.mediacontroller
 
 [Containments][63][Applets][65][Configuration]
-popupHeight=268
+popupHeight=281
 popupWidth=394
 
 [Containments][63][Applets][66]
@@ -318,7 +413,7 @@ immutability=1
 plugin=org.kde.plasma.volume
 
 [Containments][63][Applets][66][Configuration]
-popupHeight=615
+popupHeight=630
 popupWidth=556
 
 [Containments][63][Applets][66][Configuration][General]
@@ -350,4 +445,4 @@ AppletOrder=86;129;69;64;67;65;66
 
 [ScreenMapping]
 itemsOnDisabledScreens=
-screenMapping=desktop:/jrh-mc.zip,0,c91d0bc0-2618-4ec0-945f-b2599e8e8166
+screenMapping=desktop:/new wallpapers,0,c6457dd2-7809-461c-8084-0328989eac04,desktop:/new wallpapers.zip,0,c6457dd2-7809-461c-8084-0328989eac04,desktop:/jrh-mc.zip,0,c91d0bc0-2618-4ec0-945f-b2599e8e8166
