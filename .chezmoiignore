@@ -35,7 +35,6 @@ Documents/WindowsPowerShell
 .zshrc
 .oh-my-zsh
 .tmux.conf
-.vimrc
 .icons
 scripts
 .config/kitty
