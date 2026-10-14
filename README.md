@@ -21,6 +21,7 @@ The exception is the files that are now templates: nushell's `config.nu`/`env.nu
 To edit those specifically:
 - shared nushell logic → `.chezmoitemplates/nushell_config.nu.tmpl` / `nushell_env.nu.tmpl` (the per-OS `.tmpl` files under `dot_config/`/`AppData/` are just one-line includes of these)
 - shared Spicetify `config-xpui.ini` logic → `.chezmoitemplates/spicetify_config-xpui.ini.tmpl`
+- Neovim → edit `dot_config/nvim/` directly. On Windows the same files are rendered into `%LOCALAPPDATA%\nvim` through one-line `include` stubs under `AppData/Local/nvim/`; when you add a new file to `dot_config/nvim/`, add a matching `AppData/Local/nvim/<path>.tmpl` containing `{{- include "dot_config/nvim/<path>" -}}`
 - `.bashrc`/`.zshrc` → edit `dot_bashrc.tmpl`/`dot_zshrc.tmpl` directly; each branches inline on `root`/`jrh`-hostname/desktop since they only ever target one path (no shared partial needed)
 
 Then just `chezmoi apply` as usual, no special command needed to re-render. `chezmoi edit` also still works, just remember you're opening a template, not raw config. If a template ever does get flattened by an accidental `add`, `git checkout` the `.tmpl` file back from the repo and reapply — nothing destructive happens to the actual target files on disk either way.
@@ -61,6 +62,7 @@ The zsh and bash configs apply the same runtime checks to the rest of their tool
 - [nushell](https://www.nushell.sh/) and/or PowerShell
 - [starship](https://starship.rs/) installed to `C:\Program Files\starship\bin\starship.exe`
 - [Spicetify](https://spicetify.app/) (theme/marketplace assets applied to `%APPDATA%\spicetify`)
+- [Neovim](https://neovim.io/) (config applied to `%LOCALAPPDATA%\nvim`)
 
 ## Install
 
@@ -106,7 +108,7 @@ chezmoi apply ~/.zshrc
 ```
 
 ### Windows
-The same repository can be applied on Windows; `.chezmoiignore` automatically skips the Linux/KDE-only files and only applies the Windows-specific ones (nushell, PowerShell profile, Spicetify).
+The same repository can be applied on Windows; `.chezmoiignore` automatically skips the Linux/KDE-only files and only applies the Windows-specific ones (nushell, PowerShell profile, Spicetify, Neovim).
 ```powershell
 chezmoi init --apply joshrandall8478
 ```
