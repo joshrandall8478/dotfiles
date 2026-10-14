@@ -37,6 +37,7 @@ Documents/WindowsPowerShell
 .tmux.conf
 .icons
 scripts
+.config/nvim
 .config/kitty
 .config/fish
 .config/distrobox
