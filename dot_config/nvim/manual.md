@@ -1,8 +1,10 @@
 # Neovim Config Manual
 
-A small, modern Neovim setup: a transparent Catppuccin theme, Treesitter syntax
-highlighting, error checking for many languages, git integration, autocomplete,
-and a bubble-style statusline. All of it is about 340 lines in 7 files.
+A small, modern Neovim setup: 8 color schemes (Catppuccin by default) with no
+backgrounds (your terminal shows through everywhere), Treesitter syntax
+highlighting, error checking for many languages, git integration,
+autocomplete, and a statusline colored by mode. All of it is about 425 lines in
+7 files.
 
 **Leader key: `Space`.** Press it and wait a moment. A popup (which-key) lists
 every shortcut you can press next.
@@ -75,18 +77,19 @@ with `:e` to attach the server.
 ├── lazy-lock.json           pinned plugin versions (managed by :Lazy)
 ├── manual.md                this file
 └── lua/plugins/             one file per feature; lazy.nvim loads them all
-    ├── colorscheme.lua      Catppuccin Mocha, transparent background
+    ├── colorscheme.lua      8 color schemes (Catppuccin default), every background removed
     ├── treesitter.lua       syntax highlighting + automatic parser installs
     ├── lsp.lua              error checking (Mason + LSP) and autocomplete (blink.cmp)
     ├── git.lua              gitsigns (gutter, blame, hunks) + fugitive (:Git)
-    ├── statusline.lua       lualine bubble statusline
+    ├── statusline.lua       lualine statusline (no background, colored by mode)
     └── editor.lua           Telescope fuzzy finder + which-key popup
 ```
 
 | Plugin | Purpose |
 |---|---|
 | [lazy.nvim](https://github.com/folke/lazy.nvim) | Plugin manager |
-| [catppuccin](https://github.com/catppuccin/nvim) | Color scheme |
+| [catppuccin](https://github.com/catppuccin/nvim) | Default color scheme **[ORIGINAL]** |
+| everforest, rose-pine, tokyonight, kanagawa, gruvbox, nightfox, dracula | Extra color schemes, loaded only when picked **[NEW]** ([list](#color-schemes)) |
 | [nvim-treesitter](https://github.com/nvim-treesitter/nvim-treesitter) | Parser installer for syntax highlighting |
 | [mason.nvim](https://github.com/mason-org/mason.nvim) | Installs language servers and tools |
 | [mason-lspconfig](https://github.com/mason-org/mason-lspconfig.nvim) | Starts every server Mason installs |
@@ -128,6 +131,7 @@ select, scroll, and drag split borders to resize them.
 | `Space f d` | List all diagnostics (errors and warnings) |
 | `Space f s` | Symbols (functions, classes…) in the current file |
 | `Space f h` | Search Neovim's help |
+| `Space f c` | Switch color scheme, with live preview |
 
 Inside a picker, type to filter and use these keys:
 
@@ -271,18 +275,86 @@ listed with `:help lspconfig-all`.
 
 ### Colors and transparency
 
-- The theme is **Catppuccin Mocha**, with `transparent_background = true`.
-  Floating windows are transparent too (`float.transparent = true`).
-- With transparency on, the **terminal draws the background**. In kitty, set
-  `background_opacity 0.85` (and `background_blur` if your compositor supports
-  it) in `kitty.conf`.
+Everything about colors lives in `lua/plugins/colorscheme.lua` (and the theme
+part of `lua/plugins/statusline.lua`). Each piece is labeled in the code and in
+this section:
+
+| Label | Meaning |
+|---|---|
+| **[ORIGINAL]** | Part of the first version of this config |
+| **[CUSTOM]** | A change to how colors look: backgrounds removed everywhere |
+| **[NEW]** | Added with the extra color schemes |
+
+#### Color schemes
+
+Press **`Space f c`** to open a picker with a **live preview**: move through the
+list to try each scheme, press `Enter` to keep it, `Esc` to cancel. You can also
+type `:colorscheme <name>`. The scheme you pick, and whether it's light or dark,
+is **remembered** the next time you start Neovim.
+
+| Scheme | Variants (`:colorscheme …`) | Status |
+|---|---|---|
+| [Catppuccin](https://github.com/catppuccin/nvim) | `catppuccin` (= mocha), `catppuccin-mocha`, `catppuccin-macchiato`, `catppuccin-frappe`, `catppuccin-latte` (light) | **[ORIGINAL]**: default if you haven't picked one |
+| [Everforest](https://github.com/sainnhe/everforest) | `everforest` (dark; `:set background=light` for light) | **[NEW]** |
+| [Rosé Pine](https://github.com/rose-pine/neovim) | `rose-pine`, `rose-pine-main`, `rose-pine-moon`, `rose-pine-dawn` (light) | **[NEW]** |
+| [Tokyo Night](https://github.com/folke/tokyonight.nvim) | `tokyonight`, `tokyonight-night`, `tokyonight-storm`, `tokyonight-moon`, `tokyonight-day` (light) | **[NEW]** |
+| [Kanagawa](https://github.com/rebelot/kanagawa.nvim) | `kanagawa`, `kanagawa-wave`, `kanagawa-dragon`, `kanagawa-lotus` (light) | **[NEW]** |
+| [Gruvbox](https://github.com/ellisonleao/gruvbox.nvim) | `gruvbox` (dark; `:set background=light` for light) | **[NEW]** |
+| [Nightfox](https://github.com/EdenEast/nightfox.nvim) | `nightfox`, `duskfox`, `nordfox`, `terafox`, `carbonfox`, `dayfox` (light), `dawnfox` (light) | **[NEW]** |
+| [Dracula](https://github.com/Mofiqul/dracula.nvim) | `dracula`, `dracula-soft` | **[NEW]** |
+
+The new schemes are **lazy-loaded**: each one is downloaded once but only loads
+when you switch to it, so they don't slow down startup.
+
+#### What each part does
+
+| Piece | What it does | Status |
+|---|---|---|
+| Catppuccin Mocha + `transparent_background` / `float.transparent` | The main theme, with the editor and popup backgrounds made transparent | **[ORIGINAL]** |
+| `clear_backgrounds()` + the `keep` list | Removes the background from every other color group (see below) | **[CUSTOM]** |
+| Statusline theme with `bg = "NONE"` | Mode color on the text instead of in a bubble | **[CUSTOM]** |
+| 7 extra scheme plugins | Everforest, Rosé Pine, Tokyo Night, Kanagawa, Gruvbox, Nightfox, Dracula | **[NEW]** |
+| `Space f c` picker | Switch schemes with a live preview | **[NEW]** |
+| Remembered choice | Saves the scheme name and light/dark to `~/.local/share/nvim/colorscheme` and restores it on startup | **[NEW]** |
+| Light-variant reset | After a light-only variant (latte, dawn, day, lotus), the next scheme opens dark, so `latte` → `tokyonight` doesn't give you `tokyonight-day` | **[NEW]** |
+| Statusline follows the scheme | The statusline uses the active scheme's colors, falling back to colors generated from the scheme | **[NEW]** (previously Catppuccin only) |
+
+#### No backgrounds **[CUSTOM]**
+
+This applies to **every** scheme above.
+
+- `colorscheme.lua` **removes the background from every color group**: the editor, cursor line,
+  gutter, popups, menus, error messages, inlay hints, titles and the statusline.
+  It does this again whenever the color scheme changes or a plugin loads, so
+  colors added by plugins are stripped too.
+- Some text is drawn as dark text on a colored block, such as popup titles or
+  the mode name. That text **takes the block's color** instead, so it stays
+  readable. This works for light themes too.
+- A few groups **keep** their background, because without it you couldn't see
+  them at all:
+
+  | Kept | Why |
+  |---|---|
+  | `Visual` | Selected text |
+  | `Search`, `IncSearch`, `CurSearch`, `Substitute` | Search matches |
+  | `PmenuSel`, `BlinkCmpMenuSelection`, `TelescopeSelection` | The selected item in menus and pickers |
+  | `DiffAdd`, `DiffChange`, `DiffDelete`, `DiffText` | Changed lines in diff mode (`Space g d`) |
+
+  To strip literally everything, empty the `keep` list at the top of
+  `lua/plugins/colorscheme.lua`. To keep another group's background, add it to
+  the list.
+- The **terminal draws the background**. In kitty, set `background_opacity
+  0.85` (and `background_blur` if your compositor supports it) in `kitty.conf`.
 - Every floating window gets rounded borders (`winborder = "rounded"`), so
-  popups stay readable on a transparent background.
+  popups stay easy to see without a background. **[ORIGINAL]**
 
 ### Statusline
 
-There is a single statusline at the bottom, shared by all windows. From left to
-right:
+There is a single statusline at the bottom, shared by all windows. Like
+everything else it has no background: the current mode's color from the active
+color scheme is used for the text. With Catppuccin that's blue for Normal,
+green for Insert, mauve for Visual, peach for Command and red for Replace. From
+left to right:
 
 | Segment | Shows |
 |---|---|
@@ -354,13 +426,29 @@ statuslines.
 
 All changes go in the files described above. Restart Neovim afterwards.
 
-**Change the color scheme flavour** in `lua/plugins/colorscheme.lua`:
+**Change the color scheme**: press `Space f c` and pick one. Your choice is
+remembered, so no file editing is needed. To change what plain `catppuccin`
+means, edit `flavour` in `lua/plugins/colorscheme.lua`:
 
 ```lua
 flavour = "macchiato", -- "latte" (light), "frappe", "macchiato", "mocha"
 ```
 
-Set `transparent_background = false` to use the theme's own background.
+**Add another color scheme** by adding a line to the `[NEW]` list at the bottom
+of `lua/plugins/colorscheme.lua`. It loses its backgrounds automatically, like
+the others:
+
+```lua
+{ "navarasu/onedark.nvim", lazy = true }, -- onedark
+```
+
+**Bring the backgrounds back**:
+
+1. In `lua/plugins/colorscheme.lua`, delete the two `[CUSTOM]`
+   `nvim_create_autocmd` lines that call `clear_backgrounds`.
+2. In the same file, set `transparent_background = false` (and remove the
+   `float` line) to get the theme's solid background as well.
+3. In `lua/plugins/statusline.lua`, delete the loop that sets `bg = "NONE"`.
 
 **Use 2-space indentation for certain languages** by adding this to `init.lua`:
 

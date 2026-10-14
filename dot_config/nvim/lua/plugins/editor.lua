@@ -12,6 +12,7 @@ return {
       { "<leader>fd", "<cmd>Telescope diagnostics<cr>", desc = "Diagnostics (errors)" },
       { "<leader>fs", "<cmd>Telescope lsp_document_symbols<cr>", desc = "Symbols in file" },
       { "<leader>fh", "<cmd>Telescope help_tags<cr>", desc = "Help" },
+      { "<leader>fc", "<cmd>Telescope colorscheme enable_preview=true<cr>", desc = "Color schemes (live preview)" },
     },
     opts = {},
   },

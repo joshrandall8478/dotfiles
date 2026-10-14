@@ -1,12 +1,10 @@
--- Bubble-style statusline (needs a Nerd Font). Left to right:
+-- Background-free statusline in the mode's colour (needs a Nerd Font). Left to right:
 --   mode · git branch + live diff · file + diagnostics ··· macro · search
 --   · plugin updates · active language servers · progress · line:col
 
 -- Nerd Font glyphs, written as escapes so they survive any editor
 local icon = {
   vim = "\u{E7C5}",
-  cap_left = "\u{E0B6}",
-  cap_right = "\u{E0B4}",
   added = "\u{F457} ",
   modified = "\u{F459} ",
   removed = "\u{F458} ",
@@ -32,15 +30,29 @@ return {
       return reg ~= "" and (icon.record .. " @" .. reg) or ""
     end
 
+    -- [NEW] Uses the current colour scheme's statusline colours (re-run by lualine
+    -- whenever the scheme changes), [CUSTOM] with backgrounds removed: the mode
+    -- colour moves onto the text. (Labels explained in colorscheme.lua / manual.md)
+    local function theme()
+      local loader = require("lualine.utils.loader")
+      local ok, t = pcall(loader.load_theme, vim.g.colors_name or "auto")
+      t = vim.deepcopy(ok and type(t) == "table" and t or loader.load_theme("auto"))
+      for _, mode in pairs(t) do
+        if mode.a and mode.a.bg and mode.a.bg ~= "NONE" then mode.a.fg = mode.a.bg end
+        for _, section in pairs(mode) do section.bg = "NONE" end
+      end
+      return t
+    end
+
     return {
       options = {
-        theme = "catppuccin-nvim",
+        theme = theme,
         globalstatus = true,
         component_separators = "",
-        section_separators = { left = icon.cap_right, right = icon.cap_left },
+        section_separators = "",
       },
       sections = {
-        lualine_a = { { "mode", icon = icon.vim, separator = { left = icon.cap_left } } },
+        lualine_a = { { "mode", icon = icon.vim } },
         lualine_b = {
           "branch",
           { "diff", source = git_diff, symbols = { added = icon.added, modified = icon.modified, removed = icon.removed } },
@@ -51,14 +63,14 @@ return {
           "diagnostics",
         },
         lualine_x = {
-          { macro, color = { fg = "#f38ba8", gui = "bold" } },
+          { macro, color = "DiagnosticError" },
           "searchcount",
           "selectioncount",
-          { lazy_status.updates, cond = lazy_status.has_updates, color = { fg = "#fab387" } },
+          { lazy_status.updates, cond = lazy_status.has_updates, color = "DiagnosticWarn" },
           "lsp_status",
         },
         lualine_y = { "progress" },
-        lualine_z = { { "location", separator = { right = icon.cap_right } } },
+        lualine_z = { "location" },
       },
       extensions = { "lazy", "mason", "fugitive", "quickfix" },
     }
