@@ -1,1 +1,12 @@
 set mouse=a
+
+set number
+
+" Enable filetype detection and syntax highlighting
+filetype plugin indent on
+syntax on
+
+" Fix syntax highlighting specifically for the Kitty terminal
+if &term =~ 'kitty'
+  set t_Co=256
+endif
