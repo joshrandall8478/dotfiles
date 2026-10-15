@@ -4,7 +4,7 @@
 
 -- Nerd Font glyphs, written as escapes so they survive any editor
 local icon = {
-  vim = "\u{E7C5}",
+  neovim = "\u{E6AE}",
   added = "\u{F457} ",
   modified = "\u{F459} ",
   removed = "\u{F458} ",
@@ -52,7 +52,7 @@ return {
         section_separators = "",
       },
       sections = {
-        lualine_a = { { "mode", icon = icon.vim } },
+        lualine_a = { { "mode", icon = icon.neovim } },
         lualine_b = {
           "branch",
           { "diff", source = git_diff, symbols = { added = icon.added, modified = icon.modified, removed = icon.removed } },
