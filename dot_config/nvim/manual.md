@@ -45,6 +45,18 @@ Optional:
 | `ripgrep` (`rg`) | `Space f g` (search text in the project) |
 | `fd` | Faster `Space f f` (find files) |
 
+On an **older Neovim** (Debian's `apt install neovim` ships 0.10 on trixie, 0.7
+on bookworm) the config still starts: you get the options and keymaps but no
+plugins, and a warning says so. To get everything, install the official release
+instead of the Debian package:
+
+```sh
+arch=x86_64   # or arm64 on ARM servers
+curl -LO https://github.com/neovim/neovim/releases/latest/download/nvim-linux-$arch.tar.gz
+sudo rm -rf /opt/nvim-linux-$arch && sudo tar -C /opt -xzf nvim-linux-$arch.tar.gz
+sudo ln -sf /opt/nvim-linux-$arch/bin/nvim /usr/local/bin/nvim   # ahead of /usr/bin on PATH
+```
+
 You **don't** need to install `tree-sitter-cli` or `shellcheck` yourself. Mason
 installs both automatically.
 
