@@ -34,7 +34,9 @@ opt.confirm = true             -- ask to save instead of erroring on :q
 opt.list = true
 opt.listchars = { tab = "» ", trail = "·", nbsp = "␣" }
 opt.fillchars = { eob = " " }  -- hide the ~ on empty lines
-opt.winborder = "rounded"      -- rounded borders on all floating windows
+if vim.fn.has("nvim-0.11") == 1 then
+  opt.winborder = "rounded"    -- rounded borders on all floating windows
+end
 vim.schedule(function() opt.clipboard = "unnamedplus" end) -- use the system clipboard
 
 vim.cmd("syntax enable")       -- regex highlighting; treesitter upgrades it when a parser exists
@@ -53,8 +55,21 @@ map("v", ">", ">gv", { desc = "Indent right" })
 
 -- Briefly flash yanked text
 vim.api.nvim_create_autocmd("TextYankPost", {
-  callback = function() vim.hl.on_yank() end,
+  callback = function() (vim.hl or vim.highlight).on_yank() end, -- vim.hl is 0.11+
 })
+
+-- ── Plugins need Neovim 0.12+ ───────────────────────────────
+-- Older Neovim (e.g. Debian's packaged one) gets the options and keymaps above
+-- without plugins, instead of a wall of errors. See "Requirements" in manual.md.
+if vim.fn.has("nvim-0.12") == 0 then
+  local v = vim.fn.api_info().version
+  vim.schedule(function()
+    vim.notify(string.format(
+      "Neovim %d.%d.%d is too old for this config's plugins (needs 0.12+); running without them.",
+      v.major, v.minor, v.patch), vim.log.levels.WARN)
+  end)
+  return
+end
 
 -- ── Plugins (lazy.nvim) ─────────────────────────────────────
 local lazypath = vim.fn.stdpath("data") .. "/lazy/lazy.nvim"
