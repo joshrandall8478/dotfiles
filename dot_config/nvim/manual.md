@@ -485,13 +485,15 @@ vim.api.nvim_create_autocmd("FileType", {
 })
 ```
 
-**Change a language server's settings** in `lua/plugins/lsp.lua`, next to the
-existing `lua_ls` example:
+**Change a language server's settings** in the `settings` table at the top of
+`lua/plugins/lsp.lua`, next to the existing `lua_ls` entry (this works on every
+supported Neovim version):
 
 ```lua
-vim.lsp.config("pyright", {
-  settings = { python = { analysis = { typeCheckingMode = "strict" } } },
-})
+local settings = {
+  lua_ls = { ... },
+  pyright = { python = { analysis = { typeCheckingMode = "strict" } } },
+}
 ```
 
 **Change the completion keys** in `lua/plugins/lsp.lua`:
