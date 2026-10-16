@@ -2,6 +2,8 @@
 return {
   {
     "nvim-telescope/telescope.nvim",
+    tag = vim.fn.has("nvim-0.12") == 0 and "v0.2.2" or nil, -- newer releases need Neovim 0.11+
+    cond = vim.fn.has("nvim-0.10.4") == 1,                  -- and v0.2.2 needs 0.10.4
     dependencies = { "nvim-lua/plenary.nvim", "nvim-tree/nvim-web-devicons" },
     cmd = "Telescope",
     keys = {

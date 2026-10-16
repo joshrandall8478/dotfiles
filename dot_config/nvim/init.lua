@@ -58,18 +58,20 @@ vim.api.nvim_create_autocmd("TextYankPost", {
   callback = function() (vim.hl or vim.highlight).on_yank() end, -- vim.hl is 0.11+
 })
 
--- ── Plugins need Neovim 0.12+ ───────────────────────────────
--- Older Neovim (e.g. Debian's packaged one) gets the options and keymaps above
--- without plugins, instead of a wall of errors. See "Requirements" in manual.md.
-if vim.fn.has("nvim-0.12") == 0 then
+-- ── Older Neovim ────────────────────────────────────────────
+-- 0.10 and 0.11 (e.g. Debian's packaged one) get older releases of the few plugins
+-- that need 0.12, pinned in lazy-lock-legacy.json. Anything older runs without
+-- plugins. See "Requirements" in manual.md.
+if vim.fn.has("nvim-0.10") == 0 then
   local v = vim.fn.api_info().version
   vim.schedule(function()
     vim.notify(string.format(
-      "Neovim %d.%d.%d is too old for this config's plugins (needs 0.12+); running without them.",
+      "Neovim %d.%d.%d is too old for this config's plugins (needs 0.10+); running without them.",
       v.major, v.minor, v.patch), vim.log.levels.WARN)
   end)
   return
 end
+local legacy = vim.fn.has("nvim-0.12") == 0
 
 -- ── Plugins (lazy.nvim) ─────────────────────────────────────
 local lazypath = vim.fn.stdpath("data") .. "/lazy/lazy.nvim"
@@ -89,4 +91,5 @@ require("lazy").setup("plugins", {
   checker = { enabled = true, notify = false }, -- quietly check for updates (shown in the statusline)
   change_detection = { notify = false },
   rocks = { enabled = false },                  -- no plugin here needs luarocks
+  lockfile = vim.fn.stdpath("config") .. (legacy and "/lazy-lock-legacy.json" or "/lazy-lock.json"),
 })

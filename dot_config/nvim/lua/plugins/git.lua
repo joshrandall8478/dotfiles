@@ -3,6 +3,7 @@
 return {
   {
     "lewis6991/gitsigns.nvim",
+    tag = vim.fn.has("nvim-0.12") == 0 and "v2.1.0" or nil, -- newer releases need Neovim 0.11+
     event = { "BufReadPre", "BufNewFile" },
     opts = {
       current_line_blame = true, -- "you, 2 days ago • message" at the end of the line
