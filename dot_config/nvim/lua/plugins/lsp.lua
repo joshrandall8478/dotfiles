@@ -15,12 +15,24 @@ local servers = {
   "yamlls", "taplo", "marksman", -- YAML, TOML, Markdown
 }
 
+-- Extra settings for particular servers
+local settings = {
+  lua_ls = { -- teach lua_ls about Neovim's API
+    Lua = { runtime = { version = "LuaJIT" }, workspace = { library = { vim.env.VIMRUNTIME } } },
+  },
+}
+
+-- Neovim 0.10/0.11 use the older Mason v1 stack, which sets servers up through
+-- nvim-lspconfig's setup() instead of vim.lsp.config (pinned in lazy-lock-legacy.json)
+local legacy = vim.fn.has("nvim-0.12") == 0
+
 -- Non-LSP tools: shellcheck powers bash error checking, tree-sitter builds highlighting parsers
 local tools = { "shellcheck", "tree-sitter-cli" }
 
 return {
   {
     "mason-org/mason.nvim",
+    version = legacy and "^1.0.0" or nil,
     lazy = false,
     config = function()
       require("mason").setup()
@@ -35,8 +47,13 @@ return {
 
   {
     "mason-org/mason-lspconfig.nvim",
+    version = legacy and "^1.0.0" or nil,
     event = { "BufReadPre", "BufNewFile" },
-    dependencies = { "mason-org/mason.nvim", "neovim/nvim-lspconfig", "saghen/blink.cmp" },
+    dependencies = {
+      "mason-org/mason.nvim",
+      { "neovim/nvim-lspconfig", tag = legacy and "v2.5.0" or nil }, -- later 2.x warn on 0.10
+      "saghen/blink.cmp",
+    },
     config = function()
       vim.diagnostic.config({
         severity_sort = true,
@@ -52,13 +69,23 @@ return {
         },
       })
 
-      vim.lsp.config("*", { capabilities = require("blink.cmp").get_lsp_capabilities() })
-      vim.lsp.config("lua_ls", { -- teach lua_ls about Neovim's API
-        settings = { Lua = { runtime = { version = "LuaJIT" }, workspace = { library = { vim.env.VIMRUNTIME } } } },
-      })
+      local capabilities = require("blink.cmp").get_lsp_capabilities()
 
       -- Installs any missing servers above, and starts every installed one.
-      require("mason-lspconfig").setup({ ensure_installed = servers })
+      if legacy then
+        require("mason-lspconfig").setup({
+          ensure_installed = servers,
+          handlers = {
+            function(name)
+              require("lspconfig")[name].setup({ capabilities = capabilities, settings = settings[name] })
+            end,
+          },
+        })
+      else
+        vim.lsp.config("*", { capabilities = capabilities })
+        for name, s in pairs(settings) do vim.lsp.config(name, { settings = s }) end
+        require("mason-lspconfig").setup({ ensure_installed = servers })
+      end
 
       -- Built in already: K hover, grn rename, gra code action, grr references, [d / ]d jump to diagnostics
       vim.api.nvim_create_autocmd("LspAttach", {
@@ -70,6 +97,11 @@ return {
           map("<leader>cr", vim.lsp.buf.rename, "Rename symbol")
           map("<leader>cf", function() vim.lsp.buf.format({ async = true }) end, "Format file")
           map("<leader>cd", vim.diagnostic.open_float, "Line diagnostics")
+          if vim.fn.has("nvim-0.11") == 0 then -- built in from 0.11 on
+            map("grn", vim.lsp.buf.rename, "Rename symbol")
+            map("gra", vim.lsp.buf.code_action, "Code action")
+            map("grr", vim.lsp.buf.references, "References")
+          end
         end,
       })
     end,

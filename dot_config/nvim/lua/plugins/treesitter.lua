@@ -1,5 +1,22 @@
 -- Treesitter: precise, colourful syntax highlighting. The parser for a
 -- language is installed automatically the first time you open one of its files.
+
+-- Neovim 0.10/0.11: the main branch needs 0.12, so use the older master branch,
+-- which has its own automatic installs (it builds parsers with the C compiler).
+if vim.fn.has("nvim-0.12") == 0 then
+  return {
+    "nvim-treesitter/nvim-treesitter",
+    branch = "master",
+    lazy = false,
+    build = ":TSUpdate",
+    main = "nvim-treesitter.configs",
+    opts = {
+      auto_install = true,
+      highlight = { enable = true },
+    },
+  }
+end
+
 return {
   "nvim-treesitter/nvim-treesitter",
   branch = "main",

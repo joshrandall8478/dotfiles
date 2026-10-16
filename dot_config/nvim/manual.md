@@ -29,7 +29,7 @@ every shortcut you can press next.
 
 | Requirement | Used for |
 |---|---|
-| Neovim **0.12+** | Required by nvim-treesitter's `main` branch and the built-in LSP setup |
+| Neovim **0.10+** (0.12+ recommended) | 0.10 and 0.11 get older releases of a few plugins, see below |
 | `git`, `curl`, `tar`, `unzip` | Downloading plugins, parsers and language servers |
 | A C compiler (`gcc`) | Building Treesitter parsers |
 | A **Nerd Font** set as your terminal font | Icons in the statusline, gutter and file pickers |
@@ -45,10 +45,23 @@ Optional:
 | `ripgrep` (`rg`) | `Space f g` (search text in the project) |
 | `fd` | Faster `Space f f` (find files) |
 
-On an **older Neovim** (Debian's `apt install neovim` ships 0.10 on trixie, 0.7
-on bookworm) the config still starts: you get the options and keymaps but no
-plugins, and a warning says so. To get everything, install the official release
-instead of the Debian package:
+**On Neovim 0.10 or 0.11** (e.g. Debian trixie's `apt install neovim`, which
+ships 0.10.4) everything works, using older releases of the plugins that need
+0.12: nvim-treesitter's `master` branch, Mason v1 with nvim-lspconfig's `setup()`,
+gitsigns v2.1.0 and telescope v0.2.2. Their versions are pinned in
+`lazy-lock-legacy.json` instead of `lazy-lock.json`. Differences from 0.12:
+
+- Floating windows have no rounded border (`winborder` is 0.11+).
+- Telescope (`Space f …`) needs 0.10.4 or newer.
+- `:Lazy update` can pull in a plugin release that has dropped 0.10/0.11
+  support. If something breaks after an update, `:Lazy restore` goes back to
+  the tested versions.
+
+**Older than 0.10** (e.g. Debian bookworm's 0.7) the config still starts with
+your options and keymaps, but no plugins, and a warning says so.
+
+To get the newest setup on a server, install the official release instead of
+the Debian package:
 
 ```sh
 arch=x86_64   # or arm64 on ARM servers
@@ -87,6 +100,7 @@ with `:e` to attach the server.
 ~/.config/nvim/
 ├── init.lua                 options, keymaps, and lazy.nvim setup
 ├── lazy-lock.json           pinned plugin versions (managed by :Lazy)
+├── lazy-lock-legacy.json    the same, for Neovim 0.10 / 0.11
 ├── manual.md                this file
 └── lua/plugins/             one file per feature; lazy.nvim loads them all
     ├── colorscheme.lua      8 color schemes (Catppuccin default), every background removed
@@ -471,13 +485,15 @@ vim.api.nvim_create_autocmd("FileType", {
 })
 ```
 
-**Change a language server's settings** in `lua/plugins/lsp.lua`, next to the
-existing `lua_ls` example:
+**Change a language server's settings** in the `settings` table at the top of
+`lua/plugins/lsp.lua`, next to the existing `lua_ls` entry (this works on every
+supported Neovim version):
 
 ```lua
-vim.lsp.config("pyright", {
-  settings = { python = { analysis = { typeCheckingMode = "strict" } } },
-})
+local settings = {
+  lua_ls = { ... },
+  pyright = { python = { analysis = { typeCheckingMode = "strict" } } },
+}
 ```
 
 **Change the completion keys** in `lua/plugins/lsp.lua`:
@@ -516,7 +532,7 @@ Including `desc` makes the keymap appear in the which-key popup.
 | What | How |
 |---|---|
 | Plugins | `:Lazy update` updates them and records the new versions in `lazy-lock.json`. The statusline shows how many updates are waiting. |
-| Undo a bad plugin update | `:Lazy restore` returns to the versions in `lazy-lock.json` |
+| Undo a bad plugin update | `:Lazy restore` returns to the versions in `lazy-lock.json` (`lazy-lock-legacy.json` on 0.10 / 0.11) |
 | Language servers and tools | `:Mason`, then `U` |
 | Treesitter parsers | `:TSUpdate` (also runs automatically when nvim-treesitter updates) |
 
