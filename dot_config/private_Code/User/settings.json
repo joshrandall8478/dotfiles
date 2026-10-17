@@ -49,5 +49,6 @@
     },
     "[markdown]": {
         "editor.defaultFormatter": "esbenp.prettier-vscode"
-    }
+    },
+    "claudeCode.hideOnboarding": true
 }
