@@ -1,6 +1,6 @@
 -- Background-free statusline in the mode's colour (needs a Nerd Font). Left to right:
---   mode · git branch + live diff · file + diagnostics ··· macro · search
---   · plugin updates · active language servers · progress · line:col
+--   mode · git branch + live diff · file ··· macro · search
+--   · plugin updates · progress · line:col
 
 -- Nerd Font glyphs, written as escapes so they survive any editor
 local icon = {
@@ -60,19 +60,17 @@ return {
         lualine_c = {
           { "filetype", icon_only = true, padding = { left = 1, right = 0 } },
           { "filename", path = 1, symbols = { modified = "●", readonly = icon.lock, unnamed = "[No Name]" } },
-          "diagnostics",
         },
         lualine_x = {
           { macro, color = "DiagnosticError" },
           "searchcount",
           "selectioncount",
           { lazy_status.updates, cond = lazy_status.has_updates, color = "DiagnosticWarn" },
-          "lsp_status",
         },
         lualine_y = { "progress" },
         lualine_z = { "location" },
       },
-      extensions = { "lazy", "mason", "fugitive", "quickfix" },
+      extensions = { "lazy", "fugitive", "quickfix" },
     }
   end,
 }

@@ -12,7 +12,7 @@ opt.mouse = "a"                -- mouse in every mode
 opt.number = true              -- current line shows its real number…
 opt.relativenumber = true      -- …and the rest count up/down from the cursor
 opt.cursorline = true
-opt.signcolumn = "yes"         -- room for git + diagnostic signs, no jumping
+opt.signcolumn = "yes"         -- room for git signs, no jumping
 opt.termguicolors = true       -- 24-bit colours
 opt.showmode = false           -- the statusline already shows the mode
 opt.scrolloff = 8
@@ -39,7 +39,7 @@ if vim.fn.has("nvim-0.11") == 1 then
 end
 vim.schedule(function() opt.clipboard = "unnamedplus" end) -- use the system clipboard
 
-vim.cmd("syntax enable")       -- regex highlighting; treesitter upgrades it when a parser exists
+vim.cmd("syntax enable")       -- built-in regex highlighting
 
 -- ── Keymaps ─────────────────────────────────────────────────
 local map = vim.keymap.set

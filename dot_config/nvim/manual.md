@@ -1,10 +1,10 @@
 # Neovim Config Manual
 
 A small, modern Neovim setup: 8 color schemes (Catppuccin by default) with no
-backgrounds (your terminal shows through everywhere), Treesitter syntax
-highlighting, error checking for many languages, git integration,
-autocomplete, and a statusline colored by mode. All of it is about 425 lines in
-7 files.
+backgrounds (your terminal shows through everywhere), a fuzzy finder, git
+integration, and a statusline colored by mode. Nothing needs compiling or extra
+toolchains: plugins are plain git clones. All of it is about 325 lines in
+5 files.
 
 **Leader key: `Space`.** Press it and wait a moment. A popup (which-key) lists
 every shortcut you can press next.
@@ -30,12 +30,8 @@ every shortcut you can press next.
 | Requirement | Used for |
 |---|---|
 | Neovim **0.10+** (0.12+ recommended) | 0.10 and 0.11 get older releases of a few plugins, see below |
-| `git`, `curl`, `tar`, `unzip` | Downloading plugins, parsers and language servers |
-| A C compiler (`gcc`) | Building Treesitter parsers |
+| `git` | Downloading plugins |
 | A **Nerd Font** set as your terminal font | Icons in the statusline, gutter and file pickers |
-| `npm` | Installing pyright, ts_ls, html/css/json, bashls and yamlls |
-| `go` | Installing gopls |
-| A Rust toolchain (`rustup default stable`) | Running rust-analyzer (it calls `cargo`) |
 
 Optional:
 
@@ -47,8 +43,7 @@ Optional:
 
 **On Neovim 0.10 or 0.11** (e.g. Debian trixie's `apt install neovim`, which
 ships 0.10.4) everything works, using older releases of the plugins that need
-0.12: nvim-treesitter's `master` branch, Mason v1 with nvim-lspconfig's `setup()`,
-gitsigns v2.1.0 and telescope v0.2.2. Their versions are pinned in
+0.12: gitsigns v2.1.0 and telescope v0.2.2. Their versions are pinned in
 `lazy-lock-legacy.json` instead of `lazy-lock.json`. Differences from 0.12:
 
 - Floating windows have no rounded border (`winborder` is 0.11+).
@@ -70,28 +65,14 @@ sudo rm -rf /opt/nvim-linux-$arch && sudo tar -C /opt -xzf nvim-linux-$arch.tar.
 sudo ln -sf /opt/nvim-linux-$arch/bin/nvim /usr/local/bin/nvim   # ahead of /usr/bin on PATH
 ```
 
-You **don't** need to install `tree-sitter-cli` or `shellcheck` yourself. Mason
-installs both automatically.
-
 ---
 
 ## 2. First launch
 
-Run `nvim`. The first launch downloads everything it needs:
-
-1. **lazy.nvim** clones itself and installs every plugin. The exact versions
-   are pinned in `lazy-lock.json`, so you get the versions this config was
-   tested with.
-2. **Mason** installs `tree-sitter-cli` and `shellcheck` straight away.
-3. When you **open your first file**, Mason installs the language servers
-   (about 30 seconds). Notifications show the progress.
-4. The first time you open a file in a new language, its **Treesitter parser**
-   downloads and compiles in a few seconds. Until then the file uses Vim's
-   regex highlighting, so it is never uncolored.
-
-If a file was already open while its language server was installing, reload it
-with `:e` to attach the server.
-
+Run `nvim`. On the first launch **lazy.nvim** clones itself and installs every
+plugin. The exact versions are pinned in `lazy-lock.json`, so you get the
+versions this config was tested with. That's it: there are no language servers,
+parsers or binaries to download.
 ---
 
 ## 3. File layout
@@ -104,8 +85,6 @@ with `:e` to attach the server.
 ├── manual.md                this file
 └── lua/plugins/             one file per feature; lazy.nvim loads them all
     ├── colorscheme.lua      8 color schemes (Catppuccin default), every background removed
-    ├── treesitter.lua       syntax highlighting + automatic parser installs
-    ├── lsp.lua              error checking (Mason + LSP) and autocomplete (blink.cmp)
     ├── git.lua              gitsigns (gutter, blame, hunks) + fugitive (:Git)
     ├── statusline.lua       lualine statusline (no background, colored by mode)
     └── editor.lua           Telescope fuzzy finder + which-key popup
@@ -116,11 +95,6 @@ with `:e` to attach the server.
 | [lazy.nvim](https://github.com/folke/lazy.nvim) | Plugin manager |
 | [catppuccin](https://github.com/catppuccin/nvim) | Default color scheme **[ORIGINAL]** |
 | everforest, rose-pine, tokyonight, kanagawa, gruvbox, nightfox, dracula | Extra color schemes, loaded only when picked **[NEW]** ([list](#color-schemes)) |
-| [nvim-treesitter](https://github.com/nvim-treesitter/nvim-treesitter) | Parser installer for syntax highlighting |
-| [mason.nvim](https://github.com/mason-org/mason.nvim) | Installs language servers and tools |
-| [mason-lspconfig](https://github.com/mason-org/mason-lspconfig.nvim) | Starts every server Mason installs |
-| [nvim-lspconfig](https://github.com/neovim/nvim-lspconfig) | Ready-made settings for each language server |
-| [blink.cmp](https://github.com/saghen/blink.cmp) + friendly-snippets | Autocomplete and snippets |
 | [gitsigns.nvim](https://github.com/lewis6991/gitsigns.nvim) | Git markers, inline blame, hunk actions |
 | [vim-fugitive](https://github.com/tpope/vim-fugitive) | Full git interface (`:Git`) |
 | [lualine.nvim](https://github.com/nvim-lualine/lualine.nvim) + nvim-web-devicons | Statusline and file icons |
@@ -154,8 +128,6 @@ select, scroll, and drag split borders to resize them.
 | `Space f g` | Search text across the project (needs ripgrep) |
 | `Space f b` | Switch between open buffers |
 | `Space f r` | Recently opened files |
-| `Space f d` | List all diagnostics (errors and warnings) |
-| `Space f s` | Symbols (functions, classes…) in the current file |
 | `Space f h` | Search Neovim's help |
 | `Space f c` | Switch color scheme, with live preview |
 
@@ -168,52 +140,6 @@ Inside a picker, type to filter and use these keys:
 | `Ctrl-x` / `Ctrl-v` / `Ctrl-t` | Open in a horizontal split / vertical split / new tab |
 | `Ctrl-q` | Send all results to the quickfix list |
 | `Ctrl-c`, or `Esc` twice | Close |
-
-### Code and errors (LSP)
-
-These keys work only in buffers where a language server is running.
-
-**Added by this config:**
-
-| Key | Action |
-|---|---|
-| `gd` | Go to definition |
-| `gD` | Go to declaration |
-| `Space c a` | Code action (quick fixes, refactors) |
-| `Space c r` | Rename symbol everywhere |
-| `Space c f` | Format file |
-| `Space c d` | Show the full diagnostics for the current line |
-
-**Built into Neovim 0.12:**
-
-| Key | Action |
-|---|---|
-| `K` | Hover documentation |
-| `grn` | Rename |
-| `gra` | Code action |
-| `grr` | List references |
-| `gri` | Go to implementation |
-| `grt` | Go to type definition |
-| `grx` | Run code lens |
-| `gO` | Symbols in this file |
-| `Ctrl-s` (Insert) | Signature help |
-| `]d` / `[d` | Next / previous diagnostic |
-| `Ctrl-w d` | Diagnostic popup for the cursor position |
-| `Ctrl-o` / `Ctrl-i` | Jump back / forward (for example, after `gd`) |
-
-### Autocomplete (blink.cmp)
-
-The completion menu opens on its own as you type, with documentation beside it.
-
-| Key (Insert) | Action |
-|---|---|
-| `Tab` | Accept the selected item (the first item if none is selected); inside a snippet, jump to the next placeholder |
-| `Shift-Tab` | Jump to the previous snippet placeholder |
-| `Ctrl-n` / `Ctrl-p` or `↓` / `↑` | Select the next / previous item |
-| `Ctrl-Space` | Open the menu, or toggle the documentation |
-| `Ctrl-e` | Close the menu |
-| `Ctrl-f` / `Ctrl-b` | Scroll the documentation |
-| `Ctrl-k` | Toggle function signature help |
 
 ### Git (`Space g`)
 
@@ -244,60 +170,10 @@ Keys inside the **`:Git` status window**:
 
 ## 5. Features
 
-### Error checking (LSP)
-
-Mason downloads the language servers. mason-lspconfig starts **every server
-Mason has installed**, and nvim-lspconfig provides each one's settings.
-Problems show up in four places:
-
-- **Underlines** on the problem code
-- **Virtual text** (`●` and the message) at the end of the line
-- **Icons in the gutter** for errors, warnings, info and hints
-- **Counts in the statusline**
-
-Errors are listed before warnings. Diagnostics refresh when you leave Insert
-mode, not on every keystroke.
-
-**Servers installed automatically:**
-
-| Language | Server |
-|---|---|
-| Lua | `lua_ls` (already set up for Neovim's API) |
-| Python | `pyright` |
-| JavaScript / TypeScript | `ts_ls` |
-| HTML / CSS / JSON | `html`, `cssls`, `jsonls` |
-| C / C++ | `clangd` |
-| Rust | `rust_analyzer` |
-| Go | `gopls` |
-| Bash / sh | `bashls` (uses `shellcheck` for warnings) |
-| YAML / TOML / Markdown | `yamlls`, `taplo`, `marksman` |
-
-**To add another language:**
-
-1. Run `:Mason`. Press `Ctrl-f` to filter by language, or `/` to search.
-2. Move to the server and press `i`.
-3. Open a file in that language. The server starts on its own.
-
-To have the server installed automatically on a new machine too, add its name
-to the `servers` list at the top of `lua/plugins/lsp.lua`. Server names are
-listed with `:help lspconfig-all`.
-
-**Per-language notes:**
-
-- **Rust** needs a default toolchain: `rustup default stable`.
-- **C/C++**: clangd works best with a `compile_commands.json` in the project.
-  CMake can generate one with `-DCMAKE_EXPORT_COMPILE_COMMANDS=ON`.
-- **Go**: projects need a `go.mod`.
-
 ### Syntax highlighting
 
-- `syntax enable` turns on Vim's regex highlighting for every filetype Vim knows.
-- **Treesitter** replaces it with more accurate, more colorful highlighting
-  once a language's parser is installed. Parsers install **on their own** the
-  first time you open a file in that language. Mason provides the
-  `tree-sitter` CLI that compiles them.
-- To manage parsers yourself: `:TSInstall <lang>`, `:TSUninstall <lang>`,
-  `:TSUpdate`, and `:TSLog` (shows install output).
+Vim's built-in regex highlighting (`syntax enable`) covers every filetype Vim
+knows. There is no Treesitter, so nothing has to be compiled.
 
 ### Colors and transparency
 
@@ -350,7 +226,7 @@ when you switch to it, so they don't slow down startup.
 This applies to **every** scheme above.
 
 - `colorscheme.lua` **removes the background from every color group**: the editor, cursor line,
-  gutter, popups, menus, error messages, inlay hints, titles and the statusline.
+  gutter, popups, menus, error messages, titles and the statusline.
   It does this again whenever the color scheme changes or a plugin loads, so
   colors added by plugins are stripped too.
 - Some text is drawn as dark text on a colored block, such as popup titles or
@@ -363,7 +239,7 @@ This applies to **every** scheme above.
   |---|---|
   | `Visual` | Selected text |
   | `Search`, `IncSearch`, `CurSearch`, `Substitute` | Search matches |
-  | `PmenuSel`, `BlinkCmpMenuSelection`, `TelescopeSelection` | The selected item in menus and pickers |
+  | `PmenuSel`, `TelescopeSelection` | The selected item in menus and pickers |
   | `DiffAdd`, `DiffChange`, `DiffDelete`, `DiffText` | Changed lines in diff mode (`Space g d`) |
 
   To strip literally everything, empty the `keep` list at the top of
@@ -387,16 +263,14 @@ left to right:
 | **Mode** | Current mode (NORMAL, INSERT, VISUAL…) with a Vim icon; the color changes with the mode |
 | **Git** | Branch name, plus live `+added ~changed -removed` line counts that update as you type |
 | **File** | File type icon, path relative to the working directory, `●` if unsaved, a lock if read-only |
-| **Diagnostics** | Error, warning, info and hint counts for the buffer |
 | **Macro** | `@q` (in red) while you're recording a macro |
 | **Search** | `[3/12]`: which match you're on, out of how many |
 | **Selection** | Size of the selection in Visual mode |
 | **Updates** | Number of plugin updates available (checked quietly in the background) |
-| **LSP** | Names of the running language servers, with a spinner while they're busy |
 | **Progress** | `Top`, `Bot`, or how far through the file you are |
 | **Location** | `line:column` |
 
-The Lazy, Mason, fugitive and quickfix windows get their own simplified
+The Lazy, fugitive and quickfix windows get their own simplified
 statuslines.
 
 ### Git
@@ -438,13 +312,9 @@ statuslines.
 | Command | What it does |
 |---|---|
 | `:Lazy` | Plugin manager. Keys: `U` update, `S` sync, `X` clean, `C` check, `R` restore lockfile, `P` profile startup, `?` help |
-| `:Mason` | Language server/tool manager. Keys: `i` install, `X` uninstall, `u` update, `U` update all, `Ctrl-f` filter by language, `g?` help |
 | `:Telescope` | Opens a list of every picker |
 | `:Git …` | Runs any git command through fugitive |
-| `:LspInfo` | Shows which language servers are attached, with their settings |
-| `:LspRestart` / `:LspLog` | Restart the servers / open the LSP log |
-| `:TSUpdate` / `:TSInstall <lang>` | Update / install Treesitter parsers |
-| `:checkhealth` | Full diagnostic report; add a name to narrow it, e.g. `:checkhealth vim.lsp` |
+| `:checkhealth` | Full diagnostic report; add a name to narrow it, e.g. `:checkhealth lazy` |
 
 ---
 
@@ -485,24 +355,6 @@ vim.api.nvim_create_autocmd("FileType", {
 })
 ```
 
-**Change a language server's settings** in the `settings` table at the top of
-`lua/plugins/lsp.lua`, next to the existing `lua_ls` entry (this works on every
-supported Neovim version):
-
-```lua
-local settings = {
-  lua_ls = { ... },
-  pyright = { python = { analysis = { typeCheckingMode = "strict" } } },
-}
-```
-
-**Change the completion keys** in `lua/plugins/lsp.lua`:
-
-```lua
-keymap = { preset = "enter" },   -- Enter accepts
-keymap = { preset = "default" }, -- Ctrl-y accepts (Vim style)
-```
-
 **Turn inline blame off by default** in `lua/plugins/git.lua`: set
 `current_line_blame = false`. `Space g B` still toggles it.
 
@@ -533,8 +385,6 @@ Including `desc` makes the keymap appear in the which-key popup.
 |---|---|
 | Plugins | `:Lazy update` updates them and records the new versions in `lazy-lock.json`. The statusline shows how many updates are waiting. |
 | Undo a bad plugin update | `:Lazy restore` returns to the versions in `lazy-lock.json` (`lazy-lock-legacy.json` on 0.10 / 0.11) |
-| Language servers and tools | `:Mason`, then `U` |
-| Treesitter parsers | `:TSUpdate` (also runs automatically when nvim-treesitter updates) |
 
 If you keep your dotfiles in git, commit `lazy-lock.json`. That way every
 machine runs the same plugin versions.
@@ -548,15 +398,11 @@ machine runs the same plugin versions.
 | Icons show up as boxes or `?` | Set your terminal font to a Nerd Font. In kitty, run `kitty +list-fonts \| grep Nerd` and put one of the names in `font_family` in `kitty.conf`. |
 | Yanking doesn't reach other apps | Install a clipboard tool (`sudo pacman -S wl-clipboard` on Wayland, `xclip` on X11), then restart Neovim. |
 | Background isn't transparent | The terminal controls this. Set `background_opacity` below `1.0` in kitty. |
-| No errors appear in a file | Run `:LspInfo` to check whether a server is attached. If none is, install one in `:Mason`. If it just finished installing, run `:e`. |
-| Rust: rust-analyzer fails with "no default toolchain" | `rustup default stable` |
-| Highlighting looks plain | The parser may still be installing, or the install failed. Check `:TSLog` and `:checkhealth nvim-treesitter`, then try `:TSInstall <lang>`. Compiling needs `gcc`. |
-| Bash files show no warnings | Make sure `shellcheck` is installed in `:Mason`. |
 | Something broke after `:Lazy update` | `:Lazy restore` |
 | `:checkhealth lazy` warns about `site/pack/core` | Harmless. Catppuccin creates that empty folder when it checks for Neovim's built-in plugin manager. |
 | Slow startup | `:Lazy profile` shows what takes the time. |
 
-**Full reset**: this deletes all plugins, servers and parsers, and also your
+**Full reset**: this deletes all plugins, and also your
 undo history. Everything else re-downloads on the next launch:
 
 ```sh

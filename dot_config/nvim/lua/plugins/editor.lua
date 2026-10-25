@@ -11,8 +11,6 @@ return {
       { "<leader>fg", "<cmd>Telescope live_grep<cr>", desc = "Search text in project" },
       { "<leader>fb", "<cmd>Telescope buffers<cr>", desc = "Open buffers" },
       { "<leader>fr", "<cmd>Telescope oldfiles<cr>", desc = "Recent files" },
-      { "<leader>fd", "<cmd>Telescope diagnostics<cr>", desc = "Diagnostics (errors)" },
-      { "<leader>fs", "<cmd>Telescope lsp_document_symbols<cr>", desc = "Symbols in file" },
       { "<leader>fh", "<cmd>Telescope help_tags<cr>", desc = "Help" },
       { "<leader>fc", "<cmd>Telescope colorscheme enable_preview=true<cr>", desc = "Color schemes (live preview)" },
     },
@@ -27,7 +25,6 @@ return {
       spec = {
         { "<leader>f", group = "find" },
         { "<leader>g", group = "git" },
-        { "<leader>c", group = "code" },
       },
     },
   },

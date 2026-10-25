@@ -12,7 +12,7 @@
 local keep = {
   Visual = true, VisualNOS = true,                                          -- selected text
   Search = true, IncSearch = true, CurSearch = true, Substitute = true,     -- search matches
-  PmenuSel = true, BlinkCmpMenuSelection = true, TelescopeSelection = true, -- selected menu item
+  PmenuSel = true, TelescopeSelection = true,                               -- selected menu item
   DiffAdd = true, DiffChange = true, DiffDelete = true, DiffText = true,    -- diff mode
 }
 
