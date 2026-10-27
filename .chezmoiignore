@@ -68,6 +68,7 @@ scripts
 scripts
 Documents
 .icons
+.config/kitty
 .config/distrobox
 .config/spicetify
 .config/kdeglobals
