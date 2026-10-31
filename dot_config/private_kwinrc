@@ -207,6 +207,10 @@ tiles={"layoutDirection":"horizontal","tiles":[{"width":0.25},{"width":0.5},{"wi
 [Tiling][6d24d8ae-6a56-510a-9908-76b03ba4c67b]
 tiles={"layoutDirection":"horizontal","tiles":[{"width":0.25},{"width":0.5},{"width":0.25}]}
 
+[Tiling][6dd54889-557f-44d4-95ce-580d33319971][]
+padding=4
+tiles={"layoutDirection":"horizontal","tiles":[{"width":0.25},{"width":0.5},{"width":0.25}]}
+
 [Tiling][6dd54889-557f-44d4-95ce-580d33319971][150b6266-1417-449e-a683-fd23d12ced4c]
 padding=4
 tiles={"layoutDirection":"horizontal","tiles":[{"width":0.25},{"width":0.5},{"width":0.25}]}
@@ -578,6 +582,10 @@ tiles={"layoutDirection":"horizontal","tiles":[{"width":0.25},{"width":0.5},{"wi
 [Tiling][cf11644c-550d-4324-bce1-87ac1743a886][7dec2174-cd9c-41a8-b917-1789ac8d4db5]
 tiles={"layoutDirection":"horizontal","tiles":[{"width":0.25},{"width":0.5},{"width":0.25}]}
 
+[Tiling][d43f5a4c-0940-420e-b20c-e798f019eca4][]
+padding=4
+tiles={"layoutDirection":"horizontal","tiles":[{"width":0.25},{"width":0.5},{"width":0.25}]}
+
 [Tiling][d43f5a4c-0940-420e-b20c-e798f019eca4][150b6266-1417-449e-a683-fd23d12ced4c]
 padding=4
 tiles={"layoutDirection":"horizontal","tiles":[{"width":0.25},{"width":0.5},{"width":0.25}]}
@@ -738,5 +746,6 @@ XwaylandEisNoPrompt=true
 
 [org.kde.kdecoration2]
 ButtonsOnLeft=MSF
-library=org.kde.breeze
-theme=Breeze
+ButtonsOnRight=HAIX
+library=org.kde.kwin.aurorae.v2
+theme=__aurorae__svg__Utterly-Round-Dark-Solid

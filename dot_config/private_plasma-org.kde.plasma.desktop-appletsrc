@@ -20,7 +20,7 @@ immutability=1
 lastScreen=0
 location=0
 plugin=org.kde.plasma.systemtray
-popupHeight=598
+popupHeight=434
 popupWidth=459
 wallpaperplugin=org.kde.image
 
@@ -118,7 +118,7 @@ immutability=1
 plugin=org.kde.plasma.mediacontroller
 
 [Containments][101][Applets][119][Configuration]
-popupHeight=337
+popupHeight=340
 popupWidth=487
 
 [Containments][101][Applets][120]
@@ -126,7 +126,7 @@ immutability=1
 plugin=org.kde.plasma.digitalclock
 
 [Containments][101][Applets][120][Configuration]
-popupHeight=488
+popupHeight=452
 popupWidth=570
 
 [Containments][101][Applets][120][Configuration][Appearance]
@@ -164,8 +164,8 @@ immutability=1
 plugin=org.kde.plasma.windowlist
 
 [Containments][101][Applets][127][Configuration]
-popupHeight=67
-popupWidth=419
+popupHeight=32
+popupWidth=154
 
 [Containments][101][Applets][127][Configuration][ConfigDialog]
 DialogHeight=630
@@ -200,8 +200,14 @@ wallpaperplugin=org.kde.image
 DialogHeight=630
 DialogWidth=810
 
+[Containments][131][General]
+changedPositions={"desktop:/SYNOPSIS.md":["1650x943,1680x1050,836x400,2560x1440,2304x1536,1920x1080","0","2"],"desktop:/new wallpapers":["1650x943,1680x1050,836x400,2560x1440,2304x1536,1920x1080","0","0"]}
+lastResolution=2560x1440
+positions={"1650x943":["1","15","desktop:/SYNOPSIS.md","0","2","desktop:/new wallpapers","0","0","desktop:/new wallpapers.zip","0","1"],"1680x1050":["1","15","desktop:/SYNOPSIS.md","0","2","desktop:/new wallpapers","0","0","desktop:/new wallpapers.zip","0","1"],"1920x1080":["2","6","desktop:/SYNOPSIS.md","1","0","desktop:/new wallpapers.zip","0","1","desktop:/new wallpapers","0","0"],"2304x1536":["1","21","desktop:/new wallpapers","0","0","desktop:/SYNOPSIS.md","0","2","desktop:/new wallpapers.zip","0","1"],"2560x1440":["1","23","desktop:/SYNOPSIS.md","0","2","desktop:/stash","0","3","desktop:/new wallpapers.zip","0","1","desktop:/new wallpapers","0","0"],"836x400":["1","7","desktop:/SYNOPSIS.md","0","2","desktop:/new wallpapers","0","0","desktop:/new wallpapers.zip","0","1"]}
+sortMode=-1
+
 [Containments][131][Wallpaper][org.kde.image][General]
-Image=file:///usr/share/wallpapers/cachyos-wallpapers/north.png
+Image=file:///usr/share/wallpapers/cachyos-wallpapers/Dracula.png
 SlidePaths=/home/joshr/.local/share/wallpapers/,/usr/share/wallpapers/
 
 [Containments][132]
@@ -217,7 +223,7 @@ plugin=org.kde.plasma.folder
 wallpaperplugin=org.kde.image
 
 [Containments][132][Wallpaper][org.kde.image][General]
-Image=file:///usr/share/wallpapers/cachyos-wallpapers/north.png
+Image=file:///usr/share/wallpapers/cachyos-wallpapers/Dracula.png
 SlidePaths=/home/joshr/.local/share/wallpapers/,/usr/share/wallpapers/
 
 [Containments][133]
@@ -234,7 +240,7 @@ plugin=org.kde.plasma.folder
 wallpaperplugin=org.kde.image
 
 [Containments][133][Wallpaper][org.kde.image][General]
-Image=file:///usr/share/wallpapers/cachyos-wallpapers/north.png
+Image=file:///usr/share/wallpapers/cachyos-wallpapers/Dracula.png
 SlidePaths=/home/joshr/.local/share/wallpapers/,/usr/share/wallpapers/
 
 [Containments][134]
@@ -276,7 +282,7 @@ immutability=1
 plugin=org.kde.plasma.volume
 
 [Containments][134][Applets][137][Configuration]
-popupHeight=638
+popupHeight=369
 popupWidth=556
 
 [Containments][134][Applets][137][Configuration][General]
@@ -308,11 +314,20 @@ immutability=1
 plugin=org.kde.plasma.windowlist
 
 [Containments][134][Applets][141][Configuration]
-popupHeight=67
+popupHeight=32
 popupWidth=154
 
 [Containments][134][General]
 AppletOrder=140;141;139;135;138;136;137
+
+[Containments][143]
+activityId=c6457dd2-7809-461c-8084-0328989eac04
+formfactor=0
+immutability=1
+lastScreen=3
+location=0
+plugin=org.kde.plasma.folder
+wallpaperplugin=org.kde.image
 
 [Containments][23][Applets][24][Configuration]
 popupHeight=509
@@ -345,7 +360,7 @@ DialogWidth=720
 [Containments][4][Applets][7][Configuration][General]
 indicateAudioStreams=false
 interactiveMute=false
-launchers=applications:vivaldi-stable.desktop,applications:kitty.desktop,applications:org.kde.dolphin.desktop,file:///var/lib/flatpak/exports/share/applications/com.spotify.Client.desktop,applications:vesktop.desktop,applications:steam.desktop,applications:signal.desktop,applications:com.microsoft.VSCode.desktop,applications:joplin-desktop.desktop,applications:org.mozilla.Thunderbird.desktop,applications:com.shellyorg.shelly.desktop,applications:systemsettings.desktop
+launchers=applications:vivaldi-stable.desktop,applications:kitty.desktop,applications:org.kde.dolphin.desktop,file:///var/lib/flatpak/exports/share/applications/com.spotify.Client.desktop,applications:discord.desktop,applications:steam.desktop,applications:signal.desktop,applications:com.microsoft.VSCode.desktop,applications:joplin-desktop.desktop,applications:org.mozilla.Thunderbird.desktop,applications:com.shellyorg.shelly.desktop,applications:systemsettings.desktop
 
 [Containments][4][Applets][91]
 immutability=1
@@ -353,7 +368,7 @@ plugin=org.kde.plasma.kickoff
 
 [Containments][4][Applets][91][Configuration]
 popupHeight=526
-popupWidth=1123
+popupWidth=1332
 
 [Containments][4][Applets][91][Configuration][ConfigDialog]
 DialogHeight=540
@@ -384,7 +399,7 @@ immutability=1
 plugin=org.kde.plasma.windowlist
 
 [Containments][63][Applets][129][Configuration]
-popupHeight=67
+popupHeight=32
 popupWidth=154
 
 [Containments][63][Applets][64]
@@ -392,7 +407,7 @@ immutability=1
 plugin=org.kde.plasma.digitalclock
 
 [Containments][63][Applets][64][Configuration]
-popupHeight=488
+popupHeight=489
 popupWidth=570
 
 [Containments][63][Applets][64][Configuration][Appearance]
@@ -409,7 +424,7 @@ immutability=1
 plugin=org.kde.plasma.mediacontroller
 
 [Containments][63][Applets][65][Configuration]
-popupHeight=281
+popupHeight=282
 popupWidth=394
 
 [Containments][63][Applets][66]
@@ -417,7 +432,7 @@ immutability=1
 plugin=org.kde.plasma.volume
 
 [Containments][63][Applets][66][Configuration]
-popupHeight=639
+popupHeight=369
 popupWidth=556
 
 [Containments][63][Applets][66][Configuration][General]
@@ -449,4 +464,4 @@ AppletOrder=86;129;69;64;67;65;66
 
 [ScreenMapping]
 itemsOnDisabledScreens=
-screenMapping=desktop:/SYNOPSIS.md,0,c6457dd2-7809-461c-8084-0328989eac04,desktop:/jrh-mc.zip,0,c91d0bc0-2618-4ec0-945f-b2599e8e8166,desktop:/new wallpapers.zip,0,c6457dd2-7809-461c-8084-0328989eac04,desktop:/new wallpapers,0,c6457dd2-7809-461c-8084-0328989eac04
+screenMapping=desktop:/SYNOPSIS.md,0,c6457dd2-7809-461c-8084-0328989eac04,desktop:/new wallpapers,0,c6457dd2-7809-461c-8084-0328989eac04,desktop:/jrh-mc.zip,0,c91d0bc0-2618-4ec0-945f-b2599e8e8166,desktop:/new wallpapers.zip,0,c6457dd2-7809-461c-8084-0328989eac04
