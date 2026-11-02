@@ -746,6 +746,5 @@ XwaylandEisNoPrompt=true
 
 [org.kde.kdecoration2]
 ButtonsOnLeft=MSF
-ButtonsOnRight=HAIX
-library=org.kde.kwin.aurorae.v2
-theme=__aurorae__svg__Utterly-Round-Dark-Solid
+library=org.kde.breeze
+theme=Breeze

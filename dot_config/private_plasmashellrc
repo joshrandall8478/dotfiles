@@ -49,6 +49,7 @@ SlidePaths=/usr/share/wallpapers/
 [PlasmaViews][Panel 101]
 floating=1
 panelLengthMode=0
+panelOpacity=0
 panelVisibility=0
 shell=org.kde.plasma.desktop
 

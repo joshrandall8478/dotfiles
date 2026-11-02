@@ -1,5 +1,5 @@
 {
-    "window.titleBarStyle": "custom",
+    "window.titleBarStyle": "native",
     "workbench.iconTheme": "material-icon-theme",
     "editor.stickyScroll.enabled": false,
     "git.enableSmartCommit": true,
