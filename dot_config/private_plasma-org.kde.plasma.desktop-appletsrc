@@ -130,7 +130,7 @@ popupHeight=456
 popupWidth=570
 
 [Containments][101][Applets][120][Configuration][Appearance]
-customDateFormat=ddd, MMM dd
+customDateFormat=ddd, MMM d
 dateDisplayFormat=BesideTime
 dateFormat=custom
 
@@ -201,9 +201,9 @@ DialogHeight=630
 DialogWidth=810
 
 [Containments][131][General]
-changedPositions={"desktop:/SYNOPSIS.md":["1920x1080,1680x1050,2560x1440,1650x943,836x400,2304x1536","0","2"],"desktop:/new wallpapers":["1920x1080,1680x1050,2560x1440,1650x943,836x400,2304x1536","0","0"]}
+changedPositions={"desktop:/SYNOPSIS.md":["1680x1050,1920x1080,836x400,2304x1536,1650x943,2560x1440","0","2"],"desktop:/new wallpapers":["1680x1050,1920x1080,836x400,2304x1536,1650x943,2560x1440","0","0"]}
 lastResolution=2560x1440
-positions={"1650x943":["1","15","desktop:/SYNOPSIS.md","0","2","desktop:/new wallpapers","0","0","desktop:/new wallpapers.zip","0","1"],"1680x1050":["1","15","desktop:/SYNOPSIS.md","0","2","desktop:/new wallpapers","0","0","desktop:/new wallpapers.zip","0","1"],"1920x1080":["2","6","desktop:/SYNOPSIS.md","1","0","desktop:/new wallpapers.zip","0","1","desktop:/new wallpapers","0","0"],"2304x1536":["1","21","desktop:/new wallpapers","0","0","desktop:/SYNOPSIS.md","0","2","desktop:/new wallpapers.zip","0","1"],"2560x1440":["1","23","desktop:/new wallpapers.zip","0","1","desktop:/velvet","0","3","desktop:/SYNOPSIS.md","0","2","desktop:/new wallpapers","0","0","desktop:/stash","0","3"],"836x400":["1","7","desktop:/SYNOPSIS.md","0","2","desktop:/new wallpapers","0","0","desktop:/new wallpapers.zip","0","1"]}
+positions={"1650x943":["1","15","desktop:/SYNOPSIS.md","0","2","desktop:/new wallpapers","0","0","desktop:/new wallpapers.zip","0","1"],"1680x1050":["1","15","desktop:/SYNOPSIS.md","0","2","desktop:/new wallpapers","0","0","desktop:/new wallpapers.zip","0","1"],"1920x1080":["2","6","desktop:/SYNOPSIS.md","1","0","desktop:/new wallpapers.zip","0","1","desktop:/new wallpapers","0","0"],"2304x1536":["1","21","desktop:/new wallpapers","0","0","desktop:/SYNOPSIS.md","0","2","desktop:/new wallpapers.zip","0","1"],"2560x1440":["1","23","desktop:/stash","0","3","desktop:/velvet","0","3","desktop:/new wallpapers.zip","0","1","desktop:/new wallpapers","0","0","desktop:/SYNOPSIS.md","0","2"],"836x400":["1","7","desktop:/SYNOPSIS.md","0","2","desktop:/new wallpapers","0","0","desktop:/new wallpapers.zip","0","1"]}
 sortMode=-1
 
 [Containments][131][Wallpaper][org.kde.image][General]
@@ -464,4 +464,4 @@ AppletOrder=86;129;69;64;67;65;66
 
 [ScreenMapping]
 itemsOnDisabledScreens=
-screenMapping=desktop:/SYNOPSIS.md,0,c6457dd2-7809-461c-8084-0328989eac04,desktop:/new wallpapers,0,c6457dd2-7809-461c-8084-0328989eac04,desktop:/velvet,0,c6457dd2-7809-461c-8084-0328989eac04,desktop:/new wallpapers.zip,0,c6457dd2-7809-461c-8084-0328989eac04,desktop:/jrh-mc.zip,0,c91d0bc0-2618-4ec0-945f-b2599e8e8166
+screenMapping=desktop:/new wallpapers,0,c6457dd2-7809-461c-8084-0328989eac04,desktop:/velvet,0,c6457dd2-7809-461c-8084-0328989eac04,desktop:/SYNOPSIS.md,0,c6457dd2-7809-461c-8084-0328989eac04,desktop:/jrh-mc.zip,0,c91d0bc0-2618-4ec0-945f-b2599e8e8166,desktop:/new wallpapers.zip,0,c6457dd2-7809-461c-8084-0328989eac04
