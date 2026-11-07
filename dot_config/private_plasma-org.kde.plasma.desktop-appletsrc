@@ -26,7 +26,7 @@ wallpaperplugin=org.kde.image
 
 [Containments][101][Applets][102][Applets][103]
 immutability=1
-plugin=org.kde.kdeconnect
+plugin=org.kde.plasma.vault
 
 [Containments][101][Applets][102][Applets][104]
 immutability=1
@@ -94,7 +94,7 @@ plugin=org.kde.plasma.dwellclicker
 
 [Containments][101][Applets][102][Applets][116]
 immutability=1
-plugin=org.kde.plasma.battery
+plugin=org.kde.plasma.printmanager
 
 [Containments][101][Applets][102][Applets][118]
 immutability=1
@@ -104,13 +104,17 @@ plugin=org.kde.plasma.bluetooth
 immutability=1
 plugin=org.kde.plasma.brightness
 
+[Containments][101][Applets][102][Applets][144]
+immutability=1
+plugin=org.kde.plasma.battery
+
 [Containments][101][Applets][102][ConfigDialog]
 DialogHeight=630
 DialogWidth=810
 
 [Containments][101][Applets][102][General]
-extraItems=org.kde.kdeconnect,org.kde.plasma.keyboardindicator,org.kde.plasma.weather,org.kde.kscreen,org.kde.plasma.keyboardlayout,org.kde.plasma.networkmanagement,org.kde.plasma.volume,org.kde.plasma.cameraindicator,org.kde.plasma.clipboard,org.kde.plasma.devicenotifier,org.kde.plasma.manage-inputmethod,org.kde.plasma.bluetooth,org.kde.plasma.brightness,org.kde.plasma.battery,org.kde.plasma.notifications,org.kde.plasma.dwellclicker
-knownItems=org.kde.kdeconnect,org.kde.plasma.bluetooth,org.kde.plasma.keyboardindicator,org.kde.plasma.weather,org.kde.kscreen,org.kde.plasma.battery,org.kde.plasma.brightness,org.kde.plasma.keyboardlayout,org.kde.plasma.networkmanagement,org.kde.plasma.volume,org.kde.plasma.cameraindicator,org.kde.plasma.clipboard,org.kde.plasma.devicenotifier,org.kde.plasma.manage-inputmethod,org.kde.plasma.mediacontroller,org.kde.plasma.notifications,org.kde.plasma.dwellclicker
+extraItems=org.kde.plasma.keyboardindicator,org.kde.plasma.weather,org.kde.kscreen,org.kde.plasma.keyboardlayout,org.kde.plasma.networkmanagement,org.kde.plasma.volume,org.kde.plasma.cameraindicator,org.kde.plasma.clipboard,org.kde.plasma.devicenotifier,org.kde.plasma.manage-inputmethod,org.kde.plasma.bluetooth,org.kde.plasma.brightness,org.kde.plasma.battery,org.kde.plasma.notifications,org.kde.plasma.dwellclicker,org.kde.plasma.vault,org.kde.kupapplet,org.kde.plasma.printmanager
+knownItems=org.kde.plasma.bluetooth,org.kde.plasma.keyboardindicator,org.kde.plasma.weather,org.kde.kscreen,org.kde.plasma.battery,org.kde.plasma.brightness,org.kde.plasma.keyboardlayout,org.kde.plasma.networkmanagement,org.kde.plasma.volume,org.kde.plasma.cameraindicator,org.kde.plasma.clipboard,org.kde.plasma.devicenotifier,org.kde.plasma.manage-inputmethod,org.kde.plasma.mediacontroller,org.kde.plasma.notifications,org.kde.plasma.dwellclicker,org.kde.plasma.vault,org.kde.kupapplet,org.kde.plasma.printmanager
 shownItems=org.kde.plasma.bluetooth,org.kde.plasma.brightness,org.kde.plasma.battery,org.kde.plasma.notifications
 
 [Containments][101][Applets][119]
@@ -186,6 +190,7 @@ actionsOrder=lockScreen,switchUser,suspendToRam,requestReboot,requestShutDown,re
 AppletOrder=121;127;124;120;122;119;102;130
 
 [Containments][131]
+ItemGeometries-1024x768=
 ItemGeometries-2560x1440=
 ItemGeometriesHorizontal=
 activityId=c6457dd2-7809-461c-8084-0328989eac04
@@ -201,9 +206,9 @@ DialogHeight=630
 DialogWidth=810
 
 [Containments][131][General]
-changedPositions={"desktop:/SYNOPSIS.md":["1920x1080,2304x1536,1650x943,2560x1440,1680x1050,836x400","0","2"],"desktop:/new wallpapers":["1920x1080,2304x1536,1650x943,2560x1440,1680x1050,836x400","0","0"]}
+changedPositions={"desktop:/SYNOPSIS.md":["2560x1440,2304x1536,1680x1050,1024x768,1920x1080,836x400,1650x943","0","2"],"desktop:/new wallpapers":["2560x1440,2304x1536,1680x1050,1024x768,1920x1080,836x400,1650x943","0","0"]}
 lastResolution=2560x1440
-positions={"1650x943":["1","15","desktop:/SYNOPSIS.md","0","2","desktop:/new wallpapers","0","0","desktop:/new wallpapers.zip","0","1"],"1680x1050":["1","6","desktop:/SYNOPSIS.md","0","2","desktop:/new wallpapers.zip","0","1","desktop:/new wallpapers","0","0","desktop:/velvet","0","3"],"1920x1080":["2","2","desktop:/SYNOPSIS.md","1","0","desktop:/new wallpapers.zip","0","1","desktop:/new wallpapers","0","0","desktop:/velvet","1","1"],"2304x1536":["1","21","desktop:/new wallpapers","0","0","desktop:/SYNOPSIS.md","0","2","desktop:/new wallpapers.zip","0","1"],"2560x1440":["1","23","desktop:/velvet","0","3","desktop:/SYNOPSIS.md","0","2","desktop:/new wallpapers.zip","0","1","desktop:/stash","0","0","desktop:/new wallpapers","0","0","desktop:/st","0","0"],"836x400":["1","7","desktop:/SYNOPSIS.md","0","2","desktop:/new wallpapers","0","0","desktop:/new wallpapers.zip","0","1"]}
+positions={"1024x768":["1","9","desktop:/SYNOPSIS.md","0","2","desktop:/new wallpapers.zip","0","1","desktop:/velvet","0","3","desktop:/new wallpapers","0","0","desktop:/stash","0","4","desktop:/st","0","0"],"1650x943":["1","15","desktop:/SYNOPSIS.md","0","2","desktop:/new wallpapers","0","0","desktop:/new wallpapers.zip","0","1"],"1680x1050":["1","6","desktop:/SYNOPSIS.md","0","2","desktop:/new wallpapers.zip","0","1","desktop:/new wallpapers","0","0","desktop:/velvet","0","3"],"1920x1080":["2","2","desktop:/SYNOPSIS.md","1","0","desktop:/new wallpapers.zip","0","1","desktop:/new wallpapers","0","0","desktop:/velvet","1","1"],"2304x1536":["1","21","desktop:/new wallpapers","0","0","desktop:/SYNOPSIS.md","0","2","desktop:/new wallpapers.zip","0","1"],"2560x1440":["1","23","desktop:/SYNOPSIS.md","0","2","desktop:/new wallpapers.zip","0","1","desktop:/stash","0","0","desktop:/new wallpapers","0","0","desktop:/velvet","0","3","desktop:/st","0","0"],"836x400":["1","7","desktop:/SYNOPSIS.md","0","2","desktop:/new wallpapers","0","0","desktop:/new wallpapers.zip","0","1"]}
 sortMode=-1
 
 [Containments][131][Wallpaper][org.kde.image][General]
@@ -223,9 +228,9 @@ plugin=org.kde.plasma.folder
 wallpaperplugin=org.kde.image
 
 [Containments][132][General]
-changedPositions={"desktop:/SYNOPSIS.md":["1920x1080,1680x1050","0","2"],"desktop:/new wallpapers":["1920x1080,1680x1050","0","0"],"desktop:/new wallpapers.zip":["1920x1080,1680x1050","0","1"],"desktop:/velvet":["1920x1080,1680x1050","0","3"]}
+changedPositions={"desktop:/SYNOPSIS.md":["1680x1050,1920x1080","0","2"],"desktop:/new wallpapers":["1680x1050,1920x1080","0","0"],"desktop:/new wallpapers.zip":["1680x1050,1920x1080","0","1"],"desktop:/velvet":["1680x1050,1920x1080","0","3"]}
 lastResolution=1920x1080
-positions={"1680x1050":["1","15","desktop:/new wallpapers.zip","0","1","desktop:/SYNOPSIS.md","0","2","desktop:/new wallpapers","0","0","desktop:/velvet","0","3"],"1920x1080":["2","17","desktop:/velvet","1","1","desktop:/SYNOPSIS.md","1","0","desktop:/new wallpapers.zip","0","1","desktop:/new wallpapers","0","0"]}
+positions={"1680x1050":["1","15","desktop:/new wallpapers.zip","0","1","desktop:/SYNOPSIS.md","0","2","desktop:/new wallpapers","0","0","desktop:/velvet","0","3"],"1920x1080":["2","17","desktop:/SYNOPSIS.md","1","0","desktop:/new wallpapers.zip","0","1","desktop:/new wallpapers","0","0","desktop:/velvet","1","1"]}
 sortMode=-1
 
 [Containments][132][Wallpaper][org.kde.image][General]
@@ -366,15 +371,15 @@ DialogWidth=720
 [Containments][4][Applets][7][Configuration][General]
 indicateAudioStreams=false
 interactiveMute=false
-launchers=applications:zen.desktop,applications:kitty.desktop,applications:org.kde.dolphin.desktop,file:///var/lib/flatpak/exports/share/applications/com.spotify.Client.desktop,applications:discord.desktop,applications:steam.desktop,applications:signal.desktop,applications:com.microsoft.VSCode.desktop,applications:joplin-desktop.desktop,applications:org.mozilla.Thunderbird.desktop,applications:com.shellyorg.shelly.desktop,applications:systemsettings.desktop
+launchers=applications:zen.desktop,applications:kitty.desktop,applications:org.kde.dolphin.desktop,applications:spotify.desktop,applications:discord.desktop,applications:steam.desktop,applications:signal.desktop,applications:com.microsoft.VSCode.desktop,applications:org.mozilla.Thunderbird.desktop,applications:appimagekit-joplin.desktop,applications:com.shellyorg.shelly.desktop,applications:systemsettings.desktop
 
 [Containments][4][Applets][91]
 immutability=1
 plugin=org.kde.plasma.kickoff
 
 [Containments][4][Applets][91][Configuration]
-popupHeight=537
-popupWidth=1332
+popupHeight=570
+popupWidth=1057
 
 [Containments][4][Applets][91][Configuration][ConfigDialog]
 DialogHeight=540
@@ -383,7 +388,7 @@ DialogWidth=720
 [Containments][4][Applets][91][Configuration][General]
 applicationsDisplay=0
 favoritesPortedToKAstats=true
-icon=org.cachyos.hello
+icon=distributor-logo-archlinux
 paneSwap=true
 primaryActions=3
 systemFavorites=lock-screen\\,logout\\,save-session\\,switch-user\\,suspend\\,hibernate\\,reboot\\,shutdown
@@ -470,4 +475,4 @@ AppletOrder=86;129;69;64;67;65;66
 
 [ScreenMapping]
 itemsOnDisabledScreens=
-screenMapping=desktop:/SYNOPSIS.md,1,c6457dd2-7809-461c-8084-0328989eac04,desktop:/velvet,1,c6457dd2-7809-461c-8084-0328989eac04,desktop:/new wallpapers.zip,1,c6457dd2-7809-461c-8084-0328989eac04,desktop:/jrh-mc.zip,0,c91d0bc0-2618-4ec0-945f-b2599e8e8166,desktop:/stash,0,c6457dd2-7809-461c-8084-0328989eac04,desktop:/new wallpapers,1,c6457dd2-7809-461c-8084-0328989eac04
+screenMapping=desktop:/SYNOPSIS.md,1,c6457dd2-7809-461c-8084-0328989eac04,desktop:/new wallpapers.zip,1,c6457dd2-7809-461c-8084-0328989eac04,desktop:/velvet,1,c6457dd2-7809-461c-8084-0328989eac04,desktop:/new wallpapers,1,c6457dd2-7809-461c-8084-0328989eac04,desktop:/jrh-mc.zip,0,c91d0bc0-2618-4ec0-945f-b2599e8e8166
