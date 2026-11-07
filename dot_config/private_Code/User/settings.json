@@ -1,5 +1,4 @@
 {
-    "window.titleBarStyle": "native",
     "workbench.iconTheme": "material-icon-theme",
     "editor.stickyScroll.enabled": false,
     "git.enableSmartCommit": true,
@@ -50,5 +49,7 @@
     "[markdown]": {
         "editor.defaultFormatter": "esbenp.prettier-vscode"
     },
-    "claudeCode.hideOnboarding": true
+    "claudeCode.hideOnboarding": true,
+    "kotlin.languageServer.enabled": false,
+    "kotlin.debugAdapter.enabled": false
 }
